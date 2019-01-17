@@ -1,0 +1,82 @@
+[
+  {
+    "name": "American Express",
+    "image": "../images/amex-open.jpg"
+  },
+  {
+    "name": "Bloomberg Philanthropies",
+    "image": "../images/bloomberg-philanthropies.jpg"
+  },
+  {
+    "name": "Brooks Brothers",
+    "image": "../images/brooks-brothers.jpg"
+  },
+  {
+    "name": "Coachella",
+    "image": "../images/coachella.jpg"
+  },
+  {
+    "name": "Coca Cola",
+    "image": "../images/coca-cola-mixon.jpg"
+  },
+  {
+    "name": "Disney",
+    "image": "../images/disney.jpg"
+  },
+  {
+    "name": "Eat This, Not That!",
+    "image": "../images/eat-this.jpg"
+  },
+  {
+    "name": "Google Summit",
+    "image": "../images/google-summit.jpg"
+  },
+  {
+    "name": "Khiels",
+    "image": "../images/kiehls-hydro.jpg"
+  },
+  {
+    "name": "Leicht",
+    "image": "../images/leicht.jpg"
+  },
+  {
+    "name": "Mattel",
+    "image": "../images/mattel.jpg"
+  },
+  {
+    "name": "Motorola",
+    "image": "../images/motorola.jpg"
+  },
+  {
+    "name": "Peloton",
+    "image": "../images/peloton.jpg"
+  },
+  {
+    "name": "Reebok",
+    "image": "../images/reebok.jpg"
+  },
+  {
+    "name": "SLS Hotels",
+    "image": "../images/sls-las-vegas.jpg"
+  },
+  {
+    "name": "Sony",
+    "image": "../images/sony.jpg"
+  },
+  {
+    "name": "Tao",
+    "image": "../images/tao-group.jpg"
+  },
+  {
+    "name": "Tyler Shields",
+    "image": "../images/tyler-shields.jpg"
+  },
+  {
+    "name": "US Army",
+    "image": "../images/us-army.jpg"
+  },
+  {
+    "name": "US Open",
+    "image": "../images/us-open.jpg"
+  }
+]
