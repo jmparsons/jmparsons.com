@@ -1,5 +1,6 @@
 import React from 'react';
+import LayoutsMain from '../Layouts/Main';
 
-const Services = () => <div>Services</div>;
+const Services = () => <LayoutsMain>Services</LayoutsMain>;
 
 export default Services;

@@ -1,5 +1,6 @@
 import React from 'react';
+import LayoutsMain from '../Layouts/Main';
 
-const Contact = () => <div>Contact</div>;
+const Contact = () => <LayoutsMain>Contact</LayoutsMain>;
 
 export default Contact;

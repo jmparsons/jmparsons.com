@@ -2,21 +2,23 @@ import * as React from 'react';
 import { MainGrid, MainContent } from '../../components/UI/MainUI';
 import TopBar from '../Site/TopBar';
 import { ThemeProvider } from 'styled-components';
-import { ThemerProps } from '../../interfaces';
+import Theme from '../../constants/Theme';
 
-interface DashProps {
+type Props = {
   children: React.ReactNode;
-}
+};
 
-type Props = ThemerProps & DashProps;
-
-const LayoutsMain: React.SFC<Props> = ({ children, theme, updateTheme }) => (
-  <ThemeProvider theme={{ mode: theme }}>
-    <MainGrid>
-      <TopBar />
-      <MainContent>{children}</MainContent>
-    </MainGrid>
-  </ThemeProvider>
-);
+const LayoutsMain: React.SFC<Props> = ({ children }) => {
+  const [theme, setTheme] = React.useState<string>('light');
+  const currTheme = Theme[theme] || Theme['light'];
+  return (
+    <ThemeProvider theme={currTheme}>
+      <MainGrid>
+        <TopBar />
+        <MainContent>{children}</MainContent>
+      </MainGrid>
+    </ThemeProvider>
+  );
+};
 
 export default LayoutsMain;

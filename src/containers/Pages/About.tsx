@@ -1,5 +1,6 @@
 import React from 'react';
+import LayoutsMain from '../Layouts/Main';
 
-const About = () => <div>About</div>;
+const About = () => <LayoutsMain>About</LayoutsMain>;
 
 export default About;
