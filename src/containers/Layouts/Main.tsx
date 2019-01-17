@@ -14,7 +14,7 @@ const LayoutsMain: React.SFC<Props> = ({ children }) => {
   return (
     <ThemeProvider theme={currTheme}>
       <MainGrid>
-        <TopBar />
+        <TopBar setTheme={setTheme} />
         <MainContent>{children}</MainContent>
       </MainGrid>
     </ThemeProvider>
