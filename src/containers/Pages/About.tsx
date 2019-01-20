@@ -1,9 +1,13 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
+import { Helmet } from 'react-helmet';
 import { AboutImage, AboutCon, AboutGrid } from '../../components/UI/AboutUI';
 
 const About = () => (
   <LayoutsMain>
+    <Helmet>
+      <title>JMParsons | About</title>
+    </Helmet>
     <AboutCon>
       <AboutGrid>
         <div>
