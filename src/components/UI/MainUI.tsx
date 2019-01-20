@@ -3,7 +3,7 @@ import Colors from '../../constants/Colors';
 
 const MainGrid = styled.div`
   display: grid;
-  background: ${Colors.offWhite};
+  background: ${Colors.white};
   grid-template-rows: 60px 1fr;
   min-height: 100%;
 `;

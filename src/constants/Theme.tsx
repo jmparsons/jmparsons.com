@@ -4,7 +4,7 @@ import { ThemexProps } from '../interfaces';
 const Theme: ThemexProps = {
   light: {
     topBar: {
-      bg: Colors.lightGray,
+      bg: Colors.offWhite,
       link: Colors.lightGray,
     },
   },

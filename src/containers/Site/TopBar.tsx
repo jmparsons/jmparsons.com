@@ -1,8 +1,15 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
 import Routes from '../../constants/Routes';
 import { withTheme } from 'styled-components';
-import { NavBar, Logo, ThemeControls, TopBarGrid, ThemeBtn } from '../../components/UI/TopBarUI';
+import {
+  NavBar,
+  Logo,
+  LogoLink,
+  ThemeControls,
+  TopBarGrid,
+  ThemeBtn,
+  NxLink,
+} from '../../components/UI/TopBarUI';
 
 type Props = {
   theme: any;
@@ -12,19 +19,23 @@ type Props = {
 const TopBar: React.SFC<Props> = ({ theme, setTheme }) => (
   <TopBarGrid>
     <Logo>
-      <Link to={Routes.main}>JMParsons</Link>
+      <LogoLink to={Routes.main}>JMParsons</LogoLink>
     </Logo>
     <NavBar>
-      <NavLink to={Routes.main}>Home</NavLink>
-      <NavLink to={Routes.services}>Services</NavLink>
-      <NavLink to={Routes.clients}>Clients</NavLink>
-      <NavLink to={Routes.about}>About</NavLink>
-      <NavLink to={Routes.contact}>Contact</NavLink>
-      <ThemeControls>
-        <ThemeBtn onClick={() => setTheme('light')}>Light</ThemeBtn>
-        <ThemeBtn onClick={() => setTheme('dark')}>Dark</ThemeBtn>
-      </ThemeControls>
+      <NxLink to={Routes.main} exact>
+        Home
+      </NxLink>
+      <NxLink to={Routes.services}>Services</NxLink>
+      <NxLink to={Routes.clients}>Clients</NxLink>
+      <NxLink to={Routes.about}>About</NxLink>
+      <NxLink to={Routes.contact}>Contact</NxLink>
     </NavBar>
+    <ThemeControls>
+      <ThemeBtn onClick={() => setTheme('light')}>Light</ThemeBtn>
+      <ThemeBtn dark onClick={() => setTheme('dark')}>
+        Dark
+      </ThemeBtn>
+    </ThemeControls>
   </TopBarGrid>
 );
 
