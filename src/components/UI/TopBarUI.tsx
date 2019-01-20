@@ -3,10 +3,17 @@ import { ThxProps } from '../../interfaces';
 import Colors from '../../constants/Colors';
 import { Link, NavLink } from 'react-router-dom';
 
+const TopBarCon = styled.div`
+  display: grid;
+  background: ${({ theme }: ThxProps) => theme.topBar.bg};
+`;
+
 const TopBarGrid = styled.div`
   display: grid;
+  width: 1200px;
+  align-self: center;
+  justify-self: center;
   grid-template-columns: 1fr 1fr 50px;
-  background: ${({ theme }: ThxProps) => theme.topBar.bg};
 `;
 
 const Logo = styled.h1`
@@ -50,4 +57,4 @@ const ThemeBtn = styled.button`
   background: ${({ dark }: { dark?: Boolean }) => (dark ? Colors.darkSteel : Colors.white)};
 `;
 
-export { TopBarGrid, Logo, LogoLink, NavBar, ThemeControls, ThemeBtn, NxLink };
+export { TopBarCon, TopBarGrid, Logo, LogoLink, NavBar, ThemeControls, ThemeBtn, NxLink };
