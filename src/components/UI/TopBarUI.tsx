@@ -17,7 +17,7 @@ const Logo = styled.h1`
 const LogoLink = styled(Link)`
   font-family: 'Denmark';
   text-decoration: none;
-  color: ${Colors.darkSteel};
+  color: ${({ theme }: ThxProps) => theme.topBar.logo};
 `;
 
 const NavBar = styled.nav`
@@ -29,9 +29,9 @@ const NxLink = styled(NavLink)`
   text-decoration: none;
   align-self: center;
   justify-self: center;
-  color: ${Colors.black};
+  color: ${({ theme }: ThxProps) => theme.topBar.link};
   &.active {
-    color: ${Colors.darkBlueGray};
+    font-weight: bold;
   }
 `;
 

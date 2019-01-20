@@ -4,14 +4,16 @@ import { ThemexProps } from '../interfaces';
 const Theme: ThemexProps = {
   light: {
     topBar: {
+      logo: Colors.darkSteel,
       bg: Colors.offWhite,
-      link: Colors.lightGray,
+      link: Colors.darkBlueGray,
     },
   },
   dark: {
     topBar: {
+      logo: Colors.offWhite,
       bg: Colors.darkBlueGray,
-      link: Colors.darkBlueGray,
+      link: Colors.lightGray,
     },
   },
 };

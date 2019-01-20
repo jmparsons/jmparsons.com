@@ -5,6 +5,7 @@ export interface ThemerProps {
 
 interface ThemexBase {
   topBar: {
+    logo: string;
     bg: string;
     link: string;
   };
