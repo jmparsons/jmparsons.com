@@ -13,7 +13,7 @@ const dark = {
   topBar: {
     logo: Colors.offWhite,
     bg: Colors.darkBlueGray,
-    link: Colors.lightGray,
+    link: Colors.offWhite,
   },
 };
 
