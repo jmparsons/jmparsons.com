@@ -10,7 +10,7 @@ interface ThemexBase {
   };
 }
 
-export interface ThemexStyleProps {
+export interface ThxProps {
   theme: ThemexBase;
 }
 
