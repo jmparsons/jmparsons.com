@@ -1,6 +1,6 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
 
-const Index = () => <LayoutsMain>Index</LayoutsMain>;
+const Main = () => <LayoutsMain>Main</LayoutsMain>;
 
-export default Index;
+export default Main;

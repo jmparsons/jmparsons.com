@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Routes from '../../constants/Routes';
 import { withTheme } from 'styled-components';
 import { NavBar, Logo, ThemeControls, TopBarGrid, ThemeBtn } from '../../components/UI/TopBarUI';
@@ -11,7 +11,9 @@ type Props = {
 
 const TopBar: React.SFC<Props> = ({ theme, setTheme }) => (
   <TopBarGrid>
-    <Logo>Logo</Logo>
+    <Logo>
+      <Link to={Routes.main}>JMParsons</Link>
+    </Logo>
     <NavBar>
       <NavLink to={Routes.main}>Home</NavLink>
       <NavLink to={Routes.services}>Services</NavLink>
