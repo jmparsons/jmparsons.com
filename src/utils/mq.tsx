@@ -1,23 +1,21 @@
-import { css } from 'styled-components';
+import { css, ThemedCssFunction } from 'styled-components';
 
-interface Sizes {
-  [key: string]: number;
+enum Breakpoints {
+  desktop = 1024,
+  tablet = 768,
+  mobile = 600,
 }
 
-const sizes: Sizes = {
-  desktop: 1024,
-  tablet: 768,
-  mobile: 600,
-};
+type BreakpointsMap = Record<keyof typeof Breakpoints, ThemedCssFunction<any>>;
 
-const media = Object.keys(sizes).reduce((accumulator: any, label: string) => {
-  const emSize = sizes[label] / 16;
-  accumulator[label] = (...args: any[]) => css`
-    @media (max-width: ${emSize}em) {
-      ${(css as any)(...args)};
-    }
-  `;
-  return accumulator;
-}, {});
-
-export { media };
+export const media: BreakpointsMap = Object.keys(Breakpoints).reduce(
+  (mediaQueries: BreakpointsMap, label: string) => ({
+    ...mediaQueries,
+    [label]: (...args: any[]) => css`
+      @media (max-width: ${Breakpoints[label as keyof typeof Breakpoints] / 16}em) {
+        ${(css as any)(...args)};
+      }
+    `,
+  }),
+  {} as BreakpointsMap,
+);
