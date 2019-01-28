@@ -2,20 +2,10 @@ import styled from 'styled-components';
 import { ThxProps } from '../../interfaces';
 import Colors from '../../constants/Colors';
 import { Link, NavLink } from 'react-router-dom';
-import { media } from '../../utils/mq';
 
 const TopBarCon = styled.div`
   display: grid;
   background: ${({ theme }: ThxProps) => theme.topBar.bg};
-  ${media.desktop`
-    background: green;
-  `};
-  ${media.tablet`
-    background: blue;
-  `};
-  ${media.mobile`
-    background: red;
-  `};
 `;
 
 const TopBarGrid = styled.div`
