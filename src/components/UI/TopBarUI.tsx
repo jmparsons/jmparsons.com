@@ -54,7 +54,7 @@ const ThemeBtn = styled.button`
   margin: 0;
   padding: 0;
   width: 50px;
-  background: ${({ dark }: { dark?: Boolean }) => (dark ? Colors.darkSteel : Colors.white)};
+  background: ${({ dark }: { dark?: boolean }) => (dark ? Colors.darkSteel : Colors.white)};
 `;
 
 export { TopBarCon, TopBarGrid, Logo, LogoLink, NavBar, ThemeControls, ThemeBtn, NxLink };
