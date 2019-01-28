@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-
-const aboutBg = require('../../assets/images/train.gif');
+import Images from '../../constants/Images';
 
 const AboutCon = styled.div`
   display: grid;
@@ -17,7 +16,7 @@ const AboutGrid = styled.div`
 `;
 
 const AboutImage = styled.div`
-  background: url(${aboutBg});
+  background: url(${Images.aboutBg});
   background-repeat: no-repeat;
   background-size: contain;
   height: 500px;
