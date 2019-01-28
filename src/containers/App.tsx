@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import GlobalStyle from '../GlobalStyle';
+import GlobalStyle from './GlobalStyle';
 import Main from './Pages/Main';
 import NotFound from './Pages/NotFound';
 import Contact from './Pages/Contact';
