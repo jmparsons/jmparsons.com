@@ -2,5 +2,5 @@
   command = "yarn build"
   publish = "build"
 
-[build.master]
+[build.production]
   GENERATE_SOURCEMAP = "false"
