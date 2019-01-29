@@ -25,11 +25,11 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'Denmark';
-    src: url('./assets/fonts/jmp-denmark.eot');
-    src: url('./assets/fonts/jmp-denmark.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/jmp-denmark.woff') format('woff'),
-      url('./assets/fonts/jmp-denmark.ttf') format('truetype'),
-      url('./assets/fonts/jmp-denmark.svg#webfont') format('svg');
+    src: url(jmpDenmarkEot);
+    src: url('./fonts/jmp-denmark.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/jmp-denmark.woff') format('woff'),
+      url('./fonts/jmp-denmark.ttf') format('truetype'),
+      url('./fonts/jmp-denmark.svg#webfont') format('svg');
   }
 `;
 
