@@ -1,8 +1,10 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
+import Helmet from 'react-helmet';
 
 const Services = () => (
   <LayoutsMain>
+    <Helmet title="Services · JMParsons" />
     <h1>Services</h1>
     <h2>Languages</h2>
     <p>Javascript / Typescript</p>

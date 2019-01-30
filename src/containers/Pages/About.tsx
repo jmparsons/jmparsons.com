@@ -5,9 +5,7 @@ import { AboutImage, AboutCon, AboutGrid } from '../../components/UI/AboutUI';
 
 const About = () => (
   <LayoutsMain>
-    <Helmet>
-      <title>JMParsons | About</title>
-    </Helmet>
+    <Helmet title="About · JMParsons" />
     <AboutCon>
       <AboutGrid>
         <div>

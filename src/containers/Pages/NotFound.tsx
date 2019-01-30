@@ -1,6 +1,12 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
+import Helmet from 'react-helmet';
 
-const NotFound = () => <LayoutsMain>Not Found</LayoutsMain>;
+const NotFound = () => (
+  <LayoutsMain>
+    <Helmet title="Not Found · JMParsons" />
+    <h2>Not Found</h2>
+  </LayoutsMain>
+);
 
 export default NotFound;
