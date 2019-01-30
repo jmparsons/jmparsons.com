@@ -1,5 +1,24 @@
 import Colors from './Colors';
 
+export interface ThxProps {
+  theme: ThemexBase;
+}
+
+interface ThemexProps {
+  [key: string]: ThemexBase;
+}
+
+interface ThemexBase {
+  topBar: {
+    logo: string;
+    bg: string;
+    link: string;
+  };
+  main: {
+    bg: string;
+  };
+}
+
 const light: ThemexBase = {
   topBar: {
     logo: Colors.darkSteel,
@@ -21,25 +40,6 @@ const dark: ThemexBase = {
     bg: Colors.statOrange,
   },
 };
-
-export interface ThxProps {
-  theme: ThemexBase;
-}
-
-export interface ThemexProps {
-  [key: string]: ThemexBase;
-}
-
-export interface ThemexBase {
-  topBar: {
-    logo: string;
-    bg: string;
-    link: string;
-  };
-  main: {
-    bg: string;
-  };
-}
 
 const Theme: ThemexProps = { light, dark };
 
