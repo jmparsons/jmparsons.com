@@ -5,9 +5,9 @@ import { ThemeProvider } from 'styled-components';
 import Theme from '../../constants/Theme';
 import { useLocalStorage } from '../../utils/hooks';
 
-type Props = {
+interface Props {
   children: React.ReactNode;
-};
+}
 
 const LayoutsMain: React.SFC<Props> = ({ children }) => {
   const [theme, setTheme] = useLocalStorage('theme', 'light');

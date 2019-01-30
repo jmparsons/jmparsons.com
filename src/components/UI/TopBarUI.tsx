@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ThxProps } from '../../interfaces';
+import { ThxProps } from '../../constants/Theme';
 import Colors from '../../constants/Colors';
 import { Link, NavLink } from 'react-router-dom';
 
