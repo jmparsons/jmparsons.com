@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Colors from '../../constants/Colors';
 import { ThxProps } from '../../constants/Theme';
 
 const MainGrid = styled.div`
@@ -7,6 +6,7 @@ const MainGrid = styled.div`
   background: ${({ theme }: ThxProps) => theme.main.bg};
   grid-template-rows: 60px 1fr;
   min-height: 100%;
+  color: ${({ theme }: ThxProps) => theme.main.text};
 `;
 
 const MainContent = styled.div``;

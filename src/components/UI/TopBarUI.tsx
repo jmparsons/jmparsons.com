@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { ThxProps } from '../../constants/Theme';
-import Colors from '../../constants/Colors';
 import { Link, NavLink } from 'react-router-dom';
 
 const TopBarCon = styled.div`
@@ -48,13 +47,18 @@ const ThemeControls = styled.div`
   width: 50px;
 `;
 
+type ThemeBtnProp = ThxProps & { dark?: boolean };
+
 const ThemeBtn = styled.button`
   border: none;
   outline: 0;
   margin: 0;
   padding: 0;
   width: 50px;
-  background: ${({ dark }: { dark?: boolean }) => (dark ? Colors.darkSteel : Colors.white)};
+  background: ${({ theme, dark }: ThemeBtnProp) =>
+    dark ? theme.themeBtn.dark.bg : theme.themeBtn.light.bg};
+  color: ${({ theme, dark }: ThemeBtnProp) =>
+    dark ? theme.themeBtn.dark.text : theme.themeBtn.light.text};
 `;
 
 export { TopBarCon, TopBarGrid, Logo, LogoLink, NavBar, ThemeControls, ThemeBtn, NxLink };

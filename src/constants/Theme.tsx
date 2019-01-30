@@ -14,8 +14,19 @@ interface ThemexBase {
     bg: string;
     link: string;
   };
+  themeBtn: {
+    light: {
+      bg: string;
+      text: string;
+    };
+    dark: {
+      bg: string;
+      text: string;
+    };
+  };
   main: {
     bg: string;
+    text: string;
   };
 }
 
@@ -25,8 +36,19 @@ const light: ThemexBase = {
     bg: Colors.offWhite,
     link: Colors.darkBlueGray,
   },
+  themeBtn: {
+    light: {
+      bg: Colors.white,
+      text: Colors.black,
+    },
+    dark: {
+      bg: Colors.darkBlueGray,
+      text: Colors.white,
+    },
+  },
   main: {
-    bg: Colors.statOrange,
+    bg: Colors.white,
+    text: Colors.black,
   },
 };
 
@@ -36,8 +58,19 @@ const dark: ThemexBase = {
     bg: Colors.darkBlueGray,
     link: Colors.offWhite,
   },
+  themeBtn: {
+    light: {
+      bg: Colors.white,
+      text: Colors.black,
+    },
+    dark: {
+      bg: Colors.darkBlueGray,
+      text: Colors.white,
+    },
+  },
   main: {
-    bg: Colors.statOrange,
+    bg: Colors.darkSteel,
+    text: Colors.offWhite,
   },
 };
 
