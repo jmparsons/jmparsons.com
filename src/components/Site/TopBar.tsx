@@ -10,7 +10,7 @@ import {
   ThemeBtn,
   NxLink,
 } from '../../components/UI/TopBarUI';
-import { ThemerContext } from '../../Contexts/ThemerContext';
+import { ThemerContext } from '../../utils/contexts';
 
 const TopBar: React.FC = () => {
   const { setTheme } = useContext(ThemerContext);

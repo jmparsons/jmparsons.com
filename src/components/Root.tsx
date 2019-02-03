@@ -4,7 +4,7 @@ import { useLocalStorage } from '../utils/hooks';
 import { ThemeProvider } from 'styled-components';
 import Theme from '../constants/Theme';
 import GlobalStyle from './GlobalStyle';
-import { ThemerContext } from '../Contexts/ThemerContext';
+import { ThemerContext } from '../utils/contexts';
 
 const Root: React.FC = () => {
   const [theme, setTheme] = useLocalStorage('theme', 'light');
