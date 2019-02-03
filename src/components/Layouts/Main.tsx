@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { MainGrid, MainContent } from '../../components/UI/MainUI';
 import TopBar from '../Site/TopBar';
 
