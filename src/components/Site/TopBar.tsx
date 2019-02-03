@@ -13,7 +13,7 @@ import {
 import { ThemerContext } from '../../Contexts/ThemerContext';
 
 const TopBar: React.FC = () => {
-  const { toggleTheme } = useContext(ThemerContext);
+  const { setTheme } = useContext(ThemerContext);
   return (
     <TopBarCon>
       <TopBarGrid>
@@ -30,8 +30,8 @@ const TopBar: React.FC = () => {
           <NxLink to={Routes.contact}>Contact</NxLink>
         </NavBar>
         <ThemeControls>
-          <ThemeBtn onClick={() => toggleTheme('light')}>Light</ThemeBtn>
-          <ThemeBtn dark onClick={() => toggleTheme('dark')}>
+          <ThemeBtn onClick={() => setTheme('light')}>Light</ThemeBtn>
+          <ThemeBtn dark onClick={() => setTheme('dark')}>
             Dark
           </ThemeBtn>
         </ThemeControls>

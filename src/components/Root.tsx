@@ -9,7 +9,7 @@ import { ThemerContext } from '../Contexts/ThemerContext';
 const Root: React.FC = () => {
   const [theme, setTheme] = useLocalStorage('theme', 'light');
   return (
-    <ThemerContext.Provider value={{ theme: theme, toggleTheme: setTheme }}>
+    <ThemerContext.Provider value={{ theme, setTheme }}>
       <ThemeProvider theme={Theme[theme]}>
         <>
           <GlobalStyle />
