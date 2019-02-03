@@ -1,4 +1,5 @@
 import Colors from './Colors';
+import { useLocalStorage } from '../utils/hooks';
 
 export interface ThxProps {
   theme: ThemexBase;
@@ -75,5 +76,13 @@ const dark: ThemexBase = {
 };
 
 const Theme: ThemexProps = { light, dark };
+
+export const Themer = () => {
+  const [theme, setTheme] = useLocalStorage('theme', 'light');
+  return {
+    getTheme: () => theme,
+    setTheme,
+  };
+};
 
 export default Theme;

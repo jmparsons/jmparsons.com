@@ -9,16 +9,11 @@ interface Props {
   children: React.ReactNode;
 }
 
-const LayoutsMain: React.SFC<Props> = ({ children }) => {
-  const [theme, setTheme] = useLocalStorage('theme', 'light');
-  return (
-    <ThemeProvider theme={Theme[theme]}>
-      <MainGrid>
-        <TopBar setTheme={setTheme} />
-        <MainContent>{children}</MainContent>
-      </MainGrid>
-    </ThemeProvider>
-  );
-};
+const LayoutsMain: React.FC<Props> = ({ children }) => (
+  <MainGrid>
+    <TopBar />
+    <MainContent>{children}</MainContent>
+  </MainGrid>
+);
 
 export default LayoutsMain;

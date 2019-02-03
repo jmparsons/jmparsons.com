@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { ThxProps } from '../constants/Theme';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -9,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: 100%;
+    background: ${({ theme }: ThxProps) => {
+      console.log(theme);
+      return theme.main.bg;
+    }};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
       'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
