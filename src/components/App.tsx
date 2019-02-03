@@ -14,7 +14,7 @@ const App: React.FC = () => (
       <Route path={Routes.main} exact component={Main} />
       <Route path={Routes.services} component={Services} />
       <Route path={Routes.clients} component={Clients} />
-      <Route path={Routes.about} render={props => <About {...props} />} />
+      <Route path={Routes.about} component={About} />
       <Route path={Routes.contact} component={Contact} />
       <Route component={NotFound} />
     </Switch>
