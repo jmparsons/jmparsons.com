@@ -77,12 +77,4 @@ const dark: ThemexBase = {
 
 const Theme: ThemexProps = { light, dark };
 
-export const Themer = () => {
-  const [theme, setTheme] = useLocalStorage('theme', 'light');
-  return {
-    getTheme: () => theme,
-    setTheme,
-  };
-};
-
 export default Theme;
