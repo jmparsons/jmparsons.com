@@ -1,5 +1,4 @@
 import Colors from './Colors';
-import { useLocalStorage } from '../utils/hooks';
 
 export interface ThxProps {
   theme: ThemexBase;
@@ -16,14 +15,7 @@ interface ThemexBase {
     link: string;
   };
   themeBtn: {
-    light: {
-      bg: string;
-      text: string;
-    };
-    dark: {
-      bg: string;
-      text: string;
-    };
+    bg: string;
   };
   main: {
     bg: string;
@@ -38,14 +30,7 @@ const light: ThemexBase = {
     link: Colors.darkBlueGray,
   },
   themeBtn: {
-    light: {
-      bg: Colors.white,
-      text: Colors.black,
-    },
-    dark: {
-      bg: Colors.darkBlueGray,
-      text: Colors.white,
-    },
+    bg: Colors.white,
   },
   main: {
     bg: Colors.white,
@@ -60,14 +45,7 @@ const dark: ThemexBase = {
     link: Colors.offWhite,
   },
   themeBtn: {
-    light: {
-      bg: Colors.white,
-      text: Colors.black,
-    },
-    dark: {
-      bg: Colors.darkBlueGray,
-      text: Colors.white,
-    },
+    bg: Colors.deepBlack,
   },
   main: {
     bg: Colors.darkSteel,

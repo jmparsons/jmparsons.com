@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ThxProps } from '../../constants/Theme';
 import { Link, NavLink } from 'react-router-dom';
+import { media, Breakpoints } from '../../utils/mq';
 
 const TopBarCon = styled.div`
   display: grid;
@@ -9,18 +10,31 @@ const TopBarCon = styled.div`
 
 const TopBarGrid = styled.div`
   display: grid;
-  width: 1200px;
+  width: 100%;
   align-self: center;
   justify-self: center;
-  grid-template-columns: 1fr 1fr 50px;
+  ${media.desktop`
+    width: ${Breakpoints.desktop}px;
+    grid-template-columns: 1fr 1fr 50px;
+  `};
+  ${media.desktopXL`
+    width: ${Breakpoints.desktopXL}px;
+  `};
 `;
 
 const Logo = styled.h1`
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  height: 60px;
   margin: 0;
-  align-self: center;
+  ${media.desktop`
+    justify-content: flex-start
+  `};
 `;
 
 const LogoLink = styled(Link)`
+  font-size: 36px;
   font-family: 'Denmark';
   text-decoration: none;
   color: ${({ theme }: ThxProps) => theme.topBar.logo};
@@ -29,6 +43,11 @@ const LogoLink = styled(Link)`
 const NavBar = styled.nav`
   display: grid;
   grid-auto-flow: column;
+  height: 50px;
+  ${media.desktop`
+    height: 60px;
+    justify-content: flex-end;
+  `};
 `;
 
 const NxLink = styled(NavLink)`
@@ -39,12 +58,30 @@ const NxLink = styled(NavLink)`
   &.active {
     font-weight: bold;
   }
+  ${media.desktop`
+    padding: 0 20px;
+  `};
+`;
+
+const HomeLink = styled(NxLink)`
+  display: none;
+  ${media.desktop`
+    display: block;
+  `};
 `;
 
 const ThemeControls = styled.div`
   display: grid;
   grid-auto-flow: row;
-  width: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  ${media.desktop`
+    position: relative;
+    top: 0;
+    right: 0;
+    align-self: center;
+  `};
 `;
 
 type ThemeBtnProp = ThxProps & { dark?: boolean };
@@ -54,11 +91,13 @@ const ThemeBtn = styled.button`
   outline: 0;
   margin: 0;
   padding: 0;
-  width: 50px;
-  background: ${({ theme, dark }: ThemeBtnProp) =>
-    dark ? theme.themeBtn.dark.bg : theme.themeBtn.light.bg};
-  color: ${({ theme, dark }: ThemeBtnProp) =>
-    dark ? theme.themeBtn.dark.text : theme.themeBtn.light.text};
+  height: 30px;
+  width: 30px;
+  background: ${({ theme }: ThemeBtnProp) => theme.themeBtn.bg};
+  img {
+    width: 30px;
+    height: 30px;
+  }
 `;
 
-export { TopBarCon, TopBarGrid, Logo, LogoLink, NavBar, ThemeControls, ThemeBtn, NxLink };
+export { TopBarCon, TopBarGrid, Logo, LogoLink, NavBar, ThemeControls, ThemeBtn, NxLink, HomeLink };

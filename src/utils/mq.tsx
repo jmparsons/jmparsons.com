@@ -1,9 +1,10 @@
 import { css, ThemedCssFunction } from 'styled-components';
 
-enum Breakpoints {
+export enum Breakpoints {
   small = 380,
   tablet = 768,
   desktop = 1024,
+  desktopXL = 1200,
 }
 
 type BreakpointsMap = Record<keyof typeof Breakpoints, ThemedCssFunction<any>>;

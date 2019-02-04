@@ -9,11 +9,14 @@ import {
   TopBarGrid,
   ThemeBtn,
   NxLink,
+  HomeLink,
 } from '../../components/UI/TopBarUI';
 import { ThemerContext } from '../../utils/contexts';
+import Images from '../../constants/Images';
 
 const TopBar: React.FC = () => {
-  const { setTheme } = useContext(ThemerContext);
+  const { theme, toggleTheme } = useContext(ThemerContext);
+  const themeIcon = theme === 'light' ? Images.moon : Images.sun;
   return (
     <TopBarCon>
       <TopBarGrid>
@@ -21,18 +24,17 @@ const TopBar: React.FC = () => {
           <LogoLink to={Routes.main}>JMParsons</LogoLink>
         </Logo>
         <NavBar>
-          <NxLink to={Routes.main} exact>
+          <HomeLink to={Routes.main} exact>
             Home
-          </NxLink>
+          </HomeLink>
           <NxLink to={Routes.services}>Services</NxLink>
           <NxLink to={Routes.clients}>Clients</NxLink>
           <NxLink to={Routes.about}>About</NxLink>
           <NxLink to={Routes.contact}>Contact</NxLink>
         </NavBar>
         <ThemeControls>
-          <ThemeBtn onClick={() => setTheme('light')}>Light</ThemeBtn>
-          <ThemeBtn dark onClick={() => setTheme('dark')}>
-            Dark
+          <ThemeBtn onClick={toggleTheme}>
+            <img src={themeIcon} />
           </ThemeBtn>
         </ThemeControls>
       </TopBarGrid>
