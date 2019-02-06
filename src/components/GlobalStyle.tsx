@@ -4,16 +4,15 @@ import { ThxProps } from '../constants/Theme';
 const GlobalStyle = createGlobalStyle`
   html {
     height: 100%;
+    width: 100%;
   }
 
   body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: ${({ theme }: ThxProps) => {
-      console.log(theme);
-      return theme.main.bg;
-    }};
+    width: 100%;
+    background: ${({ theme }: ThxProps) => theme.main.bg};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
       'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -22,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
 
   #root {
     height: 100%;
+    width: 100%;
   }
 
   code {
