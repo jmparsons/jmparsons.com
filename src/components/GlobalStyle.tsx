@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+
   #root {
     height: 100%;
     width: 100%;
@@ -30,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'Denmark';
-    src: url(jmpDenmarkEot);
+    src: url('./fonts/jmp-denmark.eot');
     src: url('./fonts/jmp-denmark.eot?#iefix') format('embedded-opentype'),
       url('./fonts/jmp-denmark.woff') format('woff'),
       url('./fonts/jmp-denmark.ttf') format('truetype'),
