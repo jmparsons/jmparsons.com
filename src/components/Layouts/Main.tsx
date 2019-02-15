@@ -1,6 +1,7 @@
 import React from 'react';
-import { MainGrid, MainContent } from '../../components/UI/MainUI';
+import { MainGrid, MainContent, MainContentGrid } from '../../components/UI/MainUI';
 import TopBar from '../Site/TopBar';
+import BotBar from '../Site/BotBar';
 
 interface Props {
   children: React.ReactNode;
@@ -9,7 +10,10 @@ interface Props {
 const LayoutsMain: React.FC<Props> = ({ children }) => (
   <MainGrid>
     <TopBar />
-    <MainContent>{children}</MainContent>
+    <MainContent>
+      <MainContentGrid>{children}</MainContentGrid>
+    </MainContent>
+    <BotBar />
   </MainGrid>
 );
 

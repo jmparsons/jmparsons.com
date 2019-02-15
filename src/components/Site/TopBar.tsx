@@ -10,7 +10,7 @@ import {
   ThemeBtn,
   NxLink,
   HomeLink,
-} from '../../components/UI/TopBarUI';
+} from '../UI/TopBarUI';
 import { ThemerContext } from '../../utils/contexts';
 import Images from '../../constants/Images';
 
