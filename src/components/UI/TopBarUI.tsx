@@ -15,7 +15,7 @@ const TopBarGrid = styled.div`
   justify-self: center;
   ${media.desktop`
     width: ${Breakpoints.desktop}px;
-    grid-template-columns: 1fr 1fr 50px;
+    grid-template-columns: 1fr 1fr;
   `};
   ${media.desktopXL`
     width: ${Breakpoints.desktopXL}px;
