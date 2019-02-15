@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Routes from '../../constants/Routes';
-import { BotBarCon, NavBar, BotBarGrid, NxLink, HomeLink } from '../UI/BotBarUI';
+import { BotBarCon, NavBar, BotBarGrid, NxLink, CopyRight } from '../UI/BotBarUI';
 import { ThemerContext } from '../../utils/contexts';
 import Images from '../../constants/Images';
 import { ThemeBtn, ThemeControls } from '../UI/ThemeUI';
@@ -12,7 +12,7 @@ const BotBar: React.FC = () => {
     <BotBarCon>
       <BotBarGrid>
         <NavBar>
-          <HomeLink to={Routes.blog}>Blog</HomeLink>
+          <NxLink to={Routes.blog}>Blog</NxLink>
           <NxLink to={Routes.tech}>Tech</NxLink>
           <NxLink to={Routes.sitemap}>Sitemap</NxLink>
         </NavBar>
@@ -21,6 +21,7 @@ const BotBar: React.FC = () => {
             <img src={themeIcon} />
           </ThemeBtn>
         </ThemeControls>
+        <CopyRight>&copy; 2013-2019 JMParsons</CopyRight>
       </BotBarGrid>
     </BotBarCon>
   );
