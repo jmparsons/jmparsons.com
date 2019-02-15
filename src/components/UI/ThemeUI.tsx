@@ -8,7 +8,7 @@ const ThemeControls = styled.div`
   position: absolute;
   top: 10px;
   right: 10px;
-  ${media.desktop`
+  ${media.tablet`
     position: relative;
     top: 0;
     right: 0;

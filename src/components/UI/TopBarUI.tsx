@@ -13,9 +13,11 @@ const TopBarGrid = styled.div`
   width: 100%;
   align-self: center;
   justify-self: center;
+  ${media.tablet`
+    grid-template-columns: 1fr 1fr;
+  `};
   ${media.desktop`
     width: ${Breakpoints.desktop}px;
-    grid-template-columns: 1fr 1fr;
   `};
   ${media.desktopXL`
     width: ${Breakpoints.desktopXL}px;
@@ -28,7 +30,7 @@ const Logo = styled.h1`
   justify-content: center;
   height: 60px;
   margin: 0;
-  ${media.desktop`
+  ${media.tablet`
     justify-content: flex-start;
   `};
 `;
@@ -44,7 +46,7 @@ const NavBar = styled.nav`
   display: grid;
   grid-auto-flow: column;
   height: 50px;
-  ${media.desktop`
+  ${media.tablet`
     height: 60px;
     justify-content: flex-end;
   `};
@@ -58,14 +60,14 @@ const NxLink = styled(NavLink)`
   &.active {
     font-weight: bold;
   }
-  ${media.desktop`
+  ${media.tablet`
     padding: 0 20px;
   `};
 `;
 
 const HomeLink = styled(NxLink)`
   display: none;
-  ${media.desktop`
+  ${media.tablet`
     display: block;
   `};
 `;

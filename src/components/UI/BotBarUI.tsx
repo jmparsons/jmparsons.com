@@ -13,9 +13,11 @@ const BotBarGrid = styled.div`
   width: 100%;
   align-self: center;
   justify-self: center;
+  ${media.tablet`
+    grid-template-columns: 1fr auto 1fr;
+  `};
   ${media.desktop`
     width: ${Breakpoints.desktop}px;
-    grid-template-columns: 1fr auto 1fr;
   `};
   ${media.desktopXL`
     width: ${Breakpoints.desktopXL}px;
@@ -26,7 +28,7 @@ const NavBar = styled.nav`
   display: grid;
   grid-auto-flow: column;
   height: 50px;
-  ${media.desktop`
+  ${media.tablet`
     height: 60px;
     justify-content: flex-start;
   `};
@@ -40,7 +42,7 @@ const NxLink = styled(NavLink)`
   &.active {
     font-weight: bold;
   }
-  ${media.desktop`
+  ${media.tablet`
     padding: 0 20px;
   `};
 `;
@@ -50,7 +52,7 @@ const CopyRight = styled.div`
   height: 50px;
   justify-content: center;
   align-content: center;
-  ${media.desktop`
+  ${media.tablet`
     height: 60px;
     justify-content: flex-end;
   `};
