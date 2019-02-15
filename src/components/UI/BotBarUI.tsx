@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import { ThxProps } from '../../constants/Theme';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { media, Breakpoints } from '../../utils/mq';
 
-const TopBarCon = styled.div`
+const BotBarCon = styled.div`
   display: grid;
-  background: ${({ theme }: ThxProps) => theme.topBar.bg};
+  background: ${({ theme }: ThxProps) => theme.botBar.bg};
 `;
 
-const TopBarGrid = styled.div`
+const BotBarGrid = styled.div`
   display: grid;
   width: 100%;
   align-self: center;
@@ -20,24 +20,6 @@ const TopBarGrid = styled.div`
   ${media.desktopXL`
     width: ${Breakpoints.desktopXL}px;
   `};
-`;
-
-const Logo = styled.h1`
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  height: 60px;
-  margin: 0;
-  ${media.desktop`
-    justify-content: flex-start;
-  `};
-`;
-
-const LogoLink = styled(Link)`
-  font-size: 36px;
-  font-family: 'Denmark';
-  text-decoration: none;
-  color: ${({ theme }: ThxProps) => theme.topBar.logo};
 `;
 
 const NavBar = styled.nav`
@@ -54,7 +36,7 @@ const NxLink = styled(NavLink)`
   text-decoration: none;
   align-self: center;
   justify-self: center;
-  color: ${({ theme }: ThxProps) => theme.topBar.link};
+  color: ${({ theme }: ThxProps) => theme.botBar.link};
   &.active {
     font-weight: bold;
   }
@@ -70,4 +52,4 @@ const HomeLink = styled(NxLink)`
   `};
 `;
 
-export { TopBarCon, TopBarGrid, Logo, LogoLink, NavBar, NxLink, HomeLink };
+export { BotBarCon, BotBarGrid, NavBar, NxLink, HomeLink };

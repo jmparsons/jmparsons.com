@@ -1,16 +1,6 @@
 import React, { useContext } from 'react';
 import Routes from '../../constants/Routes';
-import {
-  TopBarCon,
-  NavBar,
-  Logo,
-  LogoLink,
-  ThemeControls,
-  TopBarGrid,
-  ThemeBtn,
-  NxLink,
-  HomeLink,
-} from '../UI/TopBarUI';
+import { TopBarCon, NavBar, Logo, LogoLink, TopBarGrid, NxLink, HomeLink } from '../UI/TopBarUI';
 import { ThemerContext } from '../../utils/contexts';
 import Images from '../../constants/Images';
 
@@ -32,11 +22,6 @@ const TopBar: React.FC = () => {
           <NxLink to={Routes.about}>About</NxLink>
           <NxLink to={Routes.contact}>Contact</NxLink>
         </NavBar>
-        <ThemeControls>
-          <ThemeBtn onClick={toggleTheme}>
-            <img src={themeIcon} />
-          </ThemeBtn>
-        </ThemeControls>
       </TopBarGrid>
     </TopBarCon>
   );
