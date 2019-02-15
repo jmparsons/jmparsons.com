@@ -5,13 +5,13 @@ import { ThemeProvider } from 'styled-components';
 import Theme from '../constants/Theme';
 import GlobalStyle from './GlobalStyle';
 import { ThemerContext } from '../utils/contexts';
+import { updateTheme } from '../utils/themer';
 import '../index.css';
 
 const Root: React.FC = () => {
   const [theme, setTheme] = useLocalStorage('theme', 'light');
-  const toggleTheme = () => (theme === 'light' ? setTheme('dark') : setTheme('light'));
   return (
-    <ThemerContext.Provider value={{ theme, toggleTheme }}>
+    <ThemerContext.Provider value={{ theme, toggleTheme: updateTheme(theme, setTheme) }}>
       <ThemeProvider theme={Theme[theme]}>
         <>
           <GlobalStyle />
