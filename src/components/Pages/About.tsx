@@ -1,11 +1,9 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
-import { Helmet } from 'react-helmet';
 import { AboutImage, AboutCon, AboutGrid } from '../../components/UI/AboutUI';
 
 const About: React.FC = () => (
-  <LayoutsMain>
-    <Helmet title="About · JMParsons" />
+  <LayoutsMain title="About · JMParsons">
     <AboutCon>
       <AboutGrid>
         <div>

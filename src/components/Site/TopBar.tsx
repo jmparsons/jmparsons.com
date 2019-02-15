@@ -6,10 +6,10 @@ const TopBar: React.FC = () => (
   <TopBarCon>
     <TopBarGrid>
       <Logo>
-        <LogoLink to={Routes.main}>JMParsons</LogoLink>
+        <LogoLink to={Routes.home}>JMParsons</LogoLink>
       </Logo>
       <NavBar>
-        <HomeLink to={Routes.main} exact>
+        <HomeLink to={Routes.home} exact>
           Home
         </HomeLink>
         <NxLink to={Routes.services}>Services</NxLink>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Main from './Pages/Main';
+import Home from './Pages/Home';
 import NotFound from './Pages/NotFound';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
@@ -11,7 +11,7 @@ import Routes from '../constants/Routes';
 const App: React.FC = () => (
   <BrowserRouter>
     <Switch>
-      <Route path={Routes.main} exact component={Main} />
+      <Route path={Routes.home} exact component={Home} />
       <Route path={Routes.services} component={Services} />
       <Route path={Routes.clients} component={Clients} />
       <Route path={Routes.about} component={About} />
