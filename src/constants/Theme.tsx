@@ -32,10 +32,12 @@ interface ThemexBase {
     logo: string;
     bg: string;
     link: string;
+    activeLink: string;
   };
   botBar: {
     bg: string;
     link: string;
+    activeLink: string;
   };
   themeBtn: {
     bg: string;
@@ -50,11 +52,13 @@ const light: ThemexBase = {
   topBar: {
     logo: Colors.darkSteel,
     bg: Colors.offWhite,
-    link: Colors.darkBlueGray,
+    link: Colors.midGray,
+    activeLink: Colors.darkBlueGray,
   },
   botBar: {
     bg: Colors.offWhite,
     link: Colors.darkBlueGray,
+    activeLink: Colors.darkBlueGray,
   },
   themeBtn: {
     bg: Colors.white,
@@ -69,11 +73,13 @@ const dark: ThemexBase = {
   topBar: {
     logo: Colors.offWhite,
     bg: Colors.darkBlueGray,
-    link: Colors.offWhite,
+    link: Colors.lightGray,
+    activeLink: Colors.offWhite,
   },
   botBar: {
     bg: Colors.darkBlueGray,
     link: Colors.offWhite,
+    activeLink: Colors.offWhite,
   },
   themeBtn: {
     bg: Colors.deepBlack,

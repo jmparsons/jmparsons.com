@@ -53,22 +53,35 @@ const NavBar = styled.nav`
 `;
 
 const NxLink = styled(NavLink)`
+  display: grid;
   text-decoration: none;
-  align-self: center;
-  justify-self: center;
+  align-content: center;
+  justify-content: center;
   color: ${({ theme }: ThxProps) => theme.topBar.link};
+  font-size: 14px;
+  height: 46px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: padding 0.2s, border 0.2s, color 0.2s;
+  &:hover {
+    color: ${({ theme }: ThxProps) => theme.topBar.activeLink};
+  }
   &.active {
     font-weight: bold;
+    color: ${({ theme }: ThxProps) => theme.topBar.activeLink};
+    border-bottom: 2px solid #17abf0;
   }
   ${media.tablet`
-    padding: 0 20px;
+    width: 84px;
+    height: 56px;
   `};
 `;
 
 const HomeLink = styled(NxLink)`
   display: none;
   ${media.tablet`
-    display: block;
+    display: grid;
   `};
 `;
 
