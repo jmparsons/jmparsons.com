@@ -1,23 +1,22 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
-import { Formik, Field, Form } from 'formik';
+import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 const FormSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Required'),
+  name: Yup.string().required(),
   email: Yup.string()
     .email('Invalid email')
-    .required('Required'),
+    .required(),
+  subject: Yup.string().required(),
+  message: Yup.string().required(),
 });
 
 const Contact: React.FC = () => (
   <LayoutsMain title="Contact · JMParsons">
     <h2>Contact</h2>
     <Formik
-      initialValues={{ name: '', email: '' }}
+      initialValues={{ name: '', email: '', subject: '', message: '' }}
       validationSchema={FormSchema}
       onSubmit={(values, actions) => {
         console.log(values);
@@ -32,10 +31,14 @@ const Contact: React.FC = () => (
       }}
       render={({ errors, status, touched, isSubmitting }) => (
         <Form>
-          <Field type="text" name="name" />
-          {errors.name && touched.name && <div>{errors.name}</div>}
-          <Field type="email" name="email" />
-          {errors.email && touched.email && <div>{errors.email}</div>}
+          <Field name="name" placeholder="Name" />
+          <ErrorMessage name="name" />
+          <Field type="email" name="email" placeholder="E-mail" />
+          <ErrorMessage name="email" />
+          <Field name="subject" placeholder="Subject" />
+          <ErrorMessage name="subject" />
+          <Field component="textarea" name="message" placeholder="Message" />
+          <ErrorMessage name="message" />
           {status && status.msg && <div>{status.msg}</div>}
           <button type="submit" disabled={isSubmitting}>
             Submit
