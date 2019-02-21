@@ -13,9 +13,9 @@ const LayoutsMain: React.FC<Props> = ({ title, children }) => (
   <MainGrid>
     <Helmet title={title} />
     <TopBar />
-    <MainContent>
-      <MainContentGrid>{children}</MainContentGrid>
-    </MainContent>
+    <MainContentGrid>
+      <MainContent>{children}</MainContent>
+    </MainContentGrid>
     <BotBar />
   </MainGrid>
 );

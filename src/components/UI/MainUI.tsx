@@ -10,21 +10,20 @@ const MainGrid = styled.div`
   color: ${({ theme }: ThxProps) => theme.main.text};
 `;
 
-const MainContent = styled.div`
+const MainContentGrid = styled.div`
   display: grid;
   width: 100%;
   height: 100%;
 `;
 
-const MainContentGrid = styled.div`
-  display: grid;
-  width: 100%;
-  justify-self: center;
+const MainContent = styled.div`
   ${media.desktop`
     width: ${Breakpoints.desktop}px;
+    justify-self: center;
   `};
   ${media.desktopXL`
     width: ${Breakpoints.desktopXL}px;
+    justify-self: center;
   `};
 `;
 
