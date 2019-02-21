@@ -17,10 +17,10 @@ const TopBarGrid = styled.div`
     grid-template-columns: 1fr 1fr;
   `};
   ${media.desktop`
-    width: ${Breakpoints.desktop}px;
+    width: ${Breakpoints.desktop / 16}em;
   `};
   ${media.desktopXL`
-    width: ${Breakpoints.desktopXL}px;
+    width: ${Breakpoints.desktopXL / 16}em;
   `};
 `;
 

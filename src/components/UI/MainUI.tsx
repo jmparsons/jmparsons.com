@@ -18,11 +18,11 @@ const MainContentGrid = styled.div`
 
 const MainContent = styled.div`
   ${media.desktop`
-    width: ${Breakpoints.desktop}px;
+    width: ${Breakpoints.desktop / 16}em;
     justify-self: center;
   `};
   ${media.desktopXL`
-    width: ${Breakpoints.desktopXL}px;
+    width: ${Breakpoints.desktopXL / 16}em;
     justify-self: center;
   `};
 `;
