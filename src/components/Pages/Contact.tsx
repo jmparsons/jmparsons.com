@@ -3,6 +3,7 @@ import LayoutsMain from '../Layouts/Main';
 import { Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Input, TextArea, FormGrid, SubmitBtn, Form } from '../UI/FormUI';
+import API from '@aws-amplify/api';
 
 const schema = Yup.object().shape({
   name: Yup.string().required(),
@@ -20,12 +21,11 @@ const Contact: React.FC = () => (
       <Formik
         initialValues={{ name: '', email: '', subject: '', message: '' }}
         validationSchema={schema}
-        onSubmit={(values, actions) => {
+        onSubmit={async (values, actions) => {
           console.log(values);
           try {
-            setTimeout(() => {
-              console.log('fake call');
-            }, 1000);
+            const response = await API.get('JMPAPI', '/dev/hello', {});
+            console.log('response', response);
           } catch (error) {
             console.log('error', error);
             actions.setSubmitting(false);
