@@ -13,7 +13,7 @@ API.configure({
   endpoints: [
     {
       name: 'JMPAPI',
-      endpoint: 'https://5w0f43j3bf.execute-api.us-east-1.amazonaws.com',
+      endpoint: 'https://kgcr07khx2.execute-api.us-east-1.amazonaws.com',
     },
   ],
 });

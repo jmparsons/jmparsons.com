@@ -24,7 +24,7 @@ const Contact: React.FC = () => (
         onSubmit={async (values, actions) => {
           console.log(values);
           try {
-            const response = await API.get('JMPAPI', '/dev/hello', {});
+            const response = await API.post('JMPAPI', '/prod/email', { body: values });
             console.log('response', response);
           } catch (error) {
             console.log('error', error);
