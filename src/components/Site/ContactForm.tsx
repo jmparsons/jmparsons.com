@@ -30,7 +30,7 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
           actions.setSubmitting(false);
         }
       }}
-      render={({ errors, status, touched, isSubmitting }) => (
+      render={({ status, isSubmitting }) => (
         <Form>
           <Input name="name" placeholder="Name" />
           <ErrorMessage name="name" />

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Field, Form } from 'formik';
-import { media, Breakpoints } from '../../utils/mq';
+import { media } from '../../utils/mq';
 
 const FormGrid = styled.div`
   display: grid;
