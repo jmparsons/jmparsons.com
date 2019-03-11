@@ -40,6 +40,9 @@ const LogoLink = styled(Link)`
   font-family: 'Denmark';
   text-decoration: none;
   color: ${({ theme }: ThxProps) => theme.topBar.logo};
+  &:active {
+    padding-top: 1px;
+  }
 `;
 
 const NavBar = styled.nav`
