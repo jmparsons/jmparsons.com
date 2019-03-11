@@ -1,17 +1,8 @@
 import React from 'react';
-import * as Yup from 'yup';
-import { Formik, ErrorMessage } from 'formik';
 import API from '@aws-amplify/api';
+import { Formik, ErrorMessage } from 'formik';
 import { Input, TextArea, FormGrid, SubmitBtn, Form } from '../UI/FormUI';
-
-const schema = Yup.object().shape({
-  name: Yup.string().required(),
-  email: Yup.string()
-    .email('email is invalid')
-    .required(),
-  subject: Yup.string().required(),
-  message: Yup.string().required(),
-});
+import { contactSchema } from '../../utils/schemas';
 
 interface FormProps {
   setSent: (value: boolean) => void;
@@ -21,7 +12,7 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
   <FormGrid>
     <Formik
       initialValues={{ name: '', email: '', subject: '', message: '' }}
-      validationSchema={schema}
+      validationSchema={contactSchema}
       onSubmit={async (values, actions) => {
         try {
           await API.post('JMPAPI', '/contact', { body: values });

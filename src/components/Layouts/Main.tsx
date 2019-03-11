@@ -1,8 +1,8 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { MainGrid, MainContent, MainContentGrid } from '../../components/UI/MainUI';
 import TopBar from '../Site/TopBar';
 import BotBar from '../Site/BotBar';
+import { Helmet } from 'react-helmet';
+import { MainGrid, MainContent, MainContentGrid } from '../../components/UI/MainUI';
 
 interface Props {
   title: string;

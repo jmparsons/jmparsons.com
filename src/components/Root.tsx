@@ -1,12 +1,12 @@
 import React from 'react';
 import App from './App';
-import { useLocalStorage } from '../utils/hooks';
-import { ThemeProvider } from 'styled-components';
+import API from '@aws-amplify/api';
 import Theme from '../constants/Theme';
 import GlobalStyle from './GlobalStyle';
+import { useLocalStorage } from '../utils/hooks';
+import { ThemeProvider } from 'styled-components';
 import { ThemerContext } from '../utils/contexts';
 import { updateTheme } from '../utils/themer';
-import API from '@aws-amplify/api';
 import '../index.css';
 
 API.configure({
