@@ -14,10 +14,10 @@ const StyledLink = styled.a`
   `};
 `;
 
-type IconLinkProps = Partial<HTMLAnchorElement> & IconProps;
+type IconLinkProps = Partial<HTMLLinkElement> & IconProps;
 
 const IconLink: React.FC<IconLinkProps> = ({ href, icon }) => (
-  <StyledLink href={href}>
+  <StyledLink href={href} title={icon}>
     <Icon icon={icon} />
   </StyledLink>
 );
