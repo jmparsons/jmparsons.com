@@ -29,10 +29,14 @@ export interface IconProps {
   icon: keyof typeof icons;
 }
 
-const Icon: React.FC<IconProps> = ({ icon }) => (
-  <SVG width="22" height="22" viewBox={`0 0 ${widths[icon]} 1024`}>
-    <path d={icons[icon]} />
-  </SVG>
-);
+const Icon: React.FC<IconProps> = ({ icon }) => {
+  const viewWidth = widths[icon];
+  const iconWidth = (viewWidth / 1024) * 22;
+  return (
+    <SVG width={iconWidth} height="22" viewBox={`0 0 ${viewWidth} 1024`}>
+      <path d={icons[icon]} />
+    </SVG>
+  );
+};
 
 export default Icon;
