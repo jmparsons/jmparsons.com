@@ -23,13 +23,9 @@ const ThemeBtn = styled.button`
   outline: 0;
   margin: 0;
   padding: 0;
-  height: 30px;
-  width: 30px;
+  height: 22px;
+  width: 22px;
   background: ${({ theme }: ThemeBtnProp) => theme.themeBtn.bg};
-  img {
-    width: 30px;
-    height: 30px;
-  }
 `;
 
 export { ThemeControls, ThemeBtn };

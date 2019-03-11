@@ -5,10 +5,11 @@ import { BotBarCon, NavBar, BotBarGrid, NxLink, CopyRight } from '../UI/BotBarUI
 import { ThemerContext } from '../../utils/contexts';
 import { ThemeBtn, ThemeControls } from '../UI/ThemeUI';
 import IconLink from './IconLink';
+import Icon from './Icon';
 
 const BotBar: React.FC = () => {
   const { theme, toggleTheme } = useContext(ThemerContext);
-  const themeIcon = theme === 'light' ? Images.moon : Images.sun;
+  const themeIcon = theme === 'light' ? 'sun' : 'moon';
   return (
     <BotBarCon>
       <BotBarGrid>
@@ -23,7 +24,7 @@ const BotBar: React.FC = () => {
         </NavBar>
         <ThemeControls>
           <ThemeBtn onClick={toggleTheme}>
-            <img src={themeIcon} />
+            <Icon icon={themeIcon} />
           </ThemeBtn>
         </ThemeControls>
         <CopyRight>&copy; 2013-2019 JMParsons</CopyRight>
