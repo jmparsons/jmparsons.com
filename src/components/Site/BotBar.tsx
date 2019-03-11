@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
+import Icon from './Icon';
+import IconLink from './IconLink';
 import Routes from '../../constants/Routes';
-import Images from '../../constants/Images';
 import { BotBarCon, NavBar, BotBarGrid, NxLink, CopyRight } from '../UI/BotBarUI';
 import { ThemerContext } from '../../utils/contexts';
 import { ThemeBtn, ThemeControls } from '../UI/ThemeUI';
-import IconLink from './IconLink';
-import Icon from './Icon';
 
 const BotBar: React.FC = () => {
   const { theme, toggleTheme } = useContext(ThemerContext);

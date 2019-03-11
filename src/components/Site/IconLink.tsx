@@ -8,7 +8,7 @@ const StyledLink = styled.a`
   text-decoration: none;
   align-self: center;
   justify-self: center;
-  color: ${({ theme }: ThxProps) => theme.botBar.link};
+  color: ${({ theme }: ThxProps) => theme.main.icon};
   ${media.tablet`
     padding: 0 20px;
   `};

@@ -9,9 +9,7 @@ const TopBar: React.FC = () => (
         <LogoLink to={Routes.home}>JMParsons</LogoLink>
       </Logo>
       <NavBar>
-        <HomeLink to={Routes.home} exact>
-          Home
-        </HomeLink>
+        <HomeLink to={Routes.home}>Home</HomeLink>
         <NxLink to={Routes.services}>Services</NxLink>
         <NxLink to={Routes.clients}>Clients</NxLink>
         <NxLink to={Routes.about}>About</NxLink>

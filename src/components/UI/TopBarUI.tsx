@@ -78,7 +78,7 @@ const NxLink = styled(NavLink)`
   `};
 `;
 
-const HomeLink = styled(NxLink)`
+const HomeLink = styled(NxLink).attrs({ exact: true })`
   display: none;
   ${media.tablet`
     display: grid;
