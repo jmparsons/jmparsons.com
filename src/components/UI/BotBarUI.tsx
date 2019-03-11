@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { ThxProps } from '../../constants/Theme';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { media, Breakpoints } from '../../utils/mq';
+import IconLink from '../Site/IconLink';
 
 const BotBarCon = styled.div`
   display: grid;
