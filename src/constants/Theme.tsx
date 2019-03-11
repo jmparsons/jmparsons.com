@@ -45,6 +45,7 @@ interface ThemexBase {
   main: {
     bg: string;
     text: string;
+    icon: string;
   };
 }
 
@@ -66,6 +67,7 @@ const light: ThemexBase = {
   main: {
     bg: Colors.white,
     text: Colors.black,
+    icon: Colors.black,
   },
 };
 
@@ -87,6 +89,7 @@ const dark: ThemexBase = {
   main: {
     bg: Colors.darkSteel,
     text: Colors.offWhite,
+    icon: Colors.white,
   },
 };
 
