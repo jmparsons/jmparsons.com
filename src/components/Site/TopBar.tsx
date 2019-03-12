@@ -1,20 +1,15 @@
-import React, { useContext } from 'react';
-import Routes from '../../constants/Routes';
-import { TopBarCon, NavBar, Logo, LogoLink, TopBarGrid, NxLink, HomeLink } from '../UI/TopBarUI';
+import React from 'react';
+import ThemeToggle from './ThemeToggle';
+import Logo from './Logo';
+import TopNav from './TopNav';
+import { TopBarCon, TopBarGrid } from '../UI/TopBarUI';
 
 const TopBar: React.FC = () => (
   <TopBarCon>
     <TopBarGrid>
-      <Logo>
-        <LogoLink to={Routes.home}>JMParsons</LogoLink>
-      </Logo>
-      <NavBar>
-        <HomeLink to={Routes.home}>Home</HomeLink>
-        <NxLink to={Routes.services}>Services</NxLink>
-        <NxLink to={Routes.clients}>Clients</NxLink>
-        <NxLink to={Routes.about}>About</NxLink>
-        <NxLink to={Routes.contact}>Contact</NxLink>
-      </NavBar>
+      <Logo />
+      <TopNav />
+      <ThemeToggle />
     </TopBarGrid>
   </TopBarCon>
 );

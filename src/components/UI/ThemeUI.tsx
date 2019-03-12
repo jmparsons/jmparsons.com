@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { ThxProps } from '../../constants/Theme';
 import { media } from '../../utils/mq';
 
-const ThemeControls = styled.div`
+const ThemeNav = styled.div`
   display: grid;
   grid-auto-flow: row;
   position: absolute;
@@ -28,4 +28,4 @@ const ThemeBtn = styled.button`
   background: ${({ theme }: ThemeBtnProp) => theme.themeBtn.bg};
 `;
 
-export { ThemeControls, ThemeBtn };
+export { ThemeNav, ThemeBtn };

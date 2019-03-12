@@ -25,7 +25,7 @@ const BotBarGrid = styled.div`
   `};
 `;
 
-const NavBar = styled.nav`
+const BotNavBar = styled.nav`
   display: grid;
   grid-auto-flow: column;
   height: 50px;
@@ -35,7 +35,7 @@ const NavBar = styled.nav`
   `};
 `;
 
-const NxLink = styled(NavLink)`
+const BotLink = styled(NavLink)`
   text-decoration: none;
   align-self: center;
   justify-self: center;
@@ -59,4 +59,14 @@ const CopyRight = styled.div`
   `};
 `;
 
-export { BotBarCon, BotBarGrid, NavBar, NxLink, CopyRight };
+const SocialBar = styled.div`
+  display: grid;
+  grid-auto-flow: column;
+  height: 50px;
+  ${media.tablet`
+    height: 60px;
+    justify-content: flex-start;
+  `};
+`;
+
+export { BotBarCon, BotBarGrid, BotNavBar, BotLink, CopyRight, SocialBar };

@@ -24,7 +24,7 @@ const TopBarGrid = styled.div`
   `};
 `;
 
-const Logo = styled.h1`
+const LogoCon = styled.h1`
   display: grid;
   align-content: center;
   justify-content: center;
@@ -45,7 +45,7 @@ const LogoLink = styled(Link)`
   }
 `;
 
-const NavBar = styled.nav`
+const TopNavCon = styled.nav`
   display: grid;
   grid-auto-flow: column;
   height: 50px;
@@ -55,7 +55,7 @@ const NavBar = styled.nav`
   `};
 `;
 
-const NxLink = styled(NavLink)`
+const TopLink = styled(NavLink)`
   display: grid;
   text-decoration: none;
   align-content: center;
@@ -81,11 +81,11 @@ const NxLink = styled(NavLink)`
   `};
 `;
 
-const HomeLink = styled(NxLink).attrs({ exact: true })`
+const HomeLink = styled(TopLink).attrs({ exact: true })`
   display: none;
   ${media.tablet`
     display: grid;
   `};
 `;
 
-export { TopBarCon, TopBarGrid, Logo, LogoLink, NavBar, NxLink, HomeLink };
+export { TopBarCon, TopBarGrid, LogoCon, LogoLink, TopNavCon, TopLink, HomeLink };
