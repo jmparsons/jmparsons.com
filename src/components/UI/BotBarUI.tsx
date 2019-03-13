@@ -65,6 +65,7 @@ const CopyRight = styled.div`
   align-content: center;
   ${media.tablet`
     height: 60px;
+    padding-right: 20px;
     justify-content: flex-end;
   `};
 `;

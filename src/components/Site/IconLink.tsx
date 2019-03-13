@@ -18,7 +18,7 @@ const StyledLink = styled.a`
 type IconLinkProps = Partial<HTMLLinkElement> & IconProps;
 
 const IconLink: React.FC<IconLinkProps> = ({ href, icon }) => (
-  <StyledLink href={href} title={icon}>
+  <StyledLink href={href} title={icon} target="_blank">
     <Icon icon={icon} />
   </StyledLink>
 );
