@@ -14,7 +14,7 @@ const TopBarGrid = styled.div`
   align-self: center;
   justify-self: center;
   ${media.tablet`
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto auto;
   `};
   ${media.desktop`
     width: ${Breakpoints.desktop / 16}em;

@@ -1,22 +1,20 @@
 import styled from 'styled-components';
-import { ThxProps } from '../../constants/Theme';
 import { media } from '../../utils/mq';
 
 const ThemeNav = styled.div`
   display: grid;
   grid-auto-flow: row;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   ${media.tablet`
     position: relative;
     top: 0;
     right: 0;
     align-self: center;
+    padding: 0 15px;
   `};
 `;
-
-type ThemeBtnProp = ThxProps & { dark?: boolean };
 
 const ThemeBtn = styled.button`
   border: none;
@@ -25,7 +23,7 @@ const ThemeBtn = styled.button`
   padding: 0;
   height: 30px;
   width: 30px;
-  background: ${({ theme }: ThemeBtnProp) => theme.themeBtn.bg};
+  background: transparent;
 `;
 
 export { ThemeNav, ThemeBtn };

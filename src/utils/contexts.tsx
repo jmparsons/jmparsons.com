@@ -1,7 +1,12 @@
 import React from 'react';
 
-const ThemerContext = React.createContext({
-  theme: '',
+export interface ThemerContextProps {
+  theme: 'light' | 'dark';
+  toggleTheme: () => void;
+}
+
+const ThemerContext = React.createContext<ThemerContextProps>({
+  theme: 'light',
   toggleTheme: () => {},
 });
 
