@@ -9,8 +9,9 @@ const StyledLink = styled.a`
   align-self: center;
   justify-self: center;
   color: ${({ theme }: ThxProps) => theme.main.icon};
+  padding: 0 20px;
   ${media.tablet`
-    padding: 0 20px;
+    padding: 0 10px;
   `};
 `;
 

@@ -14,7 +14,7 @@ const BotBarGrid = styled.div`
   align-self: center;
   justify-self: center;
   ${media.tablet`
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: auto auto 1fr;
   `};
   ${media.desktop`
     width: ${Breakpoints.desktop / 16}em;
@@ -27,6 +27,17 @@ const BotBarGrid = styled.div`
 const BotNavBar = styled.nav`
   display: grid;
   grid-auto-flow: column;
+  height: 50px;
+  ${media.tablet`
+    height: 60px;
+    justify-content: flex-start;
+  `};
+`;
+
+const SocialBar = styled.div`
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
   height: 50px;
   ${media.tablet`
     height: 60px;
@@ -55,16 +66,6 @@ const CopyRight = styled.div`
   ${media.tablet`
     height: 60px;
     justify-content: flex-end;
-  `};
-`;
-
-const SocialBar = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  height: 50px;
-  ${media.tablet`
-    height: 60px;
-    justify-content: flex-start;
   `};
 `;
 
