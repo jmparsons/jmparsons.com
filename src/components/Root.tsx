@@ -10,14 +10,9 @@ import { updateTheme } from '../utils/themer';
 import 'normalize.css';
 import '../index.css';
 
-API.configure({
-  endpoints: [
-    {
-      name: 'JMPAPI',
-      endpoint: 'https://kgcr07khx2.execute-api.us-east-1.amazonaws.com/prod',
-    },
-  ],
-});
+const endpoint = 'https://kgcr07khx2.execute-api.us-east-1.amazonaws.com/prod';
+const api = { name: 'JMPAPI', endpoint };
+API.configure({ endpoints: [api] });
 
 const Root: React.FC = () => {
   const [theme, setTheme] = useLocalStorage('theme', 'light');
