@@ -1,6 +1,8 @@
+const getAltTheme = (theme: string) => (theme === 'light' ? 'dark' : 'light');
+
 const updateTheme = (theme: string, setTheme: any) => () => {
-  const newTheme = theme === 'light' ? 'dark' : 'light';
+  const newTheme = getAltTheme(theme);
   setTheme(newTheme);
 };
 
-export { updateTheme };
+export { getAltTheme, updateTheme };

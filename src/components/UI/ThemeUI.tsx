@@ -24,6 +24,7 @@ const ThemeBtn = styled.button`
   height: 30px;
   width: 30px;
   background: transparent;
+  cursor: pointer;
 `;
 
 export { ThemeNav, ThemeBtn };
