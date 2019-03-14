@@ -56,7 +56,7 @@ const SubmitBtn = styled.button.attrs({ type: 'submit' })`
 
 const ErrorMessage: any = styled(ErrorField)`
   color: #ffffff;
-  background: red;
+  background: #333333;
   padding: 5px;
 `;
 
