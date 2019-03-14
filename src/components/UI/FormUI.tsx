@@ -25,7 +25,7 @@ const inputStyles = css`
 const StyledForm = styled(Form)`
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 5px;
+  grid-gap: 10px;
   width: 100%;
   ${media.tablet`
     width: 500px;
@@ -42,12 +42,14 @@ const TextArea = styled(Field).attrs({ component: 'textarea', rows: 5 })`
 `;
 
 const SubmitBtn = styled.button.attrs({ type: 'submit' })`
-  border: 1px solid #000;
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 42px;
+  line-height: 42px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 0;
+  color: #ffffff;
+  background: ${({ theme }: ThxProps) => theme.form.outline};
 `;
 
 const ErrorMessage: any = styled(ErrorField)`
