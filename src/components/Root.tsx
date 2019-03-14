@@ -7,7 +7,6 @@ import { useLocalStorage } from '../utils/hooks';
 import { ThemeProvider } from 'styled-components';
 import { ThemerContext } from '../utils/contexts';
 import { updateTheme } from '../utils/themer';
-import 'normalize.css';
 import '../index.css';
 
 const endpoint = 'https://kgcr07khx2.execute-api.us-east-1.amazonaws.com/prod';
