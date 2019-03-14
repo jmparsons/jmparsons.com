@@ -22,7 +22,11 @@ const widths = {
 };
 
 const SVG = styled('svg')`
+  transition: fill 0.2s;
   fill: ${({ theme }: ThxProps) => theme.main.icon};
+  &:hover {
+    fill: ${({ theme }: ThxProps) => theme.main.activeIcon};
+  }
 `;
 
 export interface IconProps {

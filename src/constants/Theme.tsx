@@ -48,6 +48,7 @@ interface ThemexBase {
     bg: string;
     text: string;
     icon: string;
+    activeIcon: string;
   };
   form: {
     outline: string;
@@ -59,13 +60,13 @@ const light: ThemexBase = {
     logo: Colors.darkSteel,
     bg: Colors.offWhite,
     link: Colors.midGray,
-    activeLink: Colors.darkBlueGray,
+    activeLink: Colors.black,
     activeBorder: Colors.electricBlue,
   },
   botBar: {
     bg: Colors.offWhite,
-    link: Colors.darkBlueGray,
-    activeLink: Colors.darkBlueGray,
+    link: Colors.midGray,
+    activeLink: Colors.black,
   },
   themeBtn: {
     bg: Colors.white,
@@ -73,7 +74,8 @@ const light: ThemexBase = {
   main: {
     bg: Colors.white,
     text: Colors.black,
-    icon: Colors.black,
+    icon: Colors.midGray,
+    activeIcon: Colors.black,
   },
   form: {
     outline: Colors.electricBlue,
@@ -85,12 +87,12 @@ const dark: ThemexBase = {
     logo: Colors.offWhite,
     bg: Colors.darkBlueGray,
     link: Colors.lightGray,
-    activeLink: Colors.offWhite,
+    activeLink: Colors.white,
     activeBorder: Colors.electricBlue,
   },
   botBar: {
     bg: Colors.darkBlueGray,
-    link: Colors.offWhite,
+    link: Colors.lightGray,
     activeLink: Colors.offWhite,
   },
   themeBtn: {
@@ -99,7 +101,8 @@ const dark: ThemexBase = {
   main: {
     bg: Colors.darkSteel,
     text: Colors.offWhite,
-    icon: Colors.white,
+    icon: Colors.lightGray,
+    activeIcon: Colors.white,
   },
   form: {
     outline: Colors.electricBlue,

@@ -41,6 +41,7 @@ const SocialBar = styled.div`
   grid-auto-flow: column;
   justify-content: center;
   height: 50px;
+  border-top: 1px solid ${({ theme }: ThxProps) => theme.main.bg};
   ${media.tablet`
     height: 60px;
     justify-content: flex-start;
@@ -48,12 +49,18 @@ const SocialBar = styled.div`
 `;
 
 const BotLink = styled(NavLink)`
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: ${({ theme }: ThxProps) => theme.botBar.link};
   text-decoration: none;
   align-self: center;
   justify-self: center;
-  color: ${({ theme }: ThxProps) => theme.botBar.link};
+  transition: color 0.2s;
+  &:hover {
+    color: ${({ theme }: ThxProps) => theme.botBar.activeLink};
+  }
   &.active {
-    font-weight: bold;
+    color: ${({ theme }: ThxProps) => theme.botBar.activeLink};
   }
   ${media.tablet`
     margin-right: 20px;
@@ -62,9 +69,12 @@ const BotLink = styled(NavLink)`
 
 const CopyRight = styled.div`
   display: grid;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
   height: 50px;
   justify-content: center;
   align-content: center;
+  border-top: 1px solid ${({ theme }: ThxProps) => theme.main.bg};
   ${media.tablet`
     height: 60px;
     justify-content: flex-end;

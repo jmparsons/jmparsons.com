@@ -51,6 +51,7 @@ const TopNavCon = styled.nav`
   display: grid;
   grid-auto-flow: column;
   height: 50px;
+  border-top: 1px solid ${({ theme }: ThxProps) => theme.main.bg};
   ${media.tablet`
     height: 60px;
     justify-content: flex-end;
@@ -73,7 +74,6 @@ const TopLink = styled(NavLink)`
     color: ${({ theme }: ThxProps) => theme.topBar.activeLink};
   }
   &.active {
-    font-weight: bold;
     color: ${({ theme }: ThxProps) => theme.topBar.activeLink};
     border-bottom: 2px solid ${({ theme }: ThxProps) => theme.topBar.activeBorder};
   }
