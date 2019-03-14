@@ -54,7 +54,7 @@ const BotLink = styled(NavLink)`
     font-weight: bold;
   }
   ${media.tablet`
-    padding: 0 20px;
+    margin-right: 20px;
   `};
 `;
 
@@ -65,7 +65,6 @@ const CopyRight = styled.div`
   align-content: center;
   ${media.tablet`
     height: 60px;
-    padding-right: 20px;
     justify-content: flex-end;
   `};
 `;

@@ -12,7 +12,7 @@ const ThemeNav = styled.div`
     top: 0;
     right: 0;
     align-self: center;
-    padding: 0 15px;
+    padding: 0 0 0 10px;
   `};
 `;
 

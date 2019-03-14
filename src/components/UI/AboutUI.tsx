@@ -1,22 +1,31 @@
 import styled from 'styled-components';
-import Images from '../../constants/Images';
+import { media } from '../../utils/mq';
 
 const AboutCon = styled.div`
   display: grid;
+`;
+
+const AboutContent = styled.div`
+  padding-right: 30px;
 `;
 
 const AboutGrid = styled.div`
   display: grid;
   align-self: center;
   justify-self: center;
-  grid-template-columns: 1fr 1fr;
+  ${media.tablet`
+    grid-template-columns: 70% 30%;
+  `};
 `;
 
 const AboutImage = styled.div`
-  background: url(${Images.aboutBg});
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 500px;
+  display: grid;
+  padding-top: 30px;
+  justify-content: center;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
-export { AboutCon, AboutGrid, AboutImage };
+export { AboutCon, AboutContent, AboutGrid, AboutImage };

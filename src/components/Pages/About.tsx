@@ -1,12 +1,13 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
-import { AboutImage, AboutCon, AboutGrid } from '../../components/UI/AboutUI';
+import { AboutImage, AboutCon, AboutGrid, AboutContent } from '../../components/UI/AboutUI';
+import Images from '../../constants/Images';
 
 const About: React.FC = () => (
   <LayoutsMain title="About · JMParsons">
     <AboutCon>
       <AboutGrid>
-        <div>
+        <AboutContent>
           <h1>About</h1>
           <p>
             JMParsons is founded by web developer and designer Jonathan M. Parsons. Jon has a strong
@@ -34,8 +35,10 @@ const About: React.FC = () => (
             transitions from inception, design, development, launch, and maintenance will be smooth
             and hassle-free for the client.
           </p>
-        </div>
-        <AboutImage />
+        </AboutContent>
+        <AboutImage>
+          <img src={Images.aboutBg} width="360" height="639" />
+        </AboutImage>
       </AboutGrid>
     </AboutCon>
   </LayoutsMain>
