@@ -13,6 +13,8 @@ const BotBarGrid = styled.div`
   width: 100%;
   align-self: center;
   justify-self: center;
+  padding: 0 20px;
+  box-sizing: border-box;
   ${media.tablet`
     grid-template-columns: auto auto 1fr;
   `};
