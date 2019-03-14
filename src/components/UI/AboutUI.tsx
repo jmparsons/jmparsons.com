@@ -6,7 +6,9 @@ const AboutCon = styled.div`
 `;
 
 const AboutContent = styled.div`
-  padding-right: 30px;
+  ${media.tablet`
+    padding-right: 30px;
+  `};
 `;
 
 const AboutGrid = styled.div`

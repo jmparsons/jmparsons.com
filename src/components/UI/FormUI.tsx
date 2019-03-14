@@ -1,4 +1,4 @@
-import styled, { css, StyledComponent } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Field, Form, ErrorMessage as ErrorField } from 'formik';
 import { media } from '../../utils/mq';
 import { ThxProps } from '../../constants/Theme';

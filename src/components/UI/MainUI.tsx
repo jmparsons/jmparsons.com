@@ -17,7 +17,7 @@ const MainContentGrid = styled.div`
 `;
 
 const MainContent = styled.div`
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   box-sizing: border-box;
   ${media.desktop`
     width: ${Breakpoints.desktop / 16}em;

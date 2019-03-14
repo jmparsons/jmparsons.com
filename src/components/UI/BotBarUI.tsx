@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ThxProps } from '../../constants/Theme';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { media, Breakpoints } from '../../utils/mq';
 
 const BotBarCon = styled.div`
@@ -13,9 +13,9 @@ const BotBarGrid = styled.div`
   width: 100%;
   align-self: center;
   justify-self: center;
-  padding: 0 20px;
   box-sizing: border-box;
   ${media.tablet`
+    padding: 0 20px;
     grid-template-columns: auto auto 1fr;
   `};
   ${media.desktop`

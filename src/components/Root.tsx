@@ -7,6 +7,7 @@ import { useLocalStorage } from '../utils/hooks';
 import { ThemeProvider } from 'styled-components';
 import { ThemerContext } from '../utils/contexts';
 import { updateTheme } from '../utils/themer';
+import 'normalize.css';
 import '../index.css';
 
 API.configure({
