@@ -1,7 +1,7 @@
 import React from 'react';
 import API from '@aws-amplify/api';
-import { Formik, ErrorMessage } from 'formik';
-import { Input, TextArea, FormGrid, SubmitBtn, Form } from '../UI/FormUI';
+import { Formik } from 'formik';
+import { Input, TextArea, FormGrid, SubmitBtn, ErrorMessage, Form } from '../UI/FormUI';
 import { contactSchema } from '../../utils/schemas';
 
 interface FormProps {
@@ -24,13 +24,13 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
       render={({ status, isSubmitting }) => (
         <Form>
           <Input name="name" placeholder="Name" />
-          <ErrorMessage name="name" />
+          <ErrorMessage name="name" component="span" />
           <Input type="email" name="email" placeholder="E-mail" />
-          <ErrorMessage name="email" />
+          <ErrorMessage name="email" component="span" />
           <Input name="subject" placeholder="Subject" />
-          <ErrorMessage name="subject" />
+          <ErrorMessage name="subject" component="span" />
           <TextArea name="message" placeholder="Message" />
-          <ErrorMessage name="message" />
+          <ErrorMessage name="message" component="span" />
           {status && status.msg && <div>{status.msg}</div>}
           <SubmitBtn disabled={isSubmitting}>Submit</SubmitBtn>
         </Form>

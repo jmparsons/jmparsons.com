@@ -9,6 +9,7 @@ const Colors = {
   darkBlueGray: '#202329',
   deepBlueGray: '#111315',
   deepBlack: '#0e0f10',
+  electricBlue: '#17abf0',
   steel: '#989a9c',
   darkSteel: '#3e4044',
   statGreen: '#25d65b',
@@ -33,6 +34,7 @@ interface ThemexBase {
     bg: string;
     link: string;
     activeLink: string;
+    activeBorder: string;
   };
   botBar: {
     bg: string;
@@ -47,6 +49,9 @@ interface ThemexBase {
     text: string;
     icon: string;
   };
+  form: {
+    outline: string;
+  };
 }
 
 const light: ThemexBase = {
@@ -55,6 +60,7 @@ const light: ThemexBase = {
     bg: Colors.offWhite,
     link: Colors.midGray,
     activeLink: Colors.darkBlueGray,
+    activeBorder: Colors.electricBlue,
   },
   botBar: {
     bg: Colors.offWhite,
@@ -69,6 +75,9 @@ const light: ThemexBase = {
     text: Colors.black,
     icon: Colors.black,
   },
+  form: {
+    outline: Colors.electricBlue,
+  },
 };
 
 const dark: ThemexBase = {
@@ -77,6 +86,7 @@ const dark: ThemexBase = {
     bg: Colors.darkBlueGray,
     link: Colors.lightGray,
     activeLink: Colors.offWhite,
+    activeBorder: Colors.electricBlue,
   },
   botBar: {
     bg: Colors.darkBlueGray,
@@ -90,6 +100,9 @@ const dark: ThemexBase = {
     bg: Colors.darkSteel,
     text: Colors.offWhite,
     icon: Colors.white,
+  },
+  form: {
+    outline: Colors.electricBlue,
   },
 };
 

@@ -75,7 +75,7 @@ const TopLink = styled(NavLink)`
   &.active {
     font-weight: bold;
     color: ${({ theme }: ThxProps) => theme.topBar.activeLink};
-    border-bottom: 2px solid #17abf0;
+    border-bottom: 2px solid ${({ theme }: ThxProps) => theme.topBar.activeBorder};
   }
   ${media.tablet`
     width: 84px;
