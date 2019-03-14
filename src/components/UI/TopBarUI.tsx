@@ -53,6 +53,7 @@ const TopNavCon = styled.nav`
   height: 50px;
   border-top: 1px solid ${({ theme }: ThxProps) => theme.main.bg};
   ${media.tablet`
+    border-top: 0;
     height: 60px;
     justify-content: flex-end;
   `};
