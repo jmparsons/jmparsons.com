@@ -23,11 +23,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-input,
-textarea {
-  appearance: none;
-}
-
 @font-face {
   font-family: 'Denmark';
   src: url('./assets/fonts/jmp-denmark.eot');

@@ -16,6 +16,8 @@ const inputStyles = css`
   font-size: 16px;
   border: 1px solid #ccc;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  appearance: none;
   &:focus {
     border: 1px solid ${({ theme }: ThxProps) => theme.form.outline};
     outline: 0;

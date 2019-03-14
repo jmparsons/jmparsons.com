@@ -26,7 +26,7 @@ const TopBarGrid = styled.div`
   `};
 `;
 
-const LogoCon = styled.h1`
+const LogoCon = styled.span`
   display: grid;
   align-content: center;
   justify-content: center;
