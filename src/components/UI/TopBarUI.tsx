@@ -3,7 +3,7 @@ import { ThxProps } from '../../constants/Theme';
 import { Link, NavLink } from 'react-router-dom';
 import { media, Breakpoints } from '../../utils/mq';
 
-const TopBarCon = styled.div`
+const TopBarCon = styled.header`
   display: grid;
   background: ${({ theme }: ThxProps) => theme.topBar.bg};
 `;

@@ -10,7 +10,7 @@ const MainGrid = styled.div`
   color: ${({ theme }: ThxProps) => theme.main.text};
 `;
 
-const MainContentGrid = styled.div`
+const MainContentGrid = styled.main`
   display: grid;
   width: 100%;
   height: 100%;

@@ -3,7 +3,7 @@ import { ThxProps } from '../../constants/Theme';
 import { NavLink } from 'react-router-dom';
 import { media, Breakpoints } from '../../utils/mq';
 
-const BotBarCon = styled.div`
+const BotBarCon = styled.footer`
   display: grid;
   background: ${({ theme }: ThxProps) => theme.botBar.bg};
 `;
@@ -36,7 +36,7 @@ const BotNavBar = styled.nav`
   `};
 `;
 
-const SocialBar = styled.div`
+const SocialBar = styled.nav`
   display: grid;
   grid-auto-flow: column;
   justify-content: center;

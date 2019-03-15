@@ -3,7 +3,7 @@ import LayoutsMain from '../Layouts/Main';
 
 const Clients: React.FC = () => (
   <LayoutsMain title="Clients · JMParsons">
-    <h2>Clients</h2>
+    <h1>Clients</h1>
   </LayoutsMain>
 );
 
