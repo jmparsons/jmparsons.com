@@ -4,7 +4,6 @@ import { BotNavBar, BotLink } from '../UI/BotBarUI';
 
 const BotNav: React.FC = () => (
   <BotNavBar>
-    <BotLink to={Routes.blog}>Blog</BotLink>
     <BotLink to={Routes.tech}>Tech</BotLink>
     <BotLink to={Routes.sitemap}>Sitemap</BotLink>
   </BotNavBar>
