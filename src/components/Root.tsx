@@ -6,6 +6,7 @@ import { useLocalStorage } from '../utils/hooks';
 import { ThemeProvider } from 'styled-components';
 import { ThemerContext } from '../utils/contexts';
 import { updateTheme } from '../utils/themer';
+import 'intersection-observer';
 import '../index.css';
 
 const Root: React.FC = () => {

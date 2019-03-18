@@ -1,8 +1,10 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
 import clientData from '../../data/clients.json';
-import ClientImage from '../Site/ClientImage';
+import ImageLoader from '../Site/ImageLoader';
+import clientPlacer from '../../assets/images/clientPlacer.png';
 import { ClientGrid, ClientItem } from '../UI/ClientsUI';
+import { cdn } from '../../utils';
 
 const Clients: React.FC = () => (
   <LayoutsMain title="Clients · JMParsons">
@@ -10,7 +12,7 @@ const Clients: React.FC = () => (
     <ClientGrid>
       {clientData.clients.map(client => (
         <ClientItem key={client.name}>
-          <ClientImage name={client.name} image={client.image} />
+          <ImageLoader source={cdn(client.image)} alt={client.name} placer={clientPlacer} />
         </ClientItem>
       ))}
     </ClientGrid>
