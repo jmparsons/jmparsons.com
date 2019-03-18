@@ -5,6 +5,7 @@ import { media, Breakpoints } from '../../utils/mq';
 
 const TopBarCon = styled.header`
   display: grid;
+  position: relative;
   background: ${({ theme }: ThxProps) => theme.topBar.bg};
 `;
 
@@ -39,6 +40,7 @@ const LogoCon = styled.span`
 
 const LogoLink = styled(Link)`
   font-size: 36px;
+  font-family: 'Denmark';
   text-decoration: none;
   color: ${({ theme }: ThxProps) => theme.topBar.logo};
   &:active {

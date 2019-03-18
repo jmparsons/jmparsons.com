@@ -5,7 +5,7 @@ import { media, Breakpoints } from '../../utils/mq';
 const MainGrid = styled.div`
   display: grid;
   background: ${({ theme }: ThxProps) => theme.main.bg};
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   min-height: 100%;
   color: ${({ theme }: ThxProps) => theme.main.text};
 `;

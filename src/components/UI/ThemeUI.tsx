@@ -7,12 +7,12 @@ const ThemeNav = styled.div`
   position: absolute;
   top: 15px;
   right: 15px;
+  height: 30px;
   ${media.tablet`
     position: relative;
-    top: 0;
+    top: 15px;
     right: 0;
-    align-self: center;
-    padding: 0 0 0 10px;
+    margin-left: 10px;
   `};
 `;
 
