@@ -2,83 +2,83 @@
   "clients": [
     {
       "name": "American Express",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/amex-open.jpg"
+      "image": "amex-open.jpg"
     },
     {
       "name": "Bloomberg Philanthropies",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/bloomberg-philanthropies.jpg"
+      "image": "bloomberg-philanthropies.jpg"
     },
     {
       "name": "Brooks Brothers",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/brooks-brothers.jpg"
+      "image": "brooks-brothers.jpg"
     },
     {
       "name": "Coachella",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/coachella.jpg"
+      "image": "coachella.jpg"
     },
     {
       "name": "Coca Cola",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/coca-cola-mixon.jpg"
+      "image": "coca-cola-mixon.jpg"
     },
     {
       "name": "Eat This, Not That!",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/eat-this.jpg"
+      "image": "eat-this.jpg"
     },
     {
       "name": "Google Summit",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/google-summit.jpg"
+      "image": "google-summit.jpg"
     },
     {
       "name": "I Can't Believe It's Not Butter!",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/icantbelieveitsnotbutter.jpg"
+      "image": "icantbelieveitsnotbutter.jpg"
     },
     {
       "name": "Khiels",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/kiehls-hydro.jpg"
+      "image": "kiehls-hydro.jpg"
     },
     {
       "name": "Leicht",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/leicht.jpg"
+      "image": "leicht.jpg"
     },
     {
       "name": "Mattel",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/mattel.jpg"
+      "image": "mattel.jpg"
     },
     {
       "name": "Motorola",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/motorola.jpg"
+      "image": "motorola.jpg"
     },
     {
       "name": "Peloton",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/peloton.jpg"
+      "image": "peloton.jpg"
     },
     {
       "name": "Reebok",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/reebok.jpg"
+      "image": "reebok.jpg"
     },
     {
       "name": "SLS Hotels",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/sls-las-vegas.jpg"
+      "image": "sls-las-vegas.jpg"
     },
     {
       "name": "Sony",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/sony.jpg"
+      "image": "sony.jpg"
     },
     {
       "name": "Tao",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/tao-group.jpg"
+      "image": "tao-group.jpg"
     },
     {
       "name": "Tyler Shields",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/tyler-shields.jpg"
+      "image": "tyler-shields.jpg"
     },
     {
       "name": "US Army",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/us-army.jpg"
+      "image": "us-army.jpg"
     },
     {
       "name": "US Open",
-      "image": "https://s3.amazonaws.com/jmparsons-dev-assets/us-open.jpg"
+      "image": "us-open.jpg"
     }
   ]
 }
