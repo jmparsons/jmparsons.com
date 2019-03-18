@@ -39,7 +39,6 @@ const LogoCon = styled.span`
 
 const LogoLink = styled(Link)`
   font-size: 36px;
-  font-family: 'Denmark';
   text-decoration: none;
   color: ${({ theme }: ThxProps) => theme.topBar.logo};
   &:active {
