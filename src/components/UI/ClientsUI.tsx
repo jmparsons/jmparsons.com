@@ -16,10 +16,6 @@ const ClientGrid = styled.div`
 
 const ClientItem = styled.div`
   outline: 1px solid #ccc;
-  ${media.tablet`
-    width: 220px;
-    height: 165px;
-  `}
   img {
     max-width: 100%;
     height: auto;

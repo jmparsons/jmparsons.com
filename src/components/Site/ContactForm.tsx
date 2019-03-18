@@ -1,5 +1,5 @@
 import React from 'react';
-import API from '@aws-amplify/api';
+// import API from '@aws-amplify/api';
 import { Formik } from 'formik';
 import { Input, TextArea, FormGrid, SubmitBtn, ErrorMessage, Form } from '../UI/FormUI';
 import { contactSchema } from '../../utils/schemas';
@@ -15,7 +15,7 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
       validationSchema={contactSchema}
       onSubmit={async (values, actions) => {
         try {
-          await API.post('JMPAPI', '/contact', { body: values });
+          // await API.post('JMPAPI', '/contact', { body: values });
           setSent(true);
         } catch (error) {
           actions.setSubmitting(false);
