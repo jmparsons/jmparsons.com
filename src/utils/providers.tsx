@@ -26,7 +26,7 @@ const DepsProvider: React.FC = ({ children }) => {
       setCanWebp(value);
       setLoaded(true);
     };
-    checkDeps();
+    if (!canWebp) checkDeps();
   }, [canWebp]);
   return (
     <DepsContext.Provider value={{ canWebp }}>{loaded ? children : null}</DepsContext.Provider>
