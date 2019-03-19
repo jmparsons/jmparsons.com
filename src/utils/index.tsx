@@ -1,3 +1,14 @@
 const cdn = (path: string) => `https://s3.amazonaws.com/jmparsons-dev-assets/${path}`;
 
-export { cdn };
+const webp = (path: string) => path.replace('.jpg', '.webp');
+
+const checkWebp = async () => {
+  if (!self.createImageBitmap) return false;
+  const data = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+  const result = await fetch(data);
+  const blob = await result.blob();
+  const bitmap = await createImageBitmap(blob);
+  return !!bitmap;
+};
+
+export { cdn, webp, checkWebp };

@@ -12,7 +12,7 @@ const Clients: React.FC = () => (
     <ClientGrid>
       {clientData.clients.map(client => (
         <ClientItem key={client.name}>
-          <ImageLoader source={cdn(client.image)} alt={client.name} placer={clientPlacer} />
+          <ImageLoader src={cdn(client.image)} alt={client.name} placer={clientPlacer} />
         </ClientItem>
       ))}
     </ClientGrid>
