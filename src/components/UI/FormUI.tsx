@@ -39,7 +39,7 @@ const Input = styled(Field)`
   ${inputStyles};
 `;
 
-const TextArea = styled(Field).attrs({ component: 'textarea', rows: 5 })`
+const TextArea = styled(Field).attrs({ component: 'textarea', rows: 7 })`
   ${inputStyles};
 `;
 

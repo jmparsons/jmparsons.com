@@ -33,7 +33,6 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
           <ErrorMessage name="subject" component="span" />
           <TextArea name="message" placeholder="Message" />
           <ErrorMessage name="message" component="span" />
-          {status && status.msg && <div>{status.msg}</div>}
           <SubmitBtn disabled={isSubmitting}>Submit</SubmitBtn>
         </Form>
       )}
