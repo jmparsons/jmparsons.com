@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Observer from '@researchgate/react-intersection-observer';
 import { webp } from '../../utils';
 import { DepsContext } from '../../utils/contexts';
@@ -10,8 +10,8 @@ export interface ImageLoaderProps {
 }
 
 const ImageLoader: React.FC<ImageLoaderProps> = ({ src, alt, placer }) => {
+  const { canWebp } = useContext(DepsContext);
   const [shown, setShown] = useState(false);
-  const [canWebp, setCanWebp] = useState(false);
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
     if (shown) {
@@ -23,27 +23,20 @@ const ImageLoader: React.FC<ImageLoaderProps> = ({ src, alt, placer }) => {
     }
   }, [shown]);
   return (
-    <DepsContext.Consumer>
-      {({ canWebp }) => (
-        <Observer
-          onChange={(event: IntersectionObserverEntry) => {
-            if (!shown && event.isIntersecting) {
-              setCanWebp(canWebp);
-              setShown(true);
-            }
-          }}
-        >
-          {shown && loaded ? (
-            <picture>
-              <source srcSet={webp(src)} type="image/webp" />
-              <img src={src} alt={alt} />
-            </picture>
-          ) : (
-            <img src={placer} />
-          )}
-        </Observer>
+    <Observer
+      onChange={(event: IntersectionObserverEntry) => {
+        if (!shown && event.isIntersecting) setShown(true);
+      }}
+    >
+      {shown && loaded ? (
+        <picture>
+          <source srcSet={webp(src)} type="image/webp" />
+          <img src={src} alt={alt} />
+        </picture>
+      ) : (
+        <img src={placer} />
       )}
-    </DepsContext.Consumer>
+    </Observer>
   );
 };
 
