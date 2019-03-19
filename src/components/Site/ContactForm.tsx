@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Formik } from 'formik';
+import { Formik, yupToFormErrors } from 'formik';
 import { Input, TextArea, FormGrid, SubmitBtn, ErrorMessage, Form } from '../UI/FormUI';
 import { contactSchema } from '../../utils/schemas';
 import { api } from '../../utils';
@@ -16,9 +16,10 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
       validationSchema={contactSchema}
       onSubmit={async (values, actions) => {
         try {
-          await axios.post(api('/contact'), values);
+          await axios.post(api('contact'), values);
           setSent(true);
         } catch (error) {
+          actions.setErrors(yupToFormErrors(error.response.data));
           actions.setSubmitting(false);
         }
       }}
