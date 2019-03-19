@@ -1,5 +1,5 @@
 import React from 'react';
-// import API from '@aws-amplify/api';
+import axios from 'axios';
 import { Formik } from 'formik';
 import { Input, TextArea, FormGrid, SubmitBtn, ErrorMessage, Form } from '../UI/FormUI';
 import { contactSchema } from '../../utils/schemas';
@@ -15,7 +15,8 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
       validationSchema={contactSchema}
       onSubmit={async (values, actions) => {
         try {
-          // await API.post('JMPAPI', '/contact', { body: values });
+          const endpoint = 'https://kgcr07khx2.execute-api.us-east-1.amazonaws.com/prod/contact';
+          await axios.post(endpoint, values);
           setSent(true);
         } catch (error) {
           actions.setSubmitting(false);
