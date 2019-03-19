@@ -1,6 +1,6 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
-import clientData from '../../data/clients.json';
+import clientData from '../../assets/data/clients.json';
 import ImageLoader from '../Site/ImageLoader';
 import clientPlacer from '../../assets/images/clientPlacer.png';
 import { ClientGrid, ClientItem } from '../UI/ClientsUI';
