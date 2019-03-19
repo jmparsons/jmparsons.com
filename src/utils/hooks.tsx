@@ -12,7 +12,7 @@ const useLocalStorage = (key: string, initialValue?: StorageValues) => {
     }
   });
 
-  const setValue = (value: any) => {
+  const setValue = (value: StorageValues) => {
     setInnerValue(value);
     window.localStorage.setItem(key, JSON.stringify(value));
   };
