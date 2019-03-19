@@ -6,7 +6,7 @@ export interface ThemerContextProps {
 }
 
 const ThemerContext = React.createContext<ThemerContextProps>({
-  theme: 'light',
+  theme: 'dark',
   toggleTheme: () => {},
 });
 

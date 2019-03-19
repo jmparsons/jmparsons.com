@@ -10,7 +10,7 @@ import 'intersection-observer';
 import '../index.css';
 
 const Root: React.FC = () => {
-  const [theme, setTheme] = useLocalStorage('theme', 'light');
+  const [theme, setTheme] = useLocalStorage('theme', 'dark');
   return (
     <ThemerContext.Provider value={{ theme, toggleTheme: updateTheme(theme, setTheme) }}>
       <ThemeProvider theme={Theme[theme]}>
