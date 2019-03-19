@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Icon, { IconProps } from './Icon';
-import { ThxProps } from '../../constants/Theme';
 import { media } from '../../utils/mq';
 
 const StyledLink = styled.a`

@@ -1,7 +1,7 @@
 import React from 'react';
-import { BotBarCon, BotBarGrid, CopyRight } from '../UI/BotBarUI';
 import SocialNav from './SocialNav';
 import BotNav from './BotNav';
+import { BotBarCon, BotBarGrid, CopyRight } from '../UI/BotBarUI';
 
 const BotBar: React.FC = () => (
   <BotBarCon>
