@@ -1,9 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import { Formik, yupToFormErrors } from 'formik';
-import { Input, TextArea, FormGrid, SubmitBtn, ErrorMessage, Form } from '../UI/FormUI';
+import { FormGrid, SubmitBtn, Form } from '../UI/FormUI';
 import { contactSchema } from '../../utils/schemas';
 import { api } from '../../utils';
+import { Input, TextArea } from './FormItems';
 
 interface FormProps {
   setSent: (value: boolean) => void;
@@ -25,14 +26,10 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
       }}
       render={({ isSubmitting }) => (
         <Form>
-          <Input name="name" placeholder="Name" />
-          <ErrorMessage name="name" component="span" />
-          <Input type="email" name="email" placeholder="E-mail" />
-          <ErrorMessage name="email" component="span" />
-          <Input name="subject" placeholder="Subject" />
-          <ErrorMessage name="subject" component="span" />
-          <TextArea name="message" placeholder="Message" />
-          <ErrorMessage name="message" component="span" />
+          <Input placeholder="Name" name="name" />
+          <Input placeholder="E-mail" type="email" name="email" />
+          <Input placeholder="Subject" name="subject" />
+          <TextArea placeholder="Message" name="message" />
           <SubmitBtn disabled={isSubmitting}>Submit</SubmitBtn>
         </Form>
       )}
