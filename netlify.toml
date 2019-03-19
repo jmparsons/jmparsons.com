@@ -2,5 +2,7 @@
   command = "yarn build"
   publish = "build"
 
-#[context.production.environment]
-#  GENERATE_SOURCEMAP = "false"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
