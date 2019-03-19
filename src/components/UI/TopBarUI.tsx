@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ThxProps } from '../../constants/Theme';
+import { ThxProps } from '../Theme';
 import { Link, NavLink } from 'react-router-dom';
 import { media, Breakpoints } from '../../utils/mq';
 

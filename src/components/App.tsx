@@ -5,7 +5,7 @@ import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Clients from './Pages/Clients';
 import Services from './Pages/Services';
-import Routes from '../constants/Routes';
+import Routes from './Routes';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const App: React.FC = () => (

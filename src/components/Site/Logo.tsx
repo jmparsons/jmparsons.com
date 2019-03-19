@@ -1,5 +1,5 @@
 import React from 'react';
-import Routes from '../../constants/Routes';
+import Routes from '../Routes';
 import { LogoCon, LogoLink } from '../UI/TopBarUI';
 
 const Logo: React.FC = () => (

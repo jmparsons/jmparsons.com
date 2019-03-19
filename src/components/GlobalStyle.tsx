@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { ThxProps } from '../constants/Theme';
+import { ThxProps } from './Theme';
 
 const GlobalStyle = createGlobalStyle`
   body {

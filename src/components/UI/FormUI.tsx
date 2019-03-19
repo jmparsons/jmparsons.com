@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Field, Form, ErrorMessage as ErrorField } from 'formik';
 import { media } from '../../utils/mq';
-import { ThxProps } from '../../constants/Theme';
+import { ThxProps } from '../Theme';
 
 const FormGrid = styled.div`
   display: grid;

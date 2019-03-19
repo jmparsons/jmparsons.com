@@ -1,6 +1,6 @@
 import React from 'react';
 import { TopNavCon, TopLink, HomeLink } from '../UI/TopBarUI';
-import Routes from '../../constants/Routes';
+import Routes from '../Routes';
 
 const TopNav: React.FC = () => (
   <TopNavCon>

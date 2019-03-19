@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Theme from '../constants/Theme';
+import Theme from '../components/Theme';
 import { useLocalStorage } from './hooks';
 import { ThemeProvider } from 'styled-components';
 import { updateTheme } from './themer';

@@ -1,7 +1,7 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
 import { AboutImage, AboutCon, AboutGrid, AboutContent } from '../../components/UI/AboutUI';
-import Images from '../../constants/Images';
+import Images from '../Images';
 
 const About: React.FC = () => (
   <LayoutsMain title="About · JMParsons">
