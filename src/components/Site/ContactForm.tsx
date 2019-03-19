@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Formik } from 'formik';
 import { Input, TextArea, FormGrid, SubmitBtn, ErrorMessage, Form } from '../UI/FormUI';
 import { contactSchema } from '../../utils/schemas';
+import { api } from '../../utils';
 
 interface FormProps {
   setSent: (value: boolean) => void;
@@ -15,8 +16,7 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
       validationSchema={contactSchema}
       onSubmit={async (values, actions) => {
         try {
-          const endpoint = 'https://kgcr07khx2.execute-api.us-east-1.amazonaws.com/prod/contact';
-          await axios.post(endpoint, values);
+          await axios.post(api('/contact'), values);
           setSent(true);
         } catch (error) {
           actions.setSubmitting(false);

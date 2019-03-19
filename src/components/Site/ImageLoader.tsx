@@ -6,29 +6,27 @@ import { DepsContext } from '../../utils/contexts';
 export interface ImageLoaderProps {
   src: string;
   alt: string;
-  placer: any;
+  placer: string;
 }
 
 const ImageLoader: React.FC<ImageLoaderProps> = ({ src, alt, placer }) => {
   const { canWebp } = useContext(DepsContext);
-  const [shown, setShown] = useState(false);
+  const [visible, setVisible] = useState(false);
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
-    if (shown) {
+    if (visible) {
       const image = new Image();
       image.src = canWebp ? webp(src) : src;
-      image.onload = () => {
-        setLoaded(image.width > 0 && image.height > 0);
-      };
+      image.onload = () => setLoaded(true);
     }
-  }, [shown]);
+  }, [visible]);
   return (
     <Observer
       onChange={(event: IntersectionObserverEntry) => {
-        if (!shown && event.isIntersecting) setShown(true);
+        if (!visible && event.isIntersecting) setVisible(true);
       }}
     >
-      {shown && loaded ? (
+      {visible && loaded ? (
         <picture>
           <source srcSet={webp(src)} type="image/webp" />
           <img src={src} alt={alt} />
