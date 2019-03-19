@@ -18,19 +18,17 @@ const ThemerProvider: React.FC = ({ children }) => {
 };
 
 const DepsProvider: React.FC = ({ children }) => {
-  const [checkedDeps, setCheckedDeps] = useLocalStorage('checkedDeps', false);
+  const [deps, setDeps] = useLocalStorage('deps', false);
   const [canWebp, setCanWebp] = useLocalStorage('canWebp', false);
   useEffect(() => {
     const checkDeps = async () => {
       const value = await checkWebp();
       setCanWebp(value);
-      setCheckedDeps(true);
+      setDeps(true);
     };
-    if (!checkedDeps) checkDeps();
-  }, [checkedDeps]);
-  return (
-    <DepsContext.Provider value={{ canWebp }}>{checkedDeps ? children : null}</DepsContext.Provider>
-  );
+    if (!deps) checkDeps();
+  }, [deps]);
+  return <DepsContext.Provider value={{ canWebp }}>{deps ? children : null}</DepsContext.Provider>;
 };
 
 export { ThemerProvider, DepsProvider };
