@@ -2,7 +2,7 @@ import React from 'react';
 import LayoutsMain from '../Layouts/Main';
 import clientData from '../../assets/data/clients.json';
 import ImageLoader from '../Site/ImageLoader';
-import clientPlacer from '../../assets/images/clientPlacer.png';
+import clientPlacer from '../../assets/images/client-placer.png';
 import { ClientGrid, ClientItem } from '../UI/ClientsUI';
 import { cdn } from '../../utils';
 
