@@ -1,24 +1,13 @@
 import React from 'react';
-import TopBar from '../Site/TopBar';
-import BotBar from '../Site/BotBar';
-import { Helmet } from 'react-helmet';
-import { MainGrid, MainContent, MainContentGrid } from '../../components/UI/MainUI';
-import { DepsProvider } from '../../utils/providers';
+import { MainGrid, MainContent } from '../../components/UI/MainUI';
 
-interface Props {
+interface LayoutsMainProps {
   children: React.ReactNode;
 }
 
-const LayoutsMain: React.FC<Props> = ({ children }) => (
+const LayoutsMain: React.FC<LayoutsMainProps> = ({ children }) => (
   <MainGrid>
-    <Helmet titleTemplate="%s · JMParsons" defaultTitle="JMParsons" />
-    <TopBar />
-    <MainContentGrid>
-      <MainContent>
-        <DepsProvider>{children}</DepsProvider>
-      </MainContent>
-    </MainContentGrid>
-    <BotBar />
+    <MainContent>{children}</MainContent>
   </MainGrid>
 );
 

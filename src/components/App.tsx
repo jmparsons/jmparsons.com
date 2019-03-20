@@ -1,27 +1,32 @@
 import React from 'react';
-import Home from './Pages/Home';
-import NotFound from './Pages/NotFound';
-import Contact from './Pages/Contact';
-import About from './Pages/About';
-import Clients from './Pages/Clients';
-import Services from './Pages/Services';
-import Tech from './Pages/Tech';
-import Sitemap from './Pages/Sitemap';
-import Routes from './Routes';
+import Helmet from 'react-helmet';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Main } from './UI/MainUI';
+import { DepsProvider } from '../utils/providers';
+import Pages from './Pages';
+import Routes from './Routes';
+import TopBar from './Site/TopBar';
+import BotBar from './Site/BotBar';
 
 const App: React.FC = () => (
   <BrowserRouter>
-    <Switch>
-      <Route path={Routes.home} exact component={Home} />
-      <Route path={Routes.services} component={Services} />
-      <Route path={Routes.clients} component={Clients} />
-      <Route path={Routes.about} component={About} />
-      <Route path={Routes.contact} component={Contact} />
-      <Route path={Routes.tech} component={Tech} />
-      <Route path={Routes.sitemap} component={Sitemap} />
-      <Route component={NotFound} />
-    </Switch>
+    <Main>
+      <Helmet titleTemplate="%s · JMParsons" defaultTitle="JMParsons" />
+      <TopBar />
+      <DepsProvider>
+        <Switch>
+          <Route path={Routes.home} exact component={Pages.Home} />
+          <Route path={Routes.services} component={Pages.Services} />
+          <Route path={Routes.clients} component={Pages.Clients} />
+          <Route path={Routes.about} component={Pages.About} />
+          <Route path={Routes.contact} component={Pages.Contact} />
+          <Route path={Routes.tech} component={Pages.Tech} />
+          <Route path={Routes.sitemap} component={Pages.Sitemap} />
+          <Route component={Pages.NotFound} />
+        </Switch>
+      </DepsProvider>
+      <BotBar />
+    </Main>
   </BrowserRouter>
 );
 

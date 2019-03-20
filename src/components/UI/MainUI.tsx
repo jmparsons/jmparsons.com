@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { ThxProps } from '../Theme';
 import { media, Breakpoints } from '../../utils/mq';
 
-const MainGrid = styled.div`
+const Main = styled.div`
   display: grid;
   background: ${({ theme }: ThxProps) => theme.main.bg};
   grid-template-rows: auto 1fr auto;
@@ -11,7 +11,7 @@ const MainGrid = styled.div`
   color: ${({ theme }: ThxProps) => theme.main.text};
 `;
 
-const MainContentGrid = styled.main`
+const MainGrid = styled.main`
   display: grid;
   width: 100%;
   height: 100%;
@@ -30,4 +30,4 @@ const MainContent = styled.div`
   `};
 `;
 
-export { MainGrid, MainContent, MainContentGrid };
+export { Main, MainGrid, MainContent };
