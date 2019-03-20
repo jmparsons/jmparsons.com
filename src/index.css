@@ -23,16 +23,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-
 @font-face {
   font-family: 'Denmark';
   font-display: auto;
-  src: url('./assets/fonts/jmp-denmark.eot');
-  src: url('./assets/fonts/jmp-denmark.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/jmp-denmark.woff') format('woff'),
-    url('./assets/fonts/jmp-denmark.ttf') format('truetype'),
-    url('./assets/fonts/jmp-denmark.svg#webfont') format('svg');
+  src: url('//s.jmp-cdn.com/assets/fonts/jmp-denmark.eot');
+  src: url('//s.jmp-cdn.com/assets/fonts/jmp-denmark.eot?#iefix') format('embedded-opentype'),
+    url('//s.jmp-cdn.com/assets/fonts/jmp-denmark.woff') format('woff'),
+    url('//s.jmp-cdn.com/assets/fonts/jmp-denmark.ttf') format('truetype'),
+    url('//s.jmp-cdn.com/assets/fonts/jmp-denmark.svg#webfont') format('svg');
 }
 
 h1,

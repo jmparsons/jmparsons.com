@@ -1,7 +1,7 @@
 import React from 'react';
 import LayoutsMain from '../Layouts/Main';
 import { AboutImage, AboutCon, AboutGrid, AboutContent } from '../../components/UI/AboutUI';
-import Images from '../Images';
+import { cdn } from '../../utils';
 
 const About: React.FC = () => (
   <LayoutsMain title="About · JMParsons">
@@ -37,7 +37,7 @@ const About: React.FC = () => (
           </p>
         </AboutContent>
         <AboutImage>
-          <img src={Images.aboutBg} width="360" height="639" />
+          <img src={cdn('images', 'train.gif')} width="360" height="639" />
         </AboutImage>
       </AboutGrid>
     </AboutCon>
