@@ -1,6 +1,8 @@
+type CdnTypes = 'images' | 'fonts';
+
 const api = (path: string) => `//api.jmparsons.com/${path}`;
 
-const cdn = (type: string, path: string) => `//s.jmp-cdn.com/assets/${type}/${path}`;
+const cdn = (type: CdnTypes, path: string) => `//s.jmp-cdn.com/assets/${type}/${path}`;
 
 const webp = (path: string) => path.replace('.jpg', '.webp');
 
