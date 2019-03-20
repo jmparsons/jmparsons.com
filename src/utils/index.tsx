@@ -1,6 +1,6 @@
 const api = (path: string) => `https://kgcr07khx2.execute-api.us-east-1.amazonaws.com/prod/${path}`;
 
-const cdn = (path: string) => `https://s3.amazonaws.com/jmparsons-dev-assets/${path}`;
+const cdn = (type: string, path: string) => `//s.jmp-cdn.com/assets/${type}/${path}`;
 
 const webp = (path: string) => path.replace('.jpg', '.webp');
 
