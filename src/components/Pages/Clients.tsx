@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import LayoutsMain from '../Layouts/Main';
 import clientData from '../../assets/data/clients.json';
 import ImageLoader from '../Site/ImageLoader';
@@ -7,7 +8,10 @@ import { ClientGrid, ClientItem } from '../UI/ClientsUI';
 import { cdn } from '../../utils';
 
 const Clients: React.FC = () => (
-  <LayoutsMain title="Clients · JMParsons">
+  <LayoutsMain>
+    <Helmet>
+      <title>Clients</title>
+    </Helmet>
     <h1>Clients</h1>
     <ClientGrid>
       {clientData.clients.map(client => (

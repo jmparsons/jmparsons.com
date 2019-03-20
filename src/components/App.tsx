@@ -5,6 +5,8 @@ import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Clients from './Pages/Clients';
 import Services from './Pages/Services';
+import Tech from './Pages/Tech';
+import Sitemap from './Pages/Sitemap';
 import Routes from './Routes';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -16,6 +18,8 @@ const App: React.FC = () => (
       <Route path={Routes.clients} component={Clients} />
       <Route path={Routes.about} component={About} />
       <Route path={Routes.contact} component={Contact} />
+      <Route path={Routes.tech} component={Tech} />
+      <Route path={Routes.sitemap} component={Sitemap} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>

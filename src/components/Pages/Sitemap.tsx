@@ -2,13 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import LayoutsMain from '../Layouts/Main';
 
-const NotFound: React.FC = () => (
+const Sitemap: React.FC = () => (
   <LayoutsMain>
     <Helmet>
-      <title>Not Found</title>
+      <title>Sitemap</title>>
     </Helmet>
-    <h1>Not Found</h1>
+    <h1>Sitemap</h1>
   </LayoutsMain>
 );
 
-export default NotFound;
+export default Sitemap;

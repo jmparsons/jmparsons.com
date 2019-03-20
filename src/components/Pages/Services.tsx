@@ -1,8 +1,12 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import LayoutsMain from '../Layouts/Main';
 
 const Services: React.FC = () => (
-  <LayoutsMain title="Services · JMParsons">
+  <LayoutsMain>
+    <Helmet>
+      <title>Services</title>
+    </Helmet>
     <h1>Services</h1>
     <h2>Languages</h2>
     <p>Javascript / Typescript</p>

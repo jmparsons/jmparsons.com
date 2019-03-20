@@ -1,8 +1,15 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import LayoutsMain from '../Layouts/Main';
 
 const Home: React.FC = () => (
-  <LayoutsMain title="JMParsons">
+  <LayoutsMain>
+    <Helmet>
+      <meta
+        name="description"
+        content="Professional Scala, Play, Node, React, iOS, and Android Developer."
+      />
+    </Helmet>
     <h1>Home</h1>
   </LayoutsMain>
 );

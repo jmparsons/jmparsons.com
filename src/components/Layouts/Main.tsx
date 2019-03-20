@@ -6,13 +6,12 @@ import { MainGrid, MainContent, MainContentGrid } from '../../components/UI/Main
 import { DepsProvider } from '../../utils/providers';
 
 interface Props {
-  title: string;
   children: React.ReactNode;
 }
 
-const LayoutsMain: React.FC<Props> = ({ title, children }) => (
+const LayoutsMain: React.FC<Props> = ({ children }) => (
   <MainGrid>
-    <Helmet title={title} />
+    <Helmet titleTemplate="%s · JMParsons" defaultTitle="JMParsons" />
     <TopBar />
     <MainContentGrid>
       <MainContent>
