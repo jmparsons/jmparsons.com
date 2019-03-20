@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Theme from '../components/Theme';
 import { useLocalStorage } from './hooks';
 import { ThemeProvider } from 'styled-components';
