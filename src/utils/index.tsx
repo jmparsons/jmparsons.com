@@ -1,4 +1,4 @@
-const api = (path: string) => `https://kgcr07khx2.execute-api.us-east-1.amazonaws.com/prod/${path}`;
+const api = (path: string) => `//api.jmparsons.com/${path}`;
 
 const cdn = (type: string, path: string) => `//s.jmp-cdn.com/assets/${type}/${path}`;
 
