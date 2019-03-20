@@ -4,9 +4,7 @@ import LayoutsMain from '../Layouts/Main';
 
 const NotFound: React.FC = () => (
   <LayoutsMain>
-    <Helmet>
-      <title>Not Found</title>
-    </Helmet>
+    <Helmet title="Not Found" />
     <h1>Not Found</h1>
   </LayoutsMain>
 );

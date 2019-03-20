@@ -4,9 +4,7 @@ import LayoutsMain from '../Layouts/Main';
 
 const Services: React.FC = () => (
   <LayoutsMain>
-    <Helmet>
-      <title>Services</title>
-    </Helmet>
+    <Helmet title="Services" />
     <h1>Services</h1>
     <h2>Languages</h2>
     <p>Javascript / Typescript</p>

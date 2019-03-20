@@ -6,9 +6,7 @@ import { cdn } from '../../utils';
 
 const About: React.FC = () => (
   <LayoutsMain>
-    <Helmet>
-      <title>About</title>
-    </Helmet>
+    <Helmet title="About" />
     <AboutCon>
       <AboutGrid>
         <AboutContent>

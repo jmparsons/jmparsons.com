@@ -9,9 +9,7 @@ import { cdn } from '../../utils';
 
 const Clients: React.FC = () => (
   <LayoutsMain>
-    <Helmet>
-      <title>Clients</title>
-    </Helmet>
+    <Helmet title="Clients" />
     <h1>Clients</h1>
     <ClientGrid>
       {clientData.clients.map(client => (

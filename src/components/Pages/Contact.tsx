@@ -8,9 +8,7 @@ const Contact: React.FC = () => {
   const [sent, setSent] = useState(false);
   return (
     <LayoutsMain>
-      <Helmet>
-        <title>Contact</title>
-      </Helmet>
+      <Helmet title="Contact" />
       <h1>Contact</h1>
       {sent ? <ContactSent /> : <ContactForm setSent={setSent} />}
     </LayoutsMain>

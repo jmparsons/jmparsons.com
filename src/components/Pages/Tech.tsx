@@ -4,9 +4,7 @@ import LayoutsMain from '../Layouts/Main';
 
 const Tech: React.FC = () => (
   <LayoutsMain>
-    <Helmet>
-      <title>Tech</title>
-    </Helmet>
+    <Helmet title="Tech" />
     <h1>Tech</h1>
   </LayoutsMain>
 );
