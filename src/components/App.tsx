@@ -12,10 +12,10 @@ import 'intersection-observer';
 import '../index.css';
 
 const App: React.FC = () => (
-  <ThemerProvider>
-    <GlobalStyle />
-    <BrowserRouter>
+  <BrowserRouter>
+    <ThemerProvider>
       <Main>
+        <GlobalStyle />
         <Helmet titleTemplate="%s · JMParsons" defaultTitle="JMParsons" />
         <TopBar />
         <DepsProvider>
@@ -32,8 +32,8 @@ const App: React.FC = () => (
         </DepsProvider>
         <BotBar />
       </Main>
-    </BrowserRouter>
-  </ThemerProvider>
+    </ThemerProvider>
+  </BrowserRouter>
 );
 
 export default App;
