@@ -1,8 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import LayoutsMain from '../components/Layouts/Main';
-import { Link } from 'react-router-dom';
 import Routes from '../components/Routes';
+import { Link } from '@reach/router';
 
 const Sitemap: React.FC = () => (
   <LayoutsMain>

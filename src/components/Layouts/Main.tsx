@@ -5,6 +5,8 @@ import GlobalStyle from '../GlobalStyle';
 import Helmet from 'react-helmet';
 import TopBar from '../Site/TopBar';
 import BotBar from '../Site/BotBar';
+import 'intersection-observer';
+import '../../index.css';
 
 interface LayoutsMainProps {
   children: React.ReactNode;
