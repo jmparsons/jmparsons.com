@@ -32,6 +32,9 @@
     "typescript": "3.3.3",
     "yup": "^0.26.10"
   },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
