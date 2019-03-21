@@ -1,12 +1,12 @@
 import React from 'react';
-import { MainGrid, MainContent, Main } from '../../components/UI/MainUI';
+import { MainGrid, MainContent, Main } from '../UI/MainUI';
 import { ThemerProvider, DepsProvider } from '../../utils/providers';
 import GlobalStyle from '../GlobalStyle';
 import Helmet from 'react-helmet';
 import TopBar from '../Site/TopBar';
 import BotBar from '../Site/BotBar';
 import 'intersection-observer';
-import '../../index.css';
+import './layout.css';
 
 interface LayoutsMainProps {
   children: React.ReactNode;

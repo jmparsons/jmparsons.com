@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import LayoutsMain from '../components/Layouts/Main';
+import LayoutsMain from '../components/Layouts/LayoutsMain';
 
 const Home: React.FC = () => (
   <LayoutsMain>

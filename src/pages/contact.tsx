@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
-import LayoutsMain from '../components/Layouts/Main';
+import LayoutsMain from '../components/Layouts/LayoutsMain';
 import ContactForm from '../components/Site/ContactForm';
 import ContactSent from '../components/Site/ContactSent';
 

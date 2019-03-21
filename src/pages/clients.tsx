@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import LayoutsMain from '../components/Layouts/Main';
+import LayoutsMain from '../components/Layouts/LayoutsMain';
 import clientData from '../assets/data/clients.json';
 import ImageLoader from '../components/Site/ImageLoader';
 import clientPlacer from '../assets/images/client-placer.png';
