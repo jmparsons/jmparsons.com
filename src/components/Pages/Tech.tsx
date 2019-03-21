@@ -28,10 +28,22 @@ React - built with [create-react-app] using [typescript]
 [react-markdown]: https://github.com/rexxars/react-markdown
 `;
 
+interface ExtLinkProps {
+  title: string;
+  href: string;
+  children: React.ReactNode;
+}
+
+const ExtLink: React.FC<ExtLinkProps> = ({ href, title, children }) => (
+  <a href={href} title={title} target="_blank">
+    {children}
+  </a>
+);
+
 const Tech: React.FC = () => (
   <LayoutsMain>
     <Helmet title="Tech" />
-    <ReactMarkdown source={md} linkTarget="_blank" />
+    <ReactMarkdown source={md} renderers={{ link: ExtLink, linkReference: ExtLink }} />
   </LayoutsMain>
 );
 
