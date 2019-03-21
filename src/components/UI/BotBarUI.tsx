@@ -53,7 +53,6 @@ const BotLink = styled(NavLink)`
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   color: ${({ theme }: ThxProps) => theme.botBar.link};
-  text-decoration: none;
   align-self: center;
   justify-self: center;
   transition: color 0.2s;

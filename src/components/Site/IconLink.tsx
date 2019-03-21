@@ -4,7 +4,6 @@ import Icon, { IconProps } from './Icon';
 import { media } from '../../utils/mq';
 
 const StyledLink = styled.a`
-  text-decoration: none;
   align-self: center;
   justify-self: center;
   padding: 0 20px;

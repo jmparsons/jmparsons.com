@@ -41,7 +41,6 @@ const LogoCon = styled.span`
 const LogoLink = styled(Link)`
   font-size: 36px;
   font-family: 'Denmark';
-  text-decoration: none;
   color: ${({ theme }: ThxProps) => theme.topBar.logo};
   &:active {
     padding-top: 1px;
@@ -62,7 +61,6 @@ const TopNavCon = styled.nav`
 
 const TopLink = styled(NavLink)`
   display: grid;
-  text-decoration: none;
   align-content: center;
   justify-content: center;
   color: ${({ theme }: ThxProps) => theme.topBar.link};
