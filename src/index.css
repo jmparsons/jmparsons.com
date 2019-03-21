@@ -46,3 +46,11 @@ h6 {
 a {
   text-decoration: none;
 }
+
+ul {
+  list-style: none;
+  padding: 0 15px;
+}
+li {
+  margin: 15px 0;
+}
