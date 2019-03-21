@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { ThxProps } from '../Theme';
-import { NavLink } from 'react-router-dom';
 import { media, Breakpoints } from '../../utils/mq';
+import { Link } from '@reach/router';
 
 const BotBarCon = styled.footer`
   display: grid;
@@ -49,7 +49,7 @@ const SocialBar = styled.nav`
   `};
 `;
 
-const BotLink = styled(NavLink)`
+const BotLink = styled(Link)`
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   color: ${({ theme }: ThxProps) => theme.botBar.link};

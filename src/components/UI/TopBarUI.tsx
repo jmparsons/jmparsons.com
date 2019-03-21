@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { ThxProps } from '../Theme';
-import { Link, NavLink } from 'react-router-dom';
 import { media, Breakpoints } from '../../utils/mq';
+import { Link } from '@reach/router';
 
 const TopBarCon = styled.header`
   display: grid;
@@ -59,7 +59,7 @@ const TopNavCon = styled.nav`
   `};
 `;
 
-const TopLink = styled(NavLink)`
+const TopLink = styled(Link)`
   display: grid;
   align-content: center;
   justify-content: center;
