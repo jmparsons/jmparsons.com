@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Icon, { IconProps } from './Icon';
-import { media } from '../../utils/mq';
+import { media } from '../utils/mq';
 
 const StyledLink = styled.a`
   align-self: center;

@@ -1,8 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import LayoutsMain from '../components/Layouts/LayoutsMain';
+import LayoutsMain from '../components/Layout';
 import clientData from '../assets/data/clients.json';
-import ImageLoader from '../components/Site/ImageLoader';
+import ImageLoader from '../components/ImageLoader';
 import clientPlacer from '../assets/images/client-placer.png';
 import { ClientGrid, ClientItem } from '../components/UI/ClientsUI';
 import { cdn } from '../utils';

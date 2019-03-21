@@ -1,18 +1,18 @@
 import React from 'react';
-import { MainGrid, MainContent, Main } from '../UI/MainUI';
-import { ThemerProvider, DepsProvider } from '../../utils/providers';
-import GlobalStyle from '../GlobalStyle';
+import { MainGrid, MainContent, Main } from './UI/MainUI';
+import { ThemerProvider, DepsProvider } from '../utils/providers';
+import GlobalStyle from './GlobalStyle';
 import Helmet from 'react-helmet';
-import TopBar from '../Site/TopBar';
-import BotBar from '../Site/BotBar';
+import TopBar from './TopBar';
+import BotBar from './BotBar';
 import 'intersection-observer';
 import './layout.css';
 
-interface LayoutsMainProps {
+interface LayoutProps {
   children: React.ReactNode;
 }
 
-const LayoutsMain: React.FC<LayoutsMainProps> = ({ children }) => (
+const Layout: React.FC<LayoutProps> = ({ children }) => (
   <ThemerProvider>
     <Main>
       <GlobalStyle />
@@ -28,4 +28,4 @@ const LayoutsMain: React.FC<LayoutsMainProps> = ({ children }) => (
   </ThemerProvider>
 );
 
-export default LayoutsMain;
+export default Layout;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import LayoutsMain from '../components/Layouts/LayoutsMain';
+import LayoutsMain from '../components/Layout';
 import { AboutImage, AboutCon, AboutGrid, AboutContent } from '../components/UI/AboutUI';
 import { cdn } from '../utils';
 

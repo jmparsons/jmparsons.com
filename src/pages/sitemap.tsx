@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import LayoutsMain from '../components/Layouts/LayoutsMain';
+import LayoutsMain from '../components/Layout';
 import Routes from '../components/Routes';
 import { Link } from '@reach/router';
 

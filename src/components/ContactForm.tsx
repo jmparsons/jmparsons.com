@@ -1,9 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 import { Formik, yupToFormErrors } from 'formik';
-import { FormGrid, SubmitBtn, Form } from '../UI/FormUI';
-import { contactSchema } from '../../utils/schemas';
-import { api } from '../../utils';
+import { FormGrid, SubmitBtn, Form } from './UI/FormUI';
+import { contactSchema } from '../utils/schemas';
+import { api } from '../utils';
 import { Input, TextArea } from './FormItems';
 
 interface FormProps {

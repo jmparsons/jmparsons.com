@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Observer from '@researchgate/react-intersection-observer';
-import { webp } from '../../utils';
-import { DepsContext } from '../../utils/contexts';
+import { webp } from '../utils';
+import { DepsContext } from '../utils/contexts';
 
 export interface ImageLoaderProps {
   src: string;

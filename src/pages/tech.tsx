@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import ReactMarkdown from 'react-markdown';
-import LayoutsMain from '../components/Layouts/LayoutsMain';
+import LayoutsMain from '../components/Layout';
 
 const md = `
 # Technology - JMParsons v6

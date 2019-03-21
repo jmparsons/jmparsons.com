@@ -1,6 +1,6 @@
 import React from 'react';
-import Routes from '../Routes';
-import { BotNavBar, BotLink } from '../UI/BotBarUI';
+import Routes from './Routes';
+import { BotNavBar, BotLink } from './UI/BotBarUI';
 
 const BotNav: React.FC = () => (
   <BotNavBar>

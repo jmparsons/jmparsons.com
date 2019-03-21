@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormItem, InputField, ErrorMessage, TextAreaField } from '../UI/FormItemsUI';
+import { FormItem, InputField, ErrorMessage, TextAreaField } from './UI/FormItemsUI';
 
 interface FormItemProps {
   placeholder: string;

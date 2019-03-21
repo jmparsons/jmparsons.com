@@ -1,6 +1,6 @@
 import React from 'react';
 import IconLink from './IconLink';
-import { SocialBar } from '../UI/BotBarUI';
+import { SocialBar } from './UI/BotBarUI';
 
 const SocialNav: React.FC = () => (
   <SocialBar>
