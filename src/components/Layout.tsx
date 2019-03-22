@@ -6,6 +6,9 @@ import Helmet from 'react-helmet';
 import TopBar from './TopBar';
 import BotBar from './BotBar';
 import './layout.css';
+import Theme from './Theme';
+import { ThemeProvider } from 'styled-components';
+import { ThemerContext } from '../utils/contexts';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,17 +16,23 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => (
   <ThemerProvider>
-    <Main>
-      <GlobalStyle />
-      <Helmet titleTemplate="%s · JMParsons" defaultTitle="JMParsons" />
-      <TopBar />
-      <DepsProvider>
-        <MainGrid>
-          <MainContent>{children}</MainContent>
-        </MainGrid>
-      </DepsProvider>
-      <BotBar />
-    </Main>
+    <ThemerContext.Consumer>
+      {({ theme }) => (
+        <ThemeProvider theme={Theme[theme]}>
+          <Main>
+            <GlobalStyle />
+            <Helmet titleTemplate="%s · JMParsons" defaultTitle="JMParsons" />
+            <TopBar />
+            <DepsProvider>
+              <MainGrid>
+                <MainContent>{children}</MainContent>
+              </MainGrid>
+            </DepsProvider>
+            <BotBar />
+          </Main>
+        </ThemeProvider>
+      )}
+    </ThemerContext.Consumer>
   </ThemerProvider>
 );
 
