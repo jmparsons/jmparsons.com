@@ -5,7 +5,6 @@ import GlobalStyle from './GlobalStyle';
 import Helmet from 'react-helmet';
 import TopBar from './TopBar';
 import BotBar from './BotBar';
-import 'intersection-observer';
 import './layout.css';
 
 interface LayoutProps {

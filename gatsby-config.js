@@ -19,8 +19,24 @@ module.exports = {
         ],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `JMParsons`,
+        short_name: `JMParsons`,
+        icons: [
+          {
+            src: 'favicon.ico',
+            sizes: '64x64 32x32 24x24 16x16',
+            type: 'image/x-icon',
+          },
+        ],
+        start_url: `.`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
+        display: `standalone`,
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 };

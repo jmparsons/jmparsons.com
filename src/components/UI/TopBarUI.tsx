@@ -83,7 +83,7 @@ const TopLink = styled(Link)`
   `};
 `;
 
-const HomeLink = styled(TopLink).attrs({ exact: true })`
+const HomeLink = styled(TopLink)`
   display: none;
   ${media.tablet`
     display: grid;
