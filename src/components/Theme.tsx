@@ -29,6 +29,7 @@ interface ThemexProps {
 }
 
 interface ThemexBase {
+  name: string;
   topBar: {
     logo: string;
     bg: string;
@@ -58,6 +59,7 @@ interface ThemexBase {
 }
 
 const light: ThemexBase = {
+  name: 'light',
   topBar: {
     logo: Colors.darkSteel,
     bg: Colors.offWhite,
@@ -87,6 +89,7 @@ const light: ThemexBase = {
 };
 
 const dark: ThemexBase = {
+  name: 'dark',
   topBar: {
     logo: Colors.offWhite,
     bg: Colors.darkBlueGray,
