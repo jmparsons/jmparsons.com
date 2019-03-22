@@ -11,6 +11,7 @@ const Home: React.FC = () => (
       />
     </Helmet>
     <h1>Home</h1>
+    <p>Thanks for stopping by! Making some updates. They will be up shortly.</p>
   </LayoutsMain>
 );
 

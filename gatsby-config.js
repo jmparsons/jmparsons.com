@@ -37,6 +37,18 @@ module.exports = {
         display: `standalone`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-1743605-1',
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'jmparsons.com',
+      },
+    },
     'gatsby-plugin-offline',
   ],
 };
