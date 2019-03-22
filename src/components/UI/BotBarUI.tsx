@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { ThxProps } from '../Theme';
 import { media, Breakpoints } from '../../utils/mq';
-import { Link } from '@reach/router';
+import { Link } from 'gatsby';
 
 const BotBarCon = styled.footer`
   display: grid;
@@ -49,7 +49,7 @@ const SocialBar = styled.nav`
   `};
 `;
 
-const BotLink = styled(Link)`
+const BotLink = styled(Link).attrs({ activeClassName: 'active' })`
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   color: ${({ theme }: ThxProps) => theme.botBar.link};

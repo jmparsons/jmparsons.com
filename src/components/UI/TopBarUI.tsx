@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { ThxProps } from '../Theme';
 import { media, Breakpoints } from '../../utils/mq';
-import { Link } from '@reach/router';
+import { Link } from 'gatsby';
 
 const TopBarCon = styled.header`
   display: grid;
@@ -59,7 +59,7 @@ const TopNavCon = styled.nav`
   `};
 `;
 
-const TopLink = styled(Link)`
+const TopLink = styled(Link).attrs({ activeClassName: 'active' })`
   display: grid;
   align-content: center;
   justify-content: center;

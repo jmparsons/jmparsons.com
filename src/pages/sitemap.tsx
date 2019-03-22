@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import LayoutsMain from '../components/Layout';
 import Routes from '../components/Routes';
-import { Link } from '@reach/router';
+import { Link } from 'gatsby';
 
 const Sitemap: React.FC = () => (
   <LayoutsMain>
