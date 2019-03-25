@@ -11,7 +11,12 @@ export const wrapRootElement = ({ element, pathname }) => {
   return <StyleSheetManager sheet={sheet.instance}>{element}</StyleSheetManager>;
 };
 
-export const onRenderBody = ({ setHeadComponents, pathname }) => {
+export const onRenderBody = ({
+  setHeadComponents,
+  setHtmlAttributes,
+  setBodyAttributes,
+  pathname,
+}) => {
   const sheet = sheetByPathname.get(pathname);
   if (sheet) {
     setHeadComponents([sheet.getStyleElement()]);
