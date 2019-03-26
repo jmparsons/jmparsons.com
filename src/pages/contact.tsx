@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
-import LayoutsMain from '../components/Layout';
+import Layout from '../components/Layout';
 import ContactForm from '../components/ContactForm';
 import ContactSent from '../components/ContactSent';
+import Content from '../components/Content';
 
 const Contact: React.FC = () => {
   const [sent, setSent] = useState(false);
   return (
-    <LayoutsMain>
+    <Layout>
       <Helmet title="Contact" />
-      <h1>Contact</h1>
-      {sent ? <ContactSent /> : <ContactForm setSent={setSent} />}
-    </LayoutsMain>
+      <Content>
+        <h1>Contact</h1>
+        {sent ? <ContactSent /> : <ContactForm setSent={setSent} />}
+      </Content>
+    </Layout>
   );
 };
 

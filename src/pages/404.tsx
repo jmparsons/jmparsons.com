@@ -1,12 +1,15 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import LayoutsMain from '../components/Layout';
+import Layout from '../components/Layout';
+import Content from '../components/Content';
 
 const NotFound: React.FC = () => (
-  <LayoutsMain>
+  <Layout>
     <Helmet title="Not Found" />
-    <h1>Not Found</h1>
-  </LayoutsMain>
+    <Content>
+      <h1>Not Found</h1>
+    </Content>
+  </Layout>
 );
 
 export default NotFound;

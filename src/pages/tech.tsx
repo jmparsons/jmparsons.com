@@ -1,7 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import ReactMarkdown from 'react-markdown';
-import LayoutsMain from '../components/Layout';
+import Layout from '../components/Layout';
+import Content from '../components/Content';
 
 const md = `
 # Technology - JMParsons v6
@@ -41,10 +42,12 @@ const ExtLink: React.FC<ExtLinkProps> = ({ href, title, children }) => (
 );
 
 const Tech: React.FC = () => (
-  <LayoutsMain>
+  <Layout>
     <Helmet title="Tech" />
-    <ReactMarkdown source={md} renderers={{ link: ExtLink, linkReference: ExtLink }} />
-  </LayoutsMain>
+    <Content>
+      <ReactMarkdown source={md} renderers={{ link: ExtLink, linkReference: ExtLink }} />
+    </Content>
+  </Layout>
 );
 
 export default Tech;
