@@ -14,19 +14,15 @@ const Clients: React.FC<{ data: Query }> = ({ data: { allClientsJson: clients } 
       <Content>
         <h1>Clients</h1>
         <ClientGrid>
-          {clients &&
-            clients.edges.map(({ node: client }) => {
-              const image =
-                client.image && client.image.childImageSharp
-                  ? client.image.childImageSharp.fluid
-                  : null;
-              const title = client.name ? client.name : '';
-              return (
-                <ClientItem key={client.id}>
-                  {image ? <Img fadeIn={false} fluid={image as FluidObject} title={title} /> : null}
-                </ClientItem>
-              );
-            })}
+          {clients!.edges.map(({ node: client }) => (
+            <ClientItem key={client.id}>
+              <Img
+                fadeIn={false}
+                fluid={client.image!.childImageSharp!.fluid as FluidObject}
+                title={client.name!}
+              />
+            </ClientItem>
+          ))}
         </ClientGrid>
       </Content>
     </Layout>
