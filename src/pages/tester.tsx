@@ -1,31 +1,18 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
-import ImageLoader from '../components/ImageLoader';
-import clientPlacer from '../assets/images/client-placer.png';
-import { ClientGrid, ClientItem } from '../components/UI/ClientsUI';
-import { cdn } from '../utils';
 import Content from '../components/Content';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const Clients: React.FC = ({ data }) => {
+const Tester: React.FC = ({ data }) => {
   console.log(data);
   return (
     <Layout>
-      <Helmet title="Clients" />
+      <Helmet title="Tester" />
       <Content>
-        <h1>Clients</h1>
-        <ClientGrid>
-          {data.allClientsJson.edges.map(client => {
-            console.log(client);
-            return (
-              <ClientItem key={client.id}>
-                <Img fixed={client.client.image.childImageSharp.small} />
-              </ClientItem>
-            );
-          })}
-        </ClientGrid>
+        <h1>Tester</h1>
+        {/* <Img fixed={data.file.childImageSharp.fixed} /> */}
       </Content>
     </Layout>
   );
@@ -61,4 +48,4 @@ export const query = graphql`
   }
 `;
 
-export default Clients;
+export default Tester;

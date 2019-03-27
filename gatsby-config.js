@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     title: `JMParsons`,
@@ -8,6 +10,23 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `assets`, `images`),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `clients`,
+        path: path.join(__dirname, `src`, `assets`, `data`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
 import ImageLoader from '../components/ImageLoader';
+import placer from '../assets/images/placer.png';
 import { IndexSplash, IndexInfo, IndexImage } from '../components/UI/IndexUI';
 import { cdn } from '../utils';
 
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
       </Helmet>
       <IndexSplash>
         <IndexImage>
-          <ImageLoader src={cdn('images', 'index-sunset.jpg')} alt="" placer="" />
+          <ImageLoader src={cdn('images', 'index-sunset.jpg')} alt="" placer={placer} />
         </IndexImage>
         <IndexInfo>
           <h2>My name is Jon.</h2>
