@@ -17,11 +17,11 @@ const Clients: React.FC = ({ data }) => {
       <Content>
         <h1>Clients</h1>
         <ClientGrid>
-          {data.allClientsJson.edges.map(client => {
+          {data.allClientsJson.edges.map(({ client }) => {
             console.log(client);
             return (
               <ClientItem key={client.id}>
-                <Img fixed={client.client.image.childImageSharp.small} />
+                <Img fluid={client.image.childImageSharp.small} />
               </ClientItem>
             );
           })}
