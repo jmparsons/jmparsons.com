@@ -5,9 +5,9 @@ import Layout from '../components/Layout';
 import Content from '../components/Content';
 import { graphql } from 'gatsby';
 import { ClientGrid, ClientItem } from '../components/UI/ClientsUI';
-import { Query } from '../graphql';
+import { QueryProps } from '../interfaces';
 
-const Clients: React.FC<{ data: Query }> = ({ data: { allClientsJson: clients } }) => {
+const Clients: React.FC<QueryProps> = ({ data: { allClientsJson: clients } }) => {
   return (
     <Layout>
       <Helmet title="Clients" />

@@ -16,13 +16,7 @@ const ClientGrid = styled.div`
 
 const ClientItem = styled.div`
   outline: 1px solid #ccc;
-  img {
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-  }
+  background: #fff;
 `;
 
 export { ClientGrid, ClientItem };
