@@ -1,30 +1,33 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Img, { FluidObject } from 'gatsby-image';
 import Layout from '../components/Layout';
-import ImageLoader from '../components/ImageLoader';
-import clientPlacer from '../assets/images/client-placer.png';
-import { ClientGrid, ClientItem } from '../components/UI/ClientsUI';
-import { cdn } from '../utils';
 import Content from '../components/Content';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { ClientGrid, ClientItem } from '../components/UI/ClientsUI';
+import { Query } from '../graphql';
 
-const Clients: React.FC = ({ data }) => {
-  console.log(data);
+const Clients: React.FC<{ data: Query }> = ({ data: { allClientsJson } }) => {
   return (
     <Layout>
       <Helmet title="Clients" />
       <Content>
         <h1>Clients</h1>
         <ClientGrid>
-          {data.allClientsJson.edges.map(({ client }) => {
-            console.log(client);
-            return (
-              <ClientItem key={client.id}>
-                <Img fluid={client.image.childImageSharp.small} />
-              </ClientItem>
-            );
-          })}
+          {allClientsJson &&
+            allClientsJson.edges.map(node => {
+              const client = node.node;
+              const image =
+                client.image && client.image.childImageSharp
+                  ? client.image.childImageSharp.fluid
+                  : null;
+              const title = client.name ? client.name : '';
+              return (
+                <ClientItem key={client.id}>
+                  {image ? <Img fadeIn={false} fluid={image as FluidObject} title={title} /> : null}
+                </ClientItem>
+              );
+            })}
         </ClientGrid>
       </Content>
     </Layout>
@@ -35,23 +38,13 @@ export const query = graphql`
   query {
     allClientsJson {
       edges {
-        client: node {
+        node {
           id
+          name
           image {
-            id
             childImageSharp {
-              id
-              small: fixed(width: 220, height: 165) {
-                base64
-                tracedSVG
-                aspectRatio
-                width
-                height
-                src
-                srcSet
-                srcWebp
-                srcSetWebp
-                originalName
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }

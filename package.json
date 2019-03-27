@@ -38,6 +38,10 @@
     "yup": "^0.26.10"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^1.0.4",
+    "@graphql-codegen/typescript": "^1.0.4",
+    "eslint-plugin-graphql": "^3.0.3",
+    "graphql": "^14.2.0",
     "prettier": "^1.16.4"
   },
   "scripts": {
@@ -48,6 +52,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "xdev": "gatsby develop -H 0.0.0.0 -p 8000",
-    "xserve": "gatsby serve -H 0.0.0.0 -p 9000"
+    "xserve": "gatsby serve -H 0.0.0.0 -p 9000",
+    "gengql": "graphql-codegen"
   }
 }
