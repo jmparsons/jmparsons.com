@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { media, Breakpoints } from '../utils/mq';
 
 const FixedContent = styled.div`
+  position: relative;
   padding: 0 20px 20px 20px;
   box-sizing: border-box;
   ${media.desktop`
@@ -31,3 +32,4 @@ const Content: React.FC<ContentProps> = ({ type = 'fixed', children }) => {
 };
 
 export default Content;
+export { FixedContent, FullContent };
