@@ -13,13 +13,13 @@ const IndexSplash = styled.div`
 `;
 
 const IndexImage = styled.div`
-  picture * {
+  * {
     width: 100%;
     height: 300px;
     ${media.tablet`
       height: 500px;
     `};
-    ${media.tablet`
+    ${media.desktop`
       height: 600px;
     `};
     object-fit: cover;

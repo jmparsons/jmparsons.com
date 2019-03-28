@@ -3,7 +3,6 @@ import axios from 'axios';
 import { Formik, yupToFormErrors } from 'formik';
 import { FormGrid, SubmitBtn, Form } from './UI/FormUI';
 import { contactSchema } from '../utils/schemas';
-import { api } from '../utils';
 import { Input, TextArea } from './FormItems';
 
 interface FormProps {
@@ -17,7 +16,7 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
       validationSchema={contactSchema}
       onSubmit={async (values, actions) => {
         try {
-          await axios.post(api('contact'), values);
+          await axios.post('//api.jmparsons.com/contact', values);
           setSent(true);
         } catch (error) {
           actions.setErrors(yupToFormErrors(error.response.data));

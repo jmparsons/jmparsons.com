@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
 import Content from '../components/Content';
 import { AboutImage, AboutCon, AboutGrid, AboutContent } from '../components/UI/AboutUI';
-import { cdn } from '../utils';
+import train from '../assets/images/train.gif';
 
 const About: React.FC = () => (
   <Layout>
@@ -41,7 +41,7 @@ const About: React.FC = () => (
             </p>
           </AboutContent>
           <AboutImage>
-            <img src={cdn('images', 'train.gif')} width="360" height="639" />
+            <img src={train} width="360" height="639" />
           </AboutImage>
         </AboutGrid>
       </AboutCon>

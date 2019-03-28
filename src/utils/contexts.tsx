@@ -10,8 +10,4 @@ const ThemerContext = React.createContext<ThemerContextProps>({
   toggleTheme: () => {},
 });
 
-const DepsContext = React.createContext({
-  canWebp: false,
-});
-
-export { ThemerContext, DepsContext };
+export { ThemerContext };

@@ -1,12 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Img, { FluidObject } from 'gatsby-image';
 import Layout from '../components/Layout';
-import ImageLoader from '../components/ImageLoader';
-import placer from '../assets/images/placer.png';
 import { IndexSplash, IndexInfo, IndexImage } from '../components/UI/IndexUI';
-import { cdn } from '../utils';
+import { QueryProps } from '../interfaces';
+import { graphql } from 'gatsby';
 
-const Home: React.FC = () => {
+const Home: React.FC<QueryProps> = ({ data }) => {
   return (
     <Layout>
       <Helmet>
@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       </Helmet>
       <IndexSplash>
         <IndexImage>
-          <ImageLoader src={cdn('images', 'index-sunset.jpg')} alt="" placer={placer} />
+          <Img fluid={data.file!.childImageSharp!.fluid as FluidObject} critical fadeIn={false} />
         </IndexImage>
         <IndexInfo>
           <h2>My name is Jon.</h2>
@@ -28,5 +28,17 @@ const Home: React.FC = () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "index-sunset.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2816) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`;
 
 export default Home;

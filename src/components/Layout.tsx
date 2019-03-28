@@ -1,6 +1,5 @@
 import React from 'react';
 import { MainGrid, Main } from './UI/MainUI';
-import { DepsProvider } from '../utils/providers';
 import GlobalStyle from './GlobalStyle';
 import Helmet from 'react-helmet';
 import TopBar from './TopBar';
@@ -19,9 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
       <GlobalStyle />
       <Helmet titleTemplate="%s · JMParsons" defaultTitle="JMParsons" />
       <TopBar />
-      <DepsProvider>
-        <MainGrid>{children}</MainGrid>
-      </DepsProvider>
+      <MainGrid>{children}</MainGrid>
       <BotBar />
     </Main>
   </ThemeProvider>
