@@ -16,7 +16,7 @@ const BotBarGrid = styled.div`
   box-sizing: border-box;
   ${media.tablet`
     padding: 0 20px;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 1fr;
   `};
   ${media.desktop`
     width: ${Breakpoints.desktop / 16}em;

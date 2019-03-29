@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { ThxProps } from '../Theme';
-import { media, Breakpoints } from '../../utils/mq';
 
 const Main = styled.div`
   display: grid;

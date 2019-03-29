@@ -24,10 +24,10 @@ const IndexImage = styled.div`
     width: 100%;
     height: 300px;
     ${media.tablet`
-      height: 500px;
+      height: 400px;
     `};
     ${media.desktop`
-      height: 600px;
+      height: 500px;
     `};
     object-fit: cover;
     object-position: center center;
@@ -37,10 +37,10 @@ const IndexImage = styled.div`
 const IndexInfo = styled(FixedContent)`
   height: 300px;
   ${media.tablet`
-    height: 500px;
+    height: 400px;
   `};
   ${media.desktop`
-    height: 600px;
+    height: 500px;
   `};
 `;
 
