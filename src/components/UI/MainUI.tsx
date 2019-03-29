@@ -3,10 +3,10 @@ import { ThxProps } from '../Theme';
 
 const Main = styled.div`
   display: grid;
-  background: ${({ theme }: ThxProps) => theme.main.bg};
   grid-template-rows: auto 1fr auto;
   width: 100%;
   height: 100%;
+  background: ${({ theme }: ThxProps) => theme.main.bg};
   color: ${({ theme }: ThxProps) => theme.main.text};
 `;
 

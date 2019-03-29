@@ -7,7 +7,7 @@ const Colors = {
   lightBlueGray: '#cdd2db',
   midLightBlueGray: '#bfc3ca',
   darkBlueGray: '#202329',
-  darkBlueGray2: '#171a1e',
+  darkCobaltGray: '#171a1e',
   deepBlueGray: '#111315',
   deepBlack: '#0e0f10',
   electricBlue: '#17abf0',
@@ -52,21 +52,18 @@ interface ThemeBase {
   form: {
     outline: string;
   };
-  index: {
-    bg: string;
-  };
 }
 
 const Theme: ThemeBase = {
   topBar: {
     logo: Colors.offWhite,
-    bg: Colors.darkBlueGray,
+    bg: Colors.darkCobaltGray,
     link: Colors.lightGray,
     activeLink: Colors.white,
     activeBorder: Colors.electricBlue,
   },
   botBar: {
-    bg: Colors.darkBlueGray,
+    bg: Colors.darkCobaltGray,
     link: Colors.lightGray,
     activeLink: Colors.white,
   },
@@ -74,18 +71,15 @@ const Theme: ThemeBase = {
     bg: Colors.deepBlack,
   },
   main: {
-    bg: Colors.darkBlueGray2,
+    bg: Colors.darkCobaltGray,
     text: Colors.offWhite,
-    link: Colors.lightGray,
+    link: Colors.electricBlue,
     activeLink: Colors.white,
     icon: Colors.lightGray,
     activeIcon: Colors.white,
   },
   form: {
     outline: Colors.electricBlue,
-  },
-  index: {
-    bg: Colors.darkBlueGray2,
   },
 };
 
