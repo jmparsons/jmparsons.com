@@ -7,6 +7,7 @@ const Colors = {
   lightBlueGray: '#cdd2db',
   midLightBlueGray: '#bfc3ca',
   darkBlueGray: '#202329',
+  darkBlueGray2: '#171a1e',
   deepBlueGray: '#111315',
   deepBlack: '#0e0f10',
   electricBlue: '#17abf0',
@@ -56,6 +57,9 @@ interface ThemexBase {
   form: {
     outline: string;
   };
+  index: {
+    bg: string;
+  };
 }
 
 const light: ThemexBase = {
@@ -86,6 +90,9 @@ const light: ThemexBase = {
   form: {
     outline: Colors.electricBlue,
   },
+  index: {
+    bg: Colors.offWhite,
+  },
 };
 
 const dark: ThemexBase = {
@@ -106,7 +113,7 @@ const dark: ThemexBase = {
     bg: Colors.deepBlack,
   },
   main: {
-    bg: Colors.darkSteel,
+    bg: Colors.darkBlueGray2,
     text: Colors.offWhite,
     link: Colors.lightGray,
     activeLink: Colors.white,
@@ -115,6 +122,9 @@ const dark: ThemexBase = {
   },
   form: {
     outline: Colors.electricBlue,
+  },
+  index: {
+    bg: Colors.darkBlueGray2,
   },
 };
 

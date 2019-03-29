@@ -1,17 +1,12 @@
 import styled from 'styled-components';
 import { media } from '../../utils/mq';
 import { FixedContent } from '../Content';
+import { ThxProps } from '../Theme';
 
 const IndexSplash = styled.div`
   display: grid;
   position: relative;
-  height: 300px;
-  ${media.tablet`
-    height: 500px;
-  `};
-  ${media.desktop`
-    height: 600px;
-  `};
+  background: ${({ theme }: ThxProps) => theme.index.bg};
 `;
 
 const IndexImage = styled.div`
@@ -36,6 +31,10 @@ const IndexImage = styled.div`
 
 const IndexInfo = styled(FixedContent)`
   height: 300px;
+  h2,
+  h3 {
+    font-weight: 400;
+  }
   ${media.tablet`
     height: 400px;
   `};
