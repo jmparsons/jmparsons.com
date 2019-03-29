@@ -4,16 +4,16 @@ import GlobalStyle from './GlobalStyle';
 import Helmet from 'react-helmet';
 import TopBar from './TopBar';
 import BotBar from './BotBar';
-import './layout.css';
 import Theme from './Theme';
 import { ThemeProvider } from 'styled-components';
+import './layout.css';
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => (
-  <ThemeProvider theme={Theme['dark']}>
+  <ThemeProvider theme={Theme}>
     <Main>
       <GlobalStyle />
       <Helmet titleTemplate="%s · JMParsons" defaultTitle="JMParsons" />

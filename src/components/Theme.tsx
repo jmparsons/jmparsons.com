@@ -22,15 +22,10 @@ const Colors = {
 };
 
 export interface ThxProps {
-  theme: ThemexBase;
+  theme: ThemeBase;
 }
 
-interface ThemexProps {
-  [key: string]: ThemexBase;
-}
-
-interface ThemexBase {
-  name: string;
+interface ThemeBase {
   topBar: {
     logo: string;
     bg: string;
@@ -62,41 +57,7 @@ interface ThemexBase {
   };
 }
 
-const light: ThemexBase = {
-  name: 'light',
-  topBar: {
-    logo: Colors.darkSteel,
-    bg: Colors.offWhite,
-    link: Colors.midGray,
-    activeLink: Colors.black,
-    activeBorder: Colors.electricBlue,
-  },
-  botBar: {
-    bg: Colors.offWhite,
-    link: Colors.midGray,
-    activeLink: Colors.black,
-  },
-  themeBtn: {
-    bg: Colors.white,
-  },
-  main: {
-    bg: Colors.white,
-    text: Colors.black,
-    link: Colors.midGray,
-    activeLink: Colors.black,
-    icon: Colors.midGray,
-    activeIcon: Colors.black,
-  },
-  form: {
-    outline: Colors.electricBlue,
-  },
-  index: {
-    bg: Colors.offWhite,
-  },
-};
-
-const dark: ThemexBase = {
-  name: 'dark',
+const Theme: ThemeBase = {
   topBar: {
     logo: Colors.offWhite,
     bg: Colors.darkBlueGray,
@@ -127,7 +88,5 @@ const dark: ThemexBase = {
     bg: Colors.darkBlueGray2,
   },
 };
-
-const Theme: ThemexProps = { light, dark };
 
 export default Theme;

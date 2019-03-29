@@ -1,9 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
-import { IndexSplash, IndexInfo, IndexImage, IndexIntro } from '../components/UI/IndexUI';
+import { IndexSplash, IndexInfo, IndexIntro } from '../components/UI/IndexUI';
 import { QueryProps } from '../interfaces';
-import { graphql } from 'gatsby';
 
 const Home: React.FC<QueryProps> = ({ data }) => (
   <Layout>
@@ -24,17 +23,5 @@ const Home: React.FC<QueryProps> = ({ data }) => (
     </IndexSplash>
   </Layout>
 );
-
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "index-sunset.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2816) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-  }
-`;
 
 export default Home;
