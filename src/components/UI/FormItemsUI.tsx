@@ -6,7 +6,7 @@ const inputStyles = css`
   margin: 0;
   padding: 5px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0;
   appearance: none;
