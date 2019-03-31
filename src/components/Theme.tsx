@@ -63,7 +63,7 @@ interface ThemexBase {
 const light: ThemexBase = {
   name: 'light',
   topBar: {
-    logo: Colors.darkSteel,
+    logo: Colors.black,
     bg: Colors.white,
     link: Colors.midGray,
     activeLink: Colors.black,
@@ -94,7 +94,7 @@ const light: ThemexBase = {
 const dark: ThemexBase = {
   name: 'dark',
   topBar: {
-    logo: Colors.offWhite,
+    logo: Colors.white,
     bg: Colors.darkCobaltGray,
     link: Colors.lightGray,
     activeLink: Colors.white,
