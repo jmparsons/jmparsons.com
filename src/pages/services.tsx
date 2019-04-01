@@ -9,6 +9,7 @@ const Services: React.FC = () => (
     <Helmet title="Services" />
     <Content>
       <SvcStyles>
+        <h1>Services</h1>
         <h2>Technologies</h2>
         <SvcGrid>
           <SvcBlock>
@@ -35,7 +36,7 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
           <SvcBlock>
-            <h2>Dapps / Blockchain / Dag</h2>
+            <h2>Blockchain</h2>
             <ul>
               <li>Ethereum</li>
               <li>Truffle</li>
@@ -164,53 +165,68 @@ const Services: React.FC = () => (
             </ul>
           </SvcCol>
         </SvcBlock>
-        <h3>Wordpress</h3>
-        <ul>
-          <li>Wordpress Skeleton structure</li>
-          <li>Custom Themes, Post Types, and Taxonomy</li>
-          <li>Custom written plugins</li>
-          <li>Custom API using json-api</li>
-          <li>Custom ACF field plugins</li>
-          <li>W3 Total Cache and Server optimization</li>
-        </ul>
-        <h3>Drupal</h3>
-        <ul>
-          <li>??</li>
-        </ul>
-        <h3>Gamedev</h3>
-        <ul>
-          <li>Unity 3D</li>
-          <li>Unreal Engine 4</li>
-          <li>Cocos2d</li>
-          <li>Cocos2d-swift</li>
-          <li>Cocos2d-x</li>
-          <li>Starling</li>
-          <li>Flash</li>
-          <li>Impact JS</li>
-        </ul>
+        <SvcBlock>
+          <h3>Wordpress</h3>
+          <SvcCol>
+            <ul>
+              <li>Wordpress Skeleton structure</li>
+              <li>Custom Themes, Post Types, and Taxonomy</li>
+              <li>Custom written plugins</li>
+              <li>Custom API using json-api</li>
+              <li>Custom ACF field plugins</li>
+              <li>W3 Total Cache and Server optimization</li>
+            </ul>
+          </SvcCol>
+        </SvcBlock>
+        <SvcBlock>
+          <h3>Drupal</h3>
+          <SvcCol>
+            <ul>
+              <li>??</li>
+            </ul>
+          </SvcCol>
+        </SvcBlock>
+        <SvcGrid>
+          <SvcBlock>
+            <h3>Gamedev</h3>
+            <ul>
+              <li>Unity 3D</li>
+              <li>Unreal Engine 4</li>
+              <li>Cocos2d</li>
+              <li>Cocos2d-swift</li>
+              <li>Cocos2d-x</li>
+              <li>Starling</li>
+              <li>Flash</li>
+              <li>Impact JS</li>
+            </ul>
+          </SvcBlock>
+          <SvcBlock>
+            <h3>Search Engine Optimization</h3>
+            <ul>
+              <li>Webmasters Tools</li>
+              <li>Meta tags setup</li>
+              <li>Webmasters</li>
+              <li>Canonical Links</li>
+              <li>W3C API specs</li>
+            </ul>
+          </SvcBlock>
+          <SvcBlock>
+            <h3>Web Performance Optimization</h3>
+            <ul>
+              <li>Page speed</li>
+              <li>HTML filter</li>
+              <li>Minification</li>
+              <li>Sprite sheets</li>
+              <li>Request reduction</li>
+            </ul>
+          </SvcBlock>
+        </SvcGrid>
 
-        <h3>Search Engine Optimization</h3>
-        <ul>
-          <li>Webmasters Tools</li>
-          <li>Meta tags setup</li>
-          <li>Webmasters</li>
-          <li>Canonical Links</li>
-          <li>W3C API specs</li>
-        </ul>
-        <h3>Web Performance Optimization</h3>
-        <ul>
-          <li>Page speed</li>
-          <li>HTML filter</li>
-          <li>Minification</li>
-          <li>Sprite sheets</li>
-          <li>Request reduction</li>
-        </ul>
-        <h1>Services</h1>
-        <h2>Websites</h2>
+        {/* <h2>Websites</h2>
         <h2>Optimization</h2>
         <h2>Mobile Apps</h2>
         <h2>Gaming</h2>
-        <h2>Dapps</h2>
+        <h2>Dapps</h2> */}
       </SvcStyles>
     </Content>
   </Layout>

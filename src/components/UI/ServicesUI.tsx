@@ -30,6 +30,8 @@ const SvcBlock = styled.div`
   h3 {
     font-weight: 400;
     margin: 0;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #434854;
   }
 `;
 
