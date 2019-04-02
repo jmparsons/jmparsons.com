@@ -14,15 +14,19 @@ const Services: React.FC = () => (
         <SvcGrid>
           <SvcBlock>
             <h3>Web Frameworks</h3>
-            <p>Scala / Java - Playframework</p>
-            <p>Python - Django / Pylons</p>
-            <p>Node</p>
+            <ul>
+              <li>Scala / Java - Playframework</li>
+              <li>Python - Django / Pylons</li>
+              <li>Node</li>
+            </ul>
           </SvcBlock>
           <SvcBlock>
             <h3>Javascript Frameworks</h3>
-            <p>React / Nextjs / Gatsby</p>
-            <p>Angular 1 & 2</p>
-            <p>Vuejs</p>
+            <ul>
+              <li>React / Nextjs / Gatsby</li>
+              <li>Angular 1 & 2</li>
+              <li>Vuejs</li>
+            </ul>
           </SvcBlock>
         </SvcGrid>
         <h2>General Services</h2>
@@ -53,10 +57,12 @@ const Services: React.FC = () => (
           </SvcBlock>
           <SvcBlock>
             <h2>Devops</h2>
-            <p>Serverless</p>
-            <p>Lambda - AWS, GC, Azure</p>
-            <p>S3 Buckets / Cloudfront</p>
-            <p>Docker - Kubernetes / ECS containers</p>
+            <ul>
+              <li>Serverless</li>
+              <li>Lambda - AWS, GC, Azure</li>
+              <li>S3 Buckets / Cloudfront</li>
+              <li>Docker - Kubernetes / ECS containers</li>
+            </ul>
           </SvcBlock>
           <SvcBlock>
             <h3>Visual Dev</h3>
@@ -68,7 +74,7 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
           <SvcBlock>
-            <h3>Socail</h3>
+            <h3>Social</h3>
             <ul>
               <li>Authorization Login</li>
               <li>Custom share scripts</li>
@@ -99,10 +105,8 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Preprocessors</h3>
             <ul>
-              <li>Haml</li>
-              <li>Less</li>
-              <li>Sass</li>
-              <li>Scss</li>
+              <li>Haml / Jade</li>
+              <li>Less / Sass / Scss</li>
               <li>Coffeescript</li>
               <li>Stylus</li>
               <li>Jade</li>
@@ -117,15 +121,13 @@ const Services: React.FC = () => (
             <h3>Languages</h3>
             <ul>
               <li>(x)HTML 4, HTML 5</li>
-              <li>CSS 1-3</li>
-              <li>Javascript</li>
-              <li>Typescript</li>
-              <li>Rust</li>
+              <li>CSS 1-3 - Grid / Flexbox</li>
+              <li>Javascript / Typescript</li>
               <li>Actionscript 1-3</li>
               <li>Scala, Java</li>
               <li>Haskell</li>
-              <li>Swift</li>
-              <li>C++, C#, Ojective C</li>
+              <li>Objective C / Swift</li>
+              <li>C++, C#, Rust</li>
               <li>Dart</li>
               <li>Go</li>
               <li>Ruby</li>
@@ -133,7 +135,7 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
           <SvcBlock>
-            <h3>Frameworks</h3>
+            <h3>Web Frameworks</h3>
             <ul>
               <li>Play Framework</li>
               <li>Sinatra</li>
@@ -175,14 +177,6 @@ const Services: React.FC = () => (
               <li>Custom API using json-api</li>
               <li>Custom ACF field plugins</li>
               <li>W3 Total Cache and Server optimization</li>
-            </ul>
-          </SvcCol>
-        </SvcBlock>
-        <SvcBlock>
-          <h3>Drupal</h3>
-          <SvcCol>
-            <ul>
-              <li>??</li>
             </ul>
           </SvcCol>
         </SvcBlock>

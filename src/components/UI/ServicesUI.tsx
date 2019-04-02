@@ -6,12 +6,24 @@ type SvcColProps = ThxProps & {
 };
 
 const SvcStyles = styled.div`
+  display: grid;
+  grid-gap: 15px;
   hr {
     border-color: #434854;
   }
   ul {
     margin: 0;
+    padding: 5px 0 0 0;
+  }
+  li {
+    margin: 0;
     padding: 0;
+    line-height: 36px;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0;
   }
 `;
 
@@ -20,7 +32,6 @@ const SvcGrid = styled.div`
   width: 100%;
   grid-gap: 15px;
   grid-template-columns: ${({ col = 3 }: SvcColProps) => '1fr '.repeat(col)};
-  margin-bottom: 15px;
 `;
 
 const SvcBlock = styled.div`
@@ -36,7 +47,9 @@ const SvcBlock = styled.div`
 `;
 
 const SvcCol = styled.div`
-  column-count: ${({ col = 3 }: SvcColProps) => col};
+  ul {
+    column-count: ${({ col = 3 }: SvcColProps) => col};
+  }
 `;
 
 export { SvcStyles, SvcGrid, SvcBlock, SvcCol };
