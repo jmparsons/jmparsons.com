@@ -202,6 +202,7 @@ const Services: React.FC = () => (
               <li>Webmasters</li>
               <li>Canonical Links</li>
               <li>W3C API specs</li>
+              <li>Server Redirects</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -212,6 +213,7 @@ const Services: React.FC = () => (
               <li>Minification</li>
               <li>Sprite sheets</li>
               <li>Request reduction</li>
+              <li>Lighthouse testing</li>
             </ul>
           </SvcBlock>
         </SvcGrid>
