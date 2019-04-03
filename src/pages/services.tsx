@@ -16,11 +16,11 @@ const Services: React.FC = () => (
             <h3>Web Frameworks</h3>
             <ul>
               <li>Scala / Java - Playframework</li>
-              <li>Python - Django / Pylons</li>
               <li>Node - Koa / Express / Sails</li>
+              <li>Python - Django / Pylons</li>
               <li>Ruby - Rails / Sinatra</li>
               <li>Python - Django / Pyramid</li>
-              <li>PHP - Laravel / Zend/ Symfony</li>
+              <li>PHP - Laravel / Zend / Symfony</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -29,9 +29,9 @@ const Services: React.FC = () => (
               <li>React / Nextjs / Gatsby</li>
               <li>Angular 1 & 2</li>
               <li>Vuejs</li>
-              <li>Backbone</li>
-              <li>Meteor</li>
               <li>Ember</li>
+              <li>Meteor</li>
+              <li>jQuery / Backbone / Sizzle</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -95,10 +95,9 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Game Dev</h3>
             <ul>
-              <li>Unity3D</li>
+              <li>Unity</li>
               <li>Unreal Engine</li>
               <li>Cocos - 2dx / Creator</li>
-              <li>Unity 3D</li>
               <li>Starling</li>
               <li>Flash</li>
               <li>Impact JS</li>
@@ -117,6 +116,14 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
           <SvcBlock>
+            <h3>Data Management</h3>
+            <ul>
+              <li>TypeORM</li>
+              <li>Slick</li>
+              <li>ODBC / JDBC</li>
+            </ul>
+          </SvcBlock>
+          <SvcBlock>
             <h3>Devops</h3>
             <ul>
               <li>Continuous Integration</li>
@@ -126,15 +133,6 @@ const Services: React.FC = () => (
               <li>Serverless Computing</li>
               <li>Deployment Automation</li>
               <li>Network Monitoring</li>
-            </ul>
-          </SvcBlock>
-          <SvcBlock>
-            <h3>Social</h3>
-            <ul>
-              <li>Authorization Login</li>
-              <li>Custom share scripts</li>
-              <li>Rest API mapping</li>
-              <li>App integration</li>
             </ul>
           </SvcBlock>
         </SvcGrid>
