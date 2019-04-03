@@ -107,9 +107,9 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Devops</h3>
             <ul>
+              <li>Continuos Integration</li>
               <li>Serverless</li>
               <li>Lambda - AWS, GC, Azure</li>
-              <li>S3 Buckets / Cloudfront</li>
               <li>Docker - Kubernetes / ECS containers</li>
             </ul>
           </SvcBlock>
@@ -132,7 +132,24 @@ const Services: React.FC = () => (
           </SvcBlock>
         </SvcGrid>
         <h2>Technologies</h2>
-        <SvcGrid>
+        <SvcGrid col={4}>
+          <SvcBlock>
+            <h3>AWS Services</h3>
+            <ul>
+              <li>API Gateway</li>
+              <li>Lambda / Serverless</li>
+              <li>Cognito</li>
+              <li>ECS Containers</li>
+              <li>EKS Kubernetes</li>
+              <li>Elastic Beanstalk</li>
+              <li>Route 53</li>
+              <li>S3 / Cloudfront</li>
+              <li>Appsync</li>
+              <li>Amplify JS</li>
+              <li>CodePipeline</li>
+              <li>Elasticsearch</li>
+            </ul>
+          </SvcBlock>
           <SvcBlock>
             <h3>Preprocessors</h3>
             <ul>
