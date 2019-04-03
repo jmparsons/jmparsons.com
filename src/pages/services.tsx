@@ -49,22 +49,22 @@ const Services: React.FC = () => (
             <h3>Search Engine Optimization</h3>
             <ul>
               <li>Webmasters Tools</li>
-              <li>Meta tags setup</li>
-              <li>Webmasters</li>
+              <li>Mobile Optimization</li>
+              <li>RDFa / JSON-LD Microdata</li>
+              <li>Meta Tags</li>
               <li>Canonical Links</li>
-              <li>W3C API specs</li>
               <li>Server Redirects</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
             <h3>Web Performance Optimization</h3>
             <ul>
-              <li>Lighthouse auditing</li>
-              <li>Page speed</li>
-              <li>HTML filter</li>
-              <li>Minification</li>
-              <li>Sprite sheets</li>
-              <li>Request reduction</li>
+              <li>Progressive Web Apps</li>
+              <li>Lighthouse Auditing</li>
+              <li>PageSpeed Insights</li>
+              <li>Lazy / Critical Render Path</li>
+              <li>Minification / Sprite sheets</li>
+              <li>Service Worker caching</li>
             </ul>
           </SvcBlock>
         </SvcGrid>
