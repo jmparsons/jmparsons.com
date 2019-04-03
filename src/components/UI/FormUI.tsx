@@ -13,7 +13,7 @@ const FormGrid = styled.div`
 const StyledForm = styled(Form)`
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 10px;
+  grid-gap: 15px;
   width: 100%;
   ${media.tablet`
     width: 500px;
@@ -27,8 +27,8 @@ const SubmitBtn = styled.button.attrs({ type: 'submit' })`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   border: 0;
-  color: #ffffff;
-  background: ${({ theme }: ThxProps) => theme.form.outline};
+  color: ${({ theme }: ThxProps) => theme.form.btnText};
+  background: ${({ theme }: ThxProps) => theme.form.btnBg};
 `;
 
 export { StyledForm as Form, FormGrid, SubmitBtn };

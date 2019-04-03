@@ -4,7 +4,7 @@ import { ThxProps } from '../Theme';
 
 const inputStyles = css`
   margin: 0;
-  padding: 5px;
+  padding: 15px;
   font-size: 16px;
   border: 1px solid ${({ theme }: ThxProps) => theme.form.border};
   font-family: Arial, Helvetica, sans-serif;
@@ -23,11 +23,11 @@ const FormItem = styled.div`
 `;
 
 const InputField = styled(Field)`
-  height: 40px;
   ${inputStyles};
 `;
 
 const TextAreaField = styled(Field).attrs({ component: 'textarea', rows: 7 })`
+  line-height: 30px;
   ${inputStyles};
 `;
 
@@ -35,8 +35,8 @@ const ErrorMessage: any = styled(ErrorField)`
   position: absolute;
   top: 5px;
   right: 5px;
-  color: #ffffff;
-  background: #333333;
+  color: ${({ theme }: ThxProps) => theme.form.errorText};
+  background: ${({ theme }: ThxProps) => theme.form.errorBg};
   padding: 5px;
   opacity: 0.5;
   height: 20px;

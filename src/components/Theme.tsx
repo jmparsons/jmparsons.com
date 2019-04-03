@@ -48,15 +48,21 @@ interface ThemexBase {
   };
   main: {
     bg: string;
+    blockBg: string;
     text: string;
     link: string;
     activeLink: string;
     icon: string;
     activeIcon: string;
+    border: string;
   };
   form: {
     border: string;
     outline: string;
+    errorText: string;
+    errorBg: string;
+    btnBg: string;
+    btnText: string;
   };
 }
 
@@ -79,15 +85,21 @@ const light: ThemexBase = {
   },
   main: {
     bg: Colors.white,
+    blockBg: Colors.offWhite,
     text: Colors.black,
     link: Colors.midGray,
     activeLink: Colors.black,
     icon: Colors.midGray,
     activeIcon: Colors.black,
+    border: Colors.lightBlueGray,
   },
   form: {
-    border: Colors.lightGray,
+    border: Colors.lightBlueGray,
     outline: Colors.electricBlue,
+    errorText: Colors.white,
+    errorBg: Colors.darkSteel,
+    btnBg: Colors.electricBlue,
+    btnText: Colors.white,
   },
 };
 
@@ -110,15 +122,21 @@ const dark: ThemexBase = {
   },
   main: {
     bg: Colors.darkCobaltGray,
+    blockBg: Colors.deepBlueGray,
     text: Colors.offWhite,
     link: Colors.electricBlue,
     activeLink: Colors.white,
     icon: Colors.lightGray,
     activeIcon: Colors.white,
+    border: Colors.darkBlueGray,
   },
   form: {
     border: Colors.transparent,
     outline: Colors.electricBlue,
+    errorText: Colors.white,
+    errorBg: Colors.darkSteel,
+    btnBg: Colors.electricBlue,
+    btnText: Colors.white,
   },
 };
 

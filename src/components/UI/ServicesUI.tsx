@@ -9,9 +9,6 @@ type SvcColProps = ThxProps & {
 const SvcStyles = styled.div`
   display: grid;
   grid-gap: 15px;
-  hr {
-    border-color: #434854;
-  }
   ul {
     margin: 0;
     padding: 5px 0 0 0;
@@ -19,7 +16,7 @@ const SvcStyles = styled.div`
   li {
     margin: 0;
     padding: 0;
-    line-height: 36px;
+    line-height: 30px;
   }
   h1,
   h2,
@@ -38,15 +35,13 @@ const SvcGrid = styled.div`
 `;
 
 const SvcBlock = styled.div`
-  /* border: 1px solid #434854; */
-  background: #111315;
+  background: ${({ theme }: SvcColProps) => theme.main.blockBg};
   padding: 20px;
   h2,
   h3 {
     font-weight: 400;
     margin: 0;
     padding: 0 0 15px 0;
-    /* border-bottom: 1px solid #434854; */
   }
   ${media.tablet`
     grid-column: ${({ col = 0 }: SvcColProps) => (col > 0 ? `${3 - col} / 3` : col)};
