@@ -17,17 +17,17 @@ const Services: React.FC = () => (
             <ul>
               <li>Scala / Java - Playframework</li>
               <li>Node - Koa / Express / Sails</li>
-              <li>Python - Django / Pylons</li>
+              <li>Python - Django / Pyramid</li>
               <li>Ruby - Rails / Sinatra</li>
               <li>Python - Django / Pyramid</li>
-              <li>PHP - Laravel / Zend / Symfony</li>
+              <li>PHP - Laravel / CodeIgniter / Symfony</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
             <h3>Javascript Frameworks</h3>
             <ul>
               <li>React / Nextjs / Gatsby</li>
-              <li>Angular 1 & 2</li>
+              <li>Angular</li>
               <li>Vuejs</li>
               <li>Ember</li>
               <li>Meteor</li>
@@ -37,12 +37,12 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Visual Dev</h3>
             <ul>
-              <li>RaphaelJS</li>
-              <li>Tweenmax</li>
               <li>PixiJS</li>
               <li>BabylonJS</li>
               <li>Three.js</li>
-              <li>Victory</li>
+              <li>RaphaelJS / D3</li>
+              <li>Victory / Recharts</li>
+              <li>GSAP</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -59,12 +59,12 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Web Performance Optimization</h3>
             <ul>
+              <li>Lighthouse auditing</li>
               <li>Page speed</li>
               <li>HTML filter</li>
               <li>Minification</li>
               <li>Sprite sheets</li>
               <li>Request reduction</li>
-              <li>Lighthouse testing</li>
             </ul>
           </SvcBlock>
         </SvcGrid>
@@ -95,12 +95,12 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Game Dev</h3>
             <ul>
-              <li>Unity</li>
               <li>Unreal Engine</li>
-              <li>Cocos - 2dx / Creator</li>
-              <li>Starling</li>
-              <li>Flash</li>
-              <li>Impact JS</li>
+              <li>Unity</li>
+              <li>Godot</li>
+              <li>Cocos 2dx</li>
+              <li>Cocos Creator</li>
+              <li>Amazon Lumberyard</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -109,7 +109,6 @@ const Services: React.FC = () => (
               <li>PostgreSQL</li>
               <li>MySQL / MariaDB</li>
               <li>Aurora Serverless</li>
-              <li>GraphQL</li>
               <li>DynamoDB</li>
               <li>MongoDB</li>
               <li>Elasticache / Redis</li>
@@ -121,6 +120,7 @@ const Services: React.FC = () => (
               <li>TypeORM</li>
               <li>Slick</li>
               <li>ODBC / JDBC</li>
+              <li>GraphQL</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -130,7 +130,6 @@ const Services: React.FC = () => (
               <li>Continuous Delivery</li>
               <li>Infrastructure as Code</li>
               <li>Microservices Architecture</li>
-              <li>Serverless Computing</li>
               <li>Deployment Automation</li>
               <li>Network Monitoring</li>
             </ul>
@@ -177,7 +176,6 @@ const Services: React.FC = () => (
               <li>(x)HTML 4, HTML 5</li>
               <li>CSS 1-3 - Grid / Flexbox</li>
               <li>Javascript</li>
-              <li>Actionscript 1-3</li>
               <li>Scala, Java</li>
               <li>Haskell</li>
               <li>Objective C / Swift</li>
@@ -186,6 +184,7 @@ const Services: React.FC = () => (
               <li>Go</li>
               <li>Ruby</li>
               <li>Python</li>
+              <li>Lua</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
