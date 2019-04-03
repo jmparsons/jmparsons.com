@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 30px;
+}
+
 ul {
   list-style: none;
   padding: 0 15px;
