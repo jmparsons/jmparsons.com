@@ -41,7 +41,6 @@ const SvcBlock = styled.div`
   /* border: 1px solid #434854; */
   background: #111315;
   padding: 20px;
-  grid-column: ${({ col = 0 }: SvcColProps) => (col > 0 ? `${3 - col} / 3` : col)};
   h2,
   h3 {
     font-weight: 400;
@@ -50,6 +49,7 @@ const SvcBlock = styled.div`
     /* border-bottom: 1px solid #434854; */
   }
   ${media.tablet`
+    grid-column: ${({ col = 0 }: SvcColProps) => (col > 0 ? `${3 - col} / 3` : col)};
     ul {
       column-count: ${({ col = 0 }: SvcColProps) => col};
     }

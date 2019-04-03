@@ -12,21 +12,15 @@ const Services: React.FC = () => (
       <h2>Web Development</h2>
       <SvcStyles>
         <SvcGrid>
-          <SvcBlock col={2}>
+          <SvcBlock>
             <h3>Web Frameworks</h3>
             <ul>
               <li>Scala / Java - Playframework</li>
               <li>Python - Django / Pylons</li>
-              <li>Node</li>
-              <li>Sinatra</li>
-              <li>Ruby on Rails</li>
-              <li>Django</li>
-              <li>Pylons - Pyramid</li>
-              <li>Laravel</li>
-              <li>Yii</li>
-              <li>Zend</li>
-              <li>Symfony</li>
-              <li>Code Igniter</li>
+              <li>Node - Koa / Express / Sails</li>
+              <li>Ruby - Rails / Sinatra</li>
+              <li>Python - Django / Pyramid</li>
+              <li>PHP - Laravel / Zend/ Symfony</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -74,7 +68,29 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
         </SvcGrid>
-        <h2>General Services</h2>
+        <h2>Mobile Development</h2>
+        <SvcGrid>
+          <SvcBlock>
+            <h3>Mobile Development</h3>
+            <ul>
+              <li>React Native</li>
+              <li>iOS - Swift 4</li>
+              <li>Android - Java / Kotlin</li>
+            </ul>
+          </SvcBlock>
+        </SvcGrid>
+        <h2>Dapps / Blockchain</h2>
+        <SvcGrid>
+          <SvcBlock>
+            <h3>Blockchain</h3>
+            <ul>
+              <li>Ethereum</li>
+              <li>Truffle</li>
+              <li>Ganache</li>
+            </ul>
+          </SvcBlock>
+        </SvcGrid>
+        <h2>Specialized Services</h2>
         <SvcGrid col={4}>
           <SvcBlock>
             <h3>Game Dev</h3>
@@ -89,28 +105,27 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
           <SvcBlock>
-            <h3>Blockchain</h3>
-            <ul>
-              <li>Ethereum</li>
-              <li>Truffle</li>
-              <li>Ganache</li>
-            </ul>
-          </SvcBlock>
-          <SvcBlock>
             <h3>Databases</h3>
             <ul>
-              <li>MySQL / MariaDB / Aurora (Serverless)</li>
               <li>PostgreSQL</li>
+              <li>MySQL / MariaDB</li>
+              <li>Aurora Serverless</li>
               <li>GraphQL</li>
+              <li>DynamoDB</li>
+              <li>MongoDB</li>
+              <li>Elasticache / Redis</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
             <h3>Devops</h3>
             <ul>
-              <li>Continuos Integration</li>
-              <li>Serverless</li>
-              <li>Lambda - AWS, GC, Azure</li>
-              <li>Docker - Kubernetes / ECS containers</li>
+              <li>Continuous Integration</li>
+              <li>Continuous Delivery</li>
+              <li>Infrastructure as Code</li>
+              <li>Microservices Architecture</li>
+              <li>Serverless Computing</li>
+              <li>Deployment Automation</li>
+              <li>Network Monitoring</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -120,14 +135,6 @@ const Services: React.FC = () => (
               <li>Custom share scripts</li>
               <li>Rest API mapping</li>
               <li>App integration</li>
-            </ul>
-          </SvcBlock>
-          <SvcBlock>
-            <h3>Mobile Development</h3>
-            <ul>
-              <li>React Native</li>
-              <li>iOS - Swift 4</li>
-              <li>Android - Java / Kotlin</li>
             </ul>
           </SvcBlock>
         </SvcGrid>
@@ -155,12 +162,13 @@ const Services: React.FC = () => (
             <ul>
               <li>Haml / Jade</li>
               <li>Less / Sass / Scss</li>
+              <li>Typescript / ES7+</li>
               <li>Coffeescript</li>
-              <li>Stylus</li>
+              <li>PostCSS / Stylus</li>
               <li>Jade</li>
               <li>Dust JS</li>
               <li>Mustache</li>
-              <li>Handelbars</li>
+              <li>Handlebars</li>
               <li>Twirl</li>
               <li>Markdown</li>
             </ul>
@@ -170,7 +178,7 @@ const Services: React.FC = () => (
             <ul>
               <li>(x)HTML 4, HTML 5</li>
               <li>CSS 1-3 - Grid / Flexbox</li>
-              <li>Javascript / Typescript</li>
+              <li>Javascript</li>
               <li>Actionscript 1-3</li>
               <li>Scala, Java</li>
               <li>Haskell</li>
@@ -198,25 +206,6 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
         </SvcGrid>
-        <SvcBlock>
-          <h3>Wordpress</h3>
-          <SvcCol>
-            <ul>
-              <li>Wordpress Skeleton structure</li>
-              <li>Custom Themes, Post Types, and Taxonomy</li>
-              <li>Custom written plugins</li>
-              <li>Custom API using json-api</li>
-              <li>Custom ACF field plugins</li>
-              <li>W3 Total Cache and Server optimization</li>
-            </ul>
-          </SvcCol>
-        </SvcBlock>
-
-        {/* <h2>Websites</h2>
-        <h2>Optimization</h2>
-        <h2>Mobile Apps</h2>
-        <h2>Gaming</h2>
-        <h2>Dapps</h2> */}
       </SvcStyles>
     </Content>
   </Layout>
