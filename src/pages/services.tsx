@@ -30,8 +30,8 @@ const Services: React.FC = () => (
               <li>Angular</li>
               <li>Vuejs</li>
               <li>Ember</li>
-              <li>Meteor</li>
-              <li>jQuery / Backbone / Sizzle</li>
+              <li>Backbone</li>
+              <li>jQuery / Sizzle</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
