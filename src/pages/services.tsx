@@ -16,17 +16,17 @@ const Services: React.FC = () => (
             <h3>Web Frameworks</h3>
             <ul>
               <li>Scala / Java - Playframework, Akka</li>
-              <li>JS - Koa / Express / Meteor / Sails</li>
-              <li>Go - Chai / Echo</li>
-              <li>Python - Django / Pyramid</li>
-              <li>Ruby - Rails / Sinatra</li>
-              <li>PHP - Laravel / CodeIgniter / Symfony</li>
+              <li>JS - Koa, Express, Meteor, Sails</li>
+              <li>Go - Chai, Echo</li>
+              <li>Python - Django, Pyramid</li>
+              <li>Ruby - Rails, Sinatra</li>
+              <li>PHP - Laravel, CodeIgniter, Symfony</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
             <h3>Javascript Frameworks</h3>
             <ul>
-              <li>React / Nextjs / Gatsby</li>
+              <li>React - CRA, Nextjs, Gatsby</li>
               <li>Angular</li>
               <li>Vuejs</li>
               <li>Ember</li>
