@@ -15,11 +15,11 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Web Frameworks</h3>
             <ul>
-              <li>Scala / Java - Playframework</li>
-              <li>Node - Koa / Express / Sails</li>
+              <li>Scala / Java - Playframework, Akka</li>
+              <li>JS - Koa / Express / Meteor / Sails</li>
+              <li>Go - Chai / Echo</li>
               <li>Python - Django / Pyramid</li>
               <li>Ruby - Rails / Sinatra</li>
-              <li>Python - Django / Pyramid</li>
               <li>PHP - Laravel / CodeIgniter / Symfony</li>
             </ul>
           </SvcBlock>
