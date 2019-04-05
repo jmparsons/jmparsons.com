@@ -2,6 +2,7 @@ const Colors = {
   white: '#ffffff',
   black: '#000000',
   offWhite: '#eeeeee',
+  offBlack: '#202021',
   midGray: '#434854',
   lightCobaltGray: '#f3f4f7',
   lightGray: '#999999',
@@ -52,6 +53,7 @@ interface ThemexBase {
     bg: string;
     blockBg: string;
     text: string;
+    title: string;
     link: string;
     activeLink: string;
     icon: string;
@@ -88,7 +90,8 @@ const light: ThemexBase = {
   main: {
     bg: Colors.lightCobaltGray,
     blockBg: Colors.deepLightGray,
-    text: Colors.black,
+    text: Colors.offBlack,
+    title: Colors.black,
     link: Colors.midGray,
     activeLink: Colors.black,
     icon: Colors.midGray,
@@ -126,6 +129,7 @@ const dark: ThemexBase = {
     bg: Colors.darkCobaltGray,
     blockBg: Colors.deepBlueGray,
     text: Colors.offWhite,
+    title: Colors.white,
     link: Colors.electricBlue,
     activeLink: Colors.white,
     icon: Colors.lightGray,

@@ -8,6 +8,14 @@ const Main = styled.div`
   height: 100%;
   background: ${({ theme }: ThxProps) => theme.main.bg};
   color: ${({ theme }: ThxProps) => theme.main.text};
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: ${({ theme }: ThxProps) => theme.main.title};
+  }
 `;
 
 const MainGrid = styled.main`
