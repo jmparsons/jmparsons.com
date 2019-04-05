@@ -31,7 +31,7 @@ const IndexInfo = styled(FixedContent)`
 
 const IndexList = styled.div`
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 0px;
   ${media.tablet`
     grid-gap: 20px;
   `};
@@ -45,16 +45,23 @@ const IndexItem = styled.div`
     theme: {
       main: { bg, blockBg },
     },
-  }: ThxProps) => `linear-gradient(90deg, ${bg}, ${blockBg})`};
+  }: ThxProps) => `linear-gradient(90deg, ${bg}, ${blockBg}, ${bg})`};
   color: ${({ theme }: ThxProps) => theme.main.text};
   box-sizing: border-box;
   font-size: 18px;
   padding: 5px;
-  justify-content: flex-end;
-  align-content: flex-end;
+  justify-content: center;
+  align-content: center;
   ${media.tablet`
     font-size: 24px;
     padding: 10px;
+    background: ${({
+      theme: {
+        main: { bg, blockBg },
+      },
+    }: ThxProps) => `linear-gradient(90deg, ${bg}, ${blockBg})`};
+    justify-content: flex-end;
+    align-content: flex-end;
   `};
 `;
 
