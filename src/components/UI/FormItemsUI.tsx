@@ -26,7 +26,7 @@ const InputField = styled(Field)`
   ${inputStyles};
 `;
 
-const TextAreaField = styled(Field).attrs({ component: 'textarea', rows: 7 })`
+const TextAreaField = styled(Field).attrs({ component: 'textarea', rows: 6 })`
   line-height: 30px;
   ${inputStyles};
 `;
