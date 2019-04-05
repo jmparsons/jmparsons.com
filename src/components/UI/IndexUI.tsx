@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { media } from '../../utils/mq';
 import { FixedContent } from '../Content';
+import { ThxProps } from '../Theme';
 
 const IndexSplash = styled.div`
   display: grid;
@@ -13,15 +14,58 @@ const IndexSplash = styled.div`
 const IndexInfo = styled(FixedContent)`
   display: grid;
   align-content: center;
-  justify-content: flex-end;
   h2,
   h3 {
     font-weight: 400;
   }
+  & > div:nth-child(1) {
+    order: 1;
+  }
+  ${media.tablet`
+    grid-template-columns: 1fr 1fr;
+    & > div:nth-child(1) {
+      order: -1;
+    }
+  `};
+`;
+
+const IndexList = styled.div`
+  display: grid;
+  grid-gap: 5px;
+  ${media.tablet`
+    grid-gap: 20px;
+  `};
+`;
+
+const IndexItem = styled.div`
+  display: grid;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  background: ${({
+    theme: {
+      main: { bg, blockBg },
+    },
+  }: ThxProps) => `linear-gradient(90deg, ${bg}, ${blockBg})`};
+  color: ${({ theme }: ThxProps) => theme.main.text};
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 5px;
+  justify-content: flex-end;
+  align-content: flex-end;
+  ${media.tablet`
+    font-size: 24px;
+    padding: 10px;
+  `};
 `;
 
 const IndexIntro = styled.div`
-  width: 320px;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  ${media.tablet`
+    justify-self: flex-end;
+    width: 320px;
+  `};
 `;
 
 const IndexBgCon = styled.div`
@@ -49,4 +93,13 @@ const IndexBg = styled.div`
   }
 `;
 
-export { IndexSplash, IndexInfo, IndexIntro, IndexBgCon, IndexBgFixed, IndexBg };
+export {
+  IndexSplash,
+  IndexInfo,
+  IndexIntro,
+  IndexBgCon,
+  IndexBgFixed,
+  IndexBg,
+  IndexList,
+  IndexItem,
+};
