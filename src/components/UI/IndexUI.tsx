@@ -19,12 +19,12 @@ const IndexInfo = styled(FixedContent)`
     font-weight: 400;
   }
   & > div:nth-child(1) {
-    order: 1;
+    order: -1;
   }
   ${media.tablet`
     grid-template-columns: 1fr 1fr;
     & > div:nth-child(1) {
-      order: -1;
+      order: 1;
     }
   `};
 `;

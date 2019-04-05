@@ -14,6 +14,11 @@ const Home: React.FC<QueryProps> = ({ data }) => (
     </Helmet>
     <IndexSplash>
       <IndexInfo>
+        <IndexIntro>
+          <h2>My name is Jon.</h2>
+          <h3>Full Stack Developer</h3>
+          <p>New York based professional Scala, Play, Node, React, iOS, and Android Developer.</p>
+        </IndexIntro>
         <IndexList>
           <IndexItem>websites</IndexItem>
           <IndexItem>mobile apps</IndexItem>
@@ -21,11 +26,6 @@ const Home: React.FC<QueryProps> = ({ data }) => (
           <IndexItem>video games</IndexItem>
           <IndexItem>blockchain</IndexItem>
         </IndexList>
-        <IndexIntro>
-          <h2>My name is Jon.</h2>
-          <h3>Full Stack Developer</h3>
-          <p>New York based professional Scala, Play, Node, React, iOS, and Android Developer.</p>
-        </IndexIntro>
       </IndexInfo>
     </IndexSplash>
   </Layout>
