@@ -7,7 +7,12 @@ module.exports = {
     author: `@jmparsons`,
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: false,
+      },
+    },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
