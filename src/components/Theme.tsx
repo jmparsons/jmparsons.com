@@ -4,6 +4,7 @@ const Colors = {
   offWhite: '#eeeeee',
   midGray: '#434854',
   lightGray: '#999999',
+  deepLightGray: '#e9eaef',
   lightBlueGray: '#cdd2db',
   midLightBlueGray: '#bfc3ca',
   darkBlueGray: '#202329',
@@ -85,7 +86,7 @@ const light: ThemexBase = {
   },
   main: {
     bg: Colors.white,
-    blockBg: Colors.offWhite,
+    blockBg: Colors.deepLightGray,
     text: Colors.black,
     link: Colors.midGray,
     activeLink: Colors.black,
