@@ -46,14 +46,14 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
           <SvcBlock>
-            <h3>Server Stacks</h3>
+            <h3>Server Setup</h3>
             <ul>
               <li>Ubuntu, CentOS, Debian</li>
-              <li>Salt, Puppet, Chef</li>
-              <li>Apache, Nginx, Lighttpd</li>
               <li>Dokker, Kubernetes</li>
+              <li>Apache, Nginx, Lighttpd</li>
               <li>API - Rest, GraphQL</li>
               <li>Serverless Lambdas</li>
+              <li>Salt, Puppet, Chef</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -82,7 +82,7 @@ const Services: React.FC = () => (
         <h2>Mobile Development</h2>
         <SvcGrid>
           <SvcBlock>
-            <h3>Mobile Development</h3>
+            <h3>Mobile Dev</h3>
             <ul>
               <li>React Native</li>
               <li>iOS - Swift 4</li>
@@ -126,12 +126,14 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
           <SvcBlock>
-            <h3>Custom</h3>
+            <h3>User Management</h3>
             <ul>
-              <li>Authorization</li>
-              <li>Role Based Access Controls</li>
-              <li>Analytics</li>
-              <li>Data Management</li>
+              <li>OAuth, JWT, Token Auth</li>
+              <li>RBAC Access Controls</li>
+              <li>Analytics, Tracking</li>
+              <li>Social Auth, SSO</li>
+              <li>Federated Identities</li>
+              <li>Multi Factor Auth</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
