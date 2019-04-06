@@ -46,6 +46,17 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
           <SvcBlock>
+            <h3>Server Stacks</h3>
+            <ul>
+              <li>Ubuntu, CentOS, Debian</li>
+              <li>Salt, Puppet, Chef</li>
+              <li>Apache, Nginx, Lighttpd</li>
+              <li>Dokker, Kubernetes</li>
+              <li>API - Rest, GraphQL</li>
+              <li>Serverless Lambdas</li>
+            </ul>
+          </SvcBlock>
+          <SvcBlock>
             <h3>Search Engine Optimization</h3>
             <ul>
               <li>Webmasters Tools</li>
@@ -115,12 +126,12 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
           <SvcBlock>
-            <h3>Data Management</h3>
+            <h3>Custom</h3>
             <ul>
-              <li>TypeORM</li>
-              <li>Slick</li>
-              <li>ODBC / JDBC</li>
-              <li>GraphQL</li>
+              <li>Authorization</li>
+              <li>Role Based Access Controls</li>
+              <li>Analytics</li>
+              <li>Data Management</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -190,9 +201,11 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Third Party Dev</h3>
             <ul>
+              <li>Netlify</li>
+              <li>Heroku</li>
+              <li>Prismic.io</li>
               <li>Squarespace</li>
               <li>Shopify</li>
-              <li>Prismic.io</li>
               <li>Wordpress</li>
               <li>Drupal</li>
               <li>Cargo Collective</li>
