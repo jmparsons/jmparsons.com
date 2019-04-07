@@ -31,7 +31,7 @@ const Services: React.FC = () => (
               <li>Vuejs</li>
               <li>Ember</li>
               <li>Backbone</li>
-              <li>jQuery / Sizzle</li>
+              <li>jQuery, Sizzle</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -40,8 +40,8 @@ const Services: React.FC = () => (
               <li>PixiJS</li>
               <li>BabylonJS</li>
               <li>Three.js</li>
-              <li>RaphaelJS / D3</li>
-              <li>Victory / Recharts</li>
+              <li>RaphaelJS, D3</li>
+              <li>Victory, Recharts</li>
               <li>GSAP</li>
             </ul>
           </SvcBlock>
@@ -86,7 +86,7 @@ const Services: React.FC = () => (
             <ul>
               <li>React Native</li>
               <li>iOS - Swift 4</li>
-              <li>Android - Java / Kotlin</li>
+              <li>Android - Java, Kotlin</li>
             </ul>
           </SvcBlock>
         </SvcGrid>
@@ -170,31 +170,32 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Preprocessors</h3>
             <ul>
-              <li>Haml / Jade</li>
-              <li>Less / Sass / Scss</li>
-              <li>Typescript / ES7+</li>
+              <li>Haml, Pug, Slim</li>
+              <li>Less, Sass, Scss</li>
+              <li>Typescript, ES7+</li>
+              <li>Babel</li>
               <li>Coffeescript</li>
-              <li>PostCSS / Stylus</li>
-              <li>Jade</li>
+              <li>PostCSS, Stylus</li>
               <li>Dust JS</li>
               <li>Mustache</li>
               <li>Handlebars</li>
               <li>Twirl</li>
               <li>Markdown</li>
+              <li>Gulp, Grunt, Webpack</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
             <h3>Languages</h3>
             <ul>
               <li>(x)HTML 4, HTML 5</li>
-              <li>CSS 1-3 - Grid / Flexbox</li>
+              <li>CSS 1-3 - Grid, Flexbox</li>
               <li>Javascript</li>
-              <li>Scala, Java</li>
+              <li>Scala, Java, Kotlin</li>
               <li>Haskell</li>
-              <li>Objective C / Swift</li>
+              <li>Objective C, Swift</li>
               <li>C++, C#, Rust</li>
-              <li>Dart</li>
-              <li>Go</li>
+              <li>Dart, Go</li>
+              <li>OCaml, Reason</li>
               <li>Ruby</li>
               <li>Python</li>
               <li>Lua</li>
