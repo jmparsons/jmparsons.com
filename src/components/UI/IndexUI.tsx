@@ -31,7 +31,7 @@ const IndexInfo = styled(FixedContent)`
 
 const IndexList = styled.div`
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 10px;
   ${media.tablet`
     grid-gap: 20px;
   `};
