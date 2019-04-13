@@ -49,7 +49,7 @@ const Services: React.FC = () => (
             <h3>Server Setup</h3>
             <ul>
               <li>Ubuntu, CentOS, Debian</li>
-              <li>Dokker, Kubernetes</li>
+              <li>Docker, Kubernetes</li>
               <li>Apache, Nginx, Lighttpd</li>
               <li>API - Rest, GraphQL</li>
               <li>Serverless Lambdas</li>
