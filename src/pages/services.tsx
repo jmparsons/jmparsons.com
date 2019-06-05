@@ -9,14 +9,14 @@ const Services: React.FC = () => (
     <Helmet title="Services" />
     <Content>
       <h1>Services</h1>
-      <h2>Web Development</h2>
+      <h2>Development</h2>
       <SvcStyles>
         <SvcGrid>
           <SvcBlock>
             <h3>Web Frameworks</h3>
             <ul>
               <li>Scala / Java - Playframework, Akka</li>
-              <li>JS - Koa, Express, Meteor, Sails</li>
+              <li>Node - Koa, Express, Meteor, Sails</li>
               <li>Go - Chai, Echo</li>
               <li>Python - Django, Pyramid</li>
               <li>Ruby - Rails, Sinatra</li>
@@ -79,23 +79,30 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
         </SvcGrid>
-        <h2>Mobile Development</h2>
         <SvcGrid>
           <SvcBlock>
-            <h3>Mobile Dev</h3>
+            <h3>React / React Native</h3>
             <ul>
-              <li>React Native</li>
-              <li>iOS - Objective-C, Swift</li>
-              <li>Android - Java, Kotlin</li>
+              <li>Hooks, Context, Redux, Mobx</li>
+              <li>Axios</li>
+              <li>Reach / React Router</li>
+              <li>Apollo GraphQL</li>
+              <li>Styled Components</li>
+              <li>i18n, Jest</li>
             </ul>
           </SvcBlock>
-        </SvcGrid>
-        <h2>Dapps / Blockchain</h2>
-        <SvcGrid>
           <SvcBlock>
-            <h3>Blockchain</h3>
+            <h3>Coding</h3>
             <ul>
-              <li>Ethereum</li>
+              <li>VSCode</li>
+              <li>Prettier</li>
+            </ul>
+          </SvcBlock>
+          <SvcBlock>
+            <h3>Dapps / Blockchain</h3>
+            <ul>
+              <li>Web3.js</li>
+              <li>Ethereum - Solidity</li>
               <li>Truffle</li>
               <li>Ganache</li>
             </ul>
@@ -153,6 +160,7 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>AWS Services</h3>
             <ul>
+              <li>Amplify JS / AWS SDK</li>
               <li>API Gateway</li>
               <li>Lambda / Serverless</li>
               <li>Cognito</li>
@@ -162,7 +170,6 @@ const Services: React.FC = () => (
               <li>Route 53</li>
               <li>S3 / Cloudfront</li>
               <li>Appsync</li>
-              <li>Amplify JS</li>
               <li>CodePipeline</li>
               <li>Elasticsearch</li>
             </ul>
