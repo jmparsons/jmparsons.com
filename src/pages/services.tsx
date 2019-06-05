@@ -85,7 +85,7 @@ const Services: React.FC = () => (
             <h3>Mobile Dev</h3>
             <ul>
               <li>React Native</li>
-              <li>iOS - Swift 4</li>
+              <li>iOS - Objective-C, Swift</li>
               <li>Android - Java, Kotlin</li>
             </ul>
           </SvcBlock>
@@ -170,10 +170,10 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Preprocessors</h3>
             <ul>
+              <li>Typescript</li>
+              <li>Babel, ES(x)+</li>
               <li>Haml, Pug, Slim</li>
               <li>Less, Sass, Scss</li>
-              <li>Typescript, ES7+</li>
-              <li>Babel</li>
               <li>Coffeescript</li>
               <li>PostCSS, Stylus</li>
               <li>Dust JS</li>
