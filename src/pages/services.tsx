@@ -109,8 +109,8 @@ const Services: React.FC = () => (
               <li>Ethereum - Solidity</li>
               <li>Truffle</li>
               <li>Ganache</li>
-              <li>Smart Contracts</li>
               <li>Geth</li>
+              <li>Smart Contracts</li>
             </ul>
           </SvcBlock>
         </SvcGrid>
