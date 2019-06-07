@@ -9,14 +9,14 @@ const Services: React.FC = () => (
     <Helmet title="Services" />
     <Content>
       <h1>Services</h1>
-      <h2>Web Development</h2>
+      <h2>Development</h2>
       <SvcStyles>
         <SvcGrid>
           <SvcBlock>
             <h3>Web Frameworks</h3>
             <ul>
               <li>Scala / Java - Playframework, Akka</li>
-              <li>JS - Koa, Express, Meteor, Sails</li>
+              <li>Node - Koa, Express, Meteor, Sails</li>
               <li>Go - Chai, Echo</li>
               <li>Python - Django, Pyramid</li>
               <li>Ruby - Rails, Sinatra</li>
@@ -79,25 +79,38 @@ const Services: React.FC = () => (
             </ul>
           </SvcBlock>
         </SvcGrid>
-        <h2>Mobile Development</h2>
         <SvcGrid>
           <SvcBlock>
-            <h3>Mobile Dev</h3>
+            <h3>React / React Native</h3>
             <ul>
-              <li>React Native</li>
-              <li>iOS - Swift 4</li>
-              <li>Android - Java, Kotlin</li>
+              <li>Hooks, Context, Redux, Mobx</li>
+              <li>Axios, Immutable, i18n, Jest</li>
+              <li>Routers, Navigators</li>
+              <li>Apollo GraphQL</li>
+              <li>Styled Components</li>
+              <li>Higher Order Components</li>
             </ul>
           </SvcBlock>
-        </SvcGrid>
-        <h2>Dapps / Blockchain</h2>
-        <SvcGrid>
           <SvcBlock>
-            <h3>Blockchain</h3>
+            <h3>Coding</h3>
             <ul>
-              <li>Ethereum</li>
+              <li>Mac, Linux, Windows</li>
+              <li>VSCode, Prettier, ESLint</li>
+              <li>XCode, Eclipse, Vim</li>
+              <li>IntelliJ, Android Studio</li>
+              <li>Git Bash, Terminal</li>
+              <li>Virtual Box, Docker</li>
+            </ul>
+          </SvcBlock>
+          <SvcBlock>
+            <h3>Dapps / Blockchain</h3>
+            <ul>
+              <li>Web3.js</li>
+              <li>Ethereum - Solidity</li>
               <li>Truffle</li>
               <li>Ganache</li>
+              <li>Geth</li>
+              <li>Smart Contracts</li>
             </ul>
           </SvcBlock>
         </SvcGrid>
@@ -153,6 +166,7 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>AWS Services</h3>
             <ul>
+              <li>Amplify JS / AWS SDK</li>
               <li>API Gateway</li>
               <li>Lambda / Serverless</li>
               <li>Cognito</li>
@@ -162,7 +176,6 @@ const Services: React.FC = () => (
               <li>Route 53</li>
               <li>S3 / Cloudfront</li>
               <li>Appsync</li>
-              <li>Amplify JS</li>
               <li>CodePipeline</li>
               <li>Elasticsearch</li>
             </ul>
@@ -170,10 +183,10 @@ const Services: React.FC = () => (
           <SvcBlock>
             <h3>Preprocessors</h3>
             <ul>
+              <li>Typescript</li>
+              <li>Babel, ES(x)+</li>
               <li>Haml, Pug, Slim</li>
               <li>Less, Sass, Scss</li>
-              <li>Typescript, ES7+</li>
-              <li>Babel</li>
               <li>Coffeescript</li>
               <li>PostCSS, Stylus</li>
               <li>Dust JS</li>
