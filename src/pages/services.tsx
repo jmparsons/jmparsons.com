@@ -84,18 +84,18 @@ const Services: React.FC = () => (
             <h3>React / React Native</h3>
             <ul>
               <li>Hooks, Context, Redux, Mobx</li>
-              <li>Axios</li>
-              <li>Reach / React Router</li>
+              <li>Axios, Immutable, i18n, Jest</li>
+              <li>Reach Router, React Navigation</li>
               <li>Apollo GraphQL</li>
               <li>Styled Components</li>
-              <li>i18n, Jest</li>
+              <li>Optimistic Response</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
             <h3>Coding</h3>
             <ul>
               <li>VSCode</li>
-              <li>Prettier</li>
+              <li>Prettier, ESLint</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -105,6 +105,8 @@ const Services: React.FC = () => (
               <li>Ethereum - Solidity</li>
               <li>Truffle</li>
               <li>Ganache</li>
+              <li>Smart Contracts</li>
+              <li>Geth</li>
             </ul>
           </SvcBlock>
         </SvcGrid>
