@@ -85,17 +85,21 @@ const Services: React.FC = () => (
             <ul>
               <li>Hooks, Context, Redux, Mobx</li>
               <li>Axios, Immutable, i18n, Jest</li>
-              <li>Reach Router, React Navigation</li>
+              <li>Routers, Navigators</li>
               <li>Apollo GraphQL</li>
               <li>Styled Components</li>
-              <li>Optimistic Response</li>
+              <li>Higher Order Components</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
             <h3>Coding</h3>
             <ul>
-              <li>VSCode</li>
-              <li>Prettier, ESLint</li>
+              <li>Mac, Linux, Windows</li>
+              <li>VSCode, Prettier, ESLint</li>
+              <li>XCode, Eclipse, Vim</li>
+              <li>IntelliJ, Android Studio</li>
+              <li>Git Bash, Terminal</li>
+              <li>Virtual Box, Docker</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
