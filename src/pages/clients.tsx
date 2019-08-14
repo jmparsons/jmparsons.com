@@ -1,13 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Img, { FluidObject } from 'gatsby-image';
-import Layout from '../components/Layout';
-import Content from '../components/Content';
+import { Layout } from '../components/Layout';
+import { Content } from '../components/Content';
 import { graphql } from 'gatsby';
 import { ClientGrid, ClientItem } from '../components/UI/ClientsUI';
 import { QueryProps } from '../interfaces';
 
-const Clients: React.FC<QueryProps> = ({ data: { allClientsJson: clients } }) => {
+export default ({ data: { allClientsJson: clients } }: QueryProps) => {
   return (
     <Layout>
       <Helmet title="Clients" />
@@ -48,5 +48,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default Clients;

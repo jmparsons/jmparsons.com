@@ -3,12 +3,12 @@ import { ThxProps } from '../Theme';
 import { media, Breakpoints } from '../../utils/mq';
 import { Link } from 'gatsby';
 
-const BotBarCon = styled.footer`
+export const BotBarCon = styled.footer`
   display: grid;
   background: ${({ theme }: ThxProps) => theme.botBar.bg};
 `;
 
-const BotBarGrid = styled.div`
+export const BotBarGrid = styled.div`
   display: grid;
   width: 100%;
   align-self: center;
@@ -26,7 +26,7 @@ const BotBarGrid = styled.div`
   `};
 `;
 
-const BotNavBar = styled.nav`
+export const BotNavBar = styled.nav`
   display: grid;
   grid-auto-flow: column;
   height: 50px;
@@ -36,7 +36,7 @@ const BotNavBar = styled.nav`
   `};
 `;
 
-const SocialBar = styled.nav`
+export const SocialBar = styled.nav`
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
@@ -47,7 +47,7 @@ const SocialBar = styled.nav`
   `};
 `;
 
-const BotLink = styled(Link).attrs({ activeClassName: 'active' })`
+export const BotLink = styled(Link).attrs({ activeClassName: 'active' })`
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   color: ${({ theme }: ThxProps) => theme.botBar.link};
@@ -65,7 +65,7 @@ const BotLink = styled(Link).attrs({ activeClassName: 'active' })`
   `};
 `;
 
-const CopyRight = styled.div`
+export const CopyRight = styled.div`
   display: grid;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -77,5 +77,3 @@ const CopyRight = styled.div`
     justify-content: flex-end;
   `};
 `;
-
-export { BotBarCon, BotBarGrid, BotNavBar, BotLink, CopyRight, SocialBar };

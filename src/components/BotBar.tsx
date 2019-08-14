@@ -1,8 +1,8 @@
 import React from 'react';
-import SocialNav from './SocialNav';
+import { SocialNav } from './SocialNav';
 import { BotBarCon, BotBarGrid, CopyRight } from './UI/BotBarUI';
 
-const BotBar: React.FC = () => (
+export const BotBar = () => (
   <BotBarCon>
     <BotBarGrid>
       <SocialNav />
@@ -10,5 +10,3 @@ const BotBar: React.FC = () => (
     </BotBarGrid>
   </BotBarCon>
 );
-
-export default BotBar;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon, { IconProps } from './Icon';
+import { Icon, IconProps } from './Icon';
 import { media } from '../utils/mq';
 
 const StyledLink = styled.a`
@@ -14,10 +14,8 @@ const StyledLink = styled.a`
 
 type IconLinkProps = Partial<HTMLLinkElement> & IconProps;
 
-const IconLink: React.FC<IconLinkProps> = ({ href, icon }) => (
+export const IconLink = ({ href, icon }: IconLinkProps) => (
   <StyledLink href={href} title={icon} target="_blank">
     <Icon icon={icon} />
   </StyledLink>
 );
-
-export default IconLink;

@@ -3,14 +3,14 @@ import { Form } from 'formik';
 import { media } from '../../utils/mq';
 import { ThxProps } from '../Theme';
 
-const FormGrid = styled.div`
+export const FormGrid = styled.div`
   display: grid;
   ${media.tablet`
     justify-content: center;
   `};
 `;
 
-const StyledForm = styled(Form)`
+export const StyledForm = styled(Form)`
   display: grid;
   grid-auto-flow: row;
   grid-gap: 15px;
@@ -20,7 +20,7 @@ const StyledForm = styled(Form)`
   `};
 `;
 
-const SubmitBtn = styled.button.attrs({ type: 'submit' })`
+export const SubmitBtn = styled.button.attrs({ type: 'submit' })`
   width: 120px;
   height: 42px;
   line-height: 42px;
@@ -30,5 +30,3 @@ const SubmitBtn = styled.button.attrs({ type: 'submit' })`
   color: ${({ theme }: ThxProps) => theme.form.btnText};
   background: ${({ theme }: ThxProps) => theme.form.btnBg};
 `;
-
-export { StyledForm as Form, FormGrid, SubmitBtn };

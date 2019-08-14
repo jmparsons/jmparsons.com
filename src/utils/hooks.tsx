@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 type StorageValues = string | number | boolean | object | [];
 
-const useLocalStorage = (key: string, initialValue?: StorageValues) => {
+export const useLocalStorage = (key: string, initialValue?: StorageValues) => {
   const [item, setInnerValue] = useState(() => {
     try {
       const localItem = window.localStorage.getItem(key);
@@ -19,5 +19,3 @@ const useLocalStorage = (key: string, initialValue?: StorageValues) => {
 
   return [item, setValue];
 };
-
-export { useLocalStorage };

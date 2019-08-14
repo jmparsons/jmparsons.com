@@ -6,7 +6,7 @@ type SvcColProps = ThxProps & {
   col?: number;
 };
 
-const SvcStyles = styled.div`
+export const SvcStyles = styled.div`
   display: grid;
   grid-gap: 15px;
   ul {
@@ -25,7 +25,7 @@ const SvcStyles = styled.div`
   }
 `;
 
-const SvcGrid = styled.div`
+export const SvcGrid = styled.div`
   display: grid;
   width: 100%;
   grid-gap: 15px;
@@ -34,7 +34,7 @@ const SvcGrid = styled.div`
   `};
 `;
 
-const SvcBlock = styled.div`
+export const SvcBlock = styled.div`
   background: ${({ theme }: SvcColProps) => theme.main.blockBg};
   padding: 20px;
   h2,
@@ -51,12 +51,10 @@ const SvcBlock = styled.div`
   `};
 `;
 
-const SvcCol = styled.div`
+export const SvcCol = styled.div`
   ${media.tablet`
     ul {
       column-count: ${({ col = 3 }: SvcColProps) => col};
     }
   `};
 `;
-
-export { SvcStyles, SvcGrid, SvcBlock, SvcCol };

@@ -33,7 +33,7 @@ export interface IconProps {
   icon: keyof typeof icons;
 }
 
-const Icon: React.FC<IconProps> = ({ icon }) => {
+export const Icon = ({ icon }: IconProps) => {
   const viewWidth = widths[icon];
   const iconWidth = (viewWidth / 1024) * 22;
   return (
@@ -42,5 +42,3 @@ const Icon: React.FC<IconProps> = ({ icon }) => {
     </SVG>
   );
 };
-
-export default Icon;

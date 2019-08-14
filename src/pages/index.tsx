@@ -1,10 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../components/Layout';
+import { Layout } from '../components/Layout';
 import { IndexSplash, IndexInfo, IndexIntro, IndexList, IndexItem } from '../components/UI/IndexUI';
-import { QueryProps } from '../interfaces';
 
-const Home: React.FC<QueryProps> = ({ data }) => (
+export default () => (
   <Layout>
     <Helmet>
       <meta
@@ -30,4 +29,3 @@ const Home: React.FC<QueryProps> = ({ data }) => (
     </IndexSplash>
   </Layout>
 );
-export default Home;

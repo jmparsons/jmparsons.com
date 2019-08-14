@@ -1,8 +1,8 @@
 import React from 'react';
-import IconLink from './IconLink';
+import { IconLink } from './IconLink';
 import { SocialBar } from './UI/BotBarUI';
 
-const SocialNav: React.FC = () => (
+export const SocialNav = () => (
   <SocialBar>
     <IconLink href="http://linkedin.com/in/jmparsons" icon="linkedin" />
     <IconLink href="http://github.com/jmparsons" icon="github" />
@@ -10,5 +10,3 @@ const SocialNav: React.FC = () => (
     <IconLink href="http://twitter.com/jmparsons" icon="twitter" />
   </SocialBar>
 );
-
-export default SocialNav;
