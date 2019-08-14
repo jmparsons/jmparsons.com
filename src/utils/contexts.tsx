@@ -1,13 +1,11 @@
-import React from 'react';
+import { createContext } from 'react';
 
 export interface ThemerContextProps {
   theme: 'light' | 'dark';
   toggleTheme: () => void;
 }
 
-const ThemerContext = React.createContext<ThemerContextProps>({
+export const ThemerContext = createContext<ThemerContextProps>({
   theme: 'dark',
   toggleTheme: () => {},
 });
-
-export { ThemerContext };

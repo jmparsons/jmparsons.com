@@ -1,10 +1,10 @@
 import React from 'react';
-import Logo from './Logo';
-import TopNav from './TopNav';
-import ThemeToggle from './ThemeToggle';
+import { Logo } from './Logo';
+import { TopNav } from './TopNav';
+import { ThemeToggle } from './ThemeToggle';
 import { TopBarCon, TopBarGrid } from './UI/TopBarUI';
 
-const TopBar: React.FC = () => (
+export const TopBar = () => (
   <TopBarCon>
     <TopBarGrid>
       <Logo />
@@ -13,5 +13,3 @@ const TopBar: React.FC = () => (
     </TopBarGrid>
   </TopBarCon>
 );
-
-export default TopBar;

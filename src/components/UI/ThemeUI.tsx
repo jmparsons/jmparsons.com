@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { media } from '../../utils/mq';
 
-const ThemeNav = styled.div`
+export const ThemeNav = styled.div`
   display: grid;
   grid-auto-flow: row;
   position: absolute;
@@ -16,7 +16,7 @@ const ThemeNav = styled.div`
   `};
 `;
 
-const ThemeBtn = styled.button`
+export const ThemeBtn = styled.button`
   border: none;
   outline: 0;
   margin: 0;
@@ -26,5 +26,3 @@ const ThemeBtn = styled.button`
   background: transparent;
   cursor: pointer;
 `;
-
-export { ThemeNav, ThemeBtn };

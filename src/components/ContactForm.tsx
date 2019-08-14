@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Formik, yupToFormErrors } from 'formik';
-import { FormGrid, SubmitBtn, Form } from './UI/FormUI';
+import { FormGrid, SubmitBtn, StyledForm as Form } from './UI/FormUI';
 import { contactSchema } from '../utils/schemas';
 import { Input, TextArea } from './FormItems';
 
@@ -9,7 +9,7 @@ interface FormProps {
   setSent: (value: boolean) => void;
 }
 
-const ContactForm: React.FC<FormProps> = ({ setSent }) => (
+export const ContactForm = ({ setSent }: FormProps) => (
   <FormGrid>
     <Formik
       initialValues={{ name: '', email: '', subject: '', message: '' }}
@@ -35,5 +35,3 @@ const ContactForm: React.FC<FormProps> = ({ setSent }) => (
     />
   </FormGrid>
 );
-
-export default ContactForm;

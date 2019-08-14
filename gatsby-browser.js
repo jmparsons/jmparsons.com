@@ -32,10 +32,8 @@ const RealRoot = ({ children }) => {
   return children;
 };
 
-export const wrapRootElement = ({ element }) => {
-  return (
-    <ThemerProvider>
-      <RealRoot>{element}</RealRoot>
-    </ThemerProvider>
-  );
-};
+export const wrapRootElement = ({ element }) => (
+  <ThemerProvider>
+    <RealRoot>{element}</RealRoot>
+  </ThemerProvider>
+);

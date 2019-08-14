@@ -1,11 +1,9 @@
 import React from 'react';
-import Routes from './Routes';
+import { Routes } from './Routes';
 import { LogoCon, LogoLink } from './UI/TopBarUI';
 
-const Logo: React.FC = () => (
+export const Logo = () => (
   <LogoCon>
     <LogoLink to={Routes.home}>JMParsons</LogoLink>
   </LogoCon>
 );
-
-export default Logo;

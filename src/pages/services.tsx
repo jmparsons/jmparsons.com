@@ -1,10 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../components/Layout';
-import Content from '../components/Content';
-import { SvcStyles, SvcGrid, SvcBlock, SvcCol } from '../components/UI/ServicesUI';
+import { Layout } from '../components/Layout';
+import { Content } from '../components/Content';
+import { SvcStyles, SvcGrid, SvcBlock } from '../components/UI/ServicesUI';
 
-const Services: React.FC = () => (
+export default () => (
   <Layout>
     <Helmet title="Services" />
     <Content>
@@ -236,5 +236,3 @@ const Services: React.FC = () => (
     </Content>
   </Layout>
 );
-
-export default Services;

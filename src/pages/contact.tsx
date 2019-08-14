@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../components/Layout';
-import ContactForm from '../components/ContactForm';
-import ContactSent from '../components/ContactSent';
-import Content from '../components/Content';
+import { Layout } from '../components/Layout';
+import { ContactForm } from '../components/ContactForm';
+import { ContactSent } from '../components/ContactSent';
+import { Content } from '../components/Content';
 
-const Contact: React.FC = () => {
+export default () => {
   const [sent, setSent] = useState(false);
   return (
     <Layout>
@@ -17,5 +17,3 @@ const Contact: React.FC = () => {
     </Layout>
   );
 };
-
-export default Contact;

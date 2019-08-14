@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { Field, ErrorMessage as ErrorField } from 'formik';
 import { ThxProps } from '../Theme';
 
-const inputStyles = css`
+export const inputStyles = css`
   margin: 0;
   padding: 10px;
   font-size: 16px;
@@ -17,21 +17,21 @@ const inputStyles = css`
   }
 `;
 
-const FormItem = styled.div`
+export const FormItem = styled.div`
   display: grid;
   position: relative;
 `;
 
-const InputField = styled(Field)`
+export const InputField = styled(Field)`
   ${inputStyles};
 `;
 
-const TextAreaField = styled(Field).attrs({ component: 'textarea', rows: 6 })`
+export const TextAreaField = styled(Field).attrs({ component: 'textarea', rows: 6 })`
   line-height: 30px;
   ${inputStyles};
 `;
 
-const ErrorMessage: any = styled(ErrorField)`
+export const ErrorMessage: any = styled(ErrorField)`
   position: absolute;
   top: 5px;
   right: 5px;
@@ -41,5 +41,3 @@ const ErrorMessage: any = styled(ErrorField)`
   opacity: 0.5;
   height: 20px;
 `;
-
-export { FormItem, InputField, TextAreaField, ErrorMessage };

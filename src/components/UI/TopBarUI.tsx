@@ -3,13 +3,13 @@ import { ThxProps } from '../Theme';
 import { media, Breakpoints } from '../../utils/mq';
 import { Link } from 'gatsby';
 
-const TopBarCon = styled.header`
+export const TopBarCon = styled.header`
   display: grid;
   position: relative;
   background: ${({ theme }: ThxProps) => theme.topBar.bg};
 `;
 
-const TopBarGrid = styled.div`
+export const TopBarGrid = styled.div`
   display: grid;
   width: 100%;
   align-self: center;
@@ -27,7 +27,7 @@ const TopBarGrid = styled.div`
   `};
 `;
 
-const LogoCon = styled.span`
+export const LogoCon = styled.span`
   display: grid;
   align-content: center;
   justify-content: center;
@@ -38,7 +38,7 @@ const LogoCon = styled.span`
   `};
 `;
 
-const LogoLink = styled(Link)`
+export const LogoLink = styled(Link)`
   font-size: 36px;
   font-family: 'Denmark';
   color: ${({ theme }: ThxProps) => theme.topBar.logo};
@@ -47,7 +47,7 @@ const LogoLink = styled(Link)`
   }
 `;
 
-const TopNavCon = styled.nav`
+export const TopNavCon = styled.nav`
   display: grid;
   grid-auto-flow: column;
   height: 50px;
@@ -57,7 +57,7 @@ const TopNavCon = styled.nav`
   `};
 `;
 
-const TopLink = styled(Link).attrs({ activeClassName: 'active' })`
+export const TopLink = styled(Link).attrs({ activeClassName: 'active' })`
   display: grid;
   align-content: center;
   justify-content: center;
@@ -81,11 +81,9 @@ const TopLink = styled(Link).attrs({ activeClassName: 'active' })`
   `};
 `;
 
-const HomeLink = styled(TopLink)`
+export const HomeLink = styled(TopLink)`
   display: none;
   ${media.tablet`
     display: grid;
   `};
 `;
-
-export { TopBarCon, TopBarGrid, LogoCon, LogoLink, TopNavCon, TopLink, HomeLink };

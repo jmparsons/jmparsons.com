@@ -3,7 +3,7 @@ import { media } from '../../utils/mq';
 import { FixedContent } from '../Content';
 import { ThxProps } from '../Theme';
 
-const IndexSplash = styled.div`
+export const IndexSplash = styled.div`
   display: grid;
   position: relative;
   width: 100%;
@@ -11,7 +11,7 @@ const IndexSplash = styled.div`
   overflow: hidden;
 `;
 
-const IndexInfo = styled(FixedContent)`
+export const IndexInfo = styled(FixedContent)`
   display: grid;
   align-content: center;
   h2,
@@ -29,7 +29,7 @@ const IndexInfo = styled(FixedContent)`
   `};
 `;
 
-const IndexList = styled.div`
+export const IndexList = styled.div`
   display: grid;
   grid-gap: 10px;
   ${media.tablet`
@@ -37,7 +37,7 @@ const IndexList = styled.div`
   `};
 `;
 
-const IndexItem = styled.div`
+export const IndexItem = styled.div`
   display: grid;
   font-family: 'Open Sans';
   font-weight: 400;
@@ -65,7 +65,7 @@ const IndexItem = styled.div`
   `};
 `;
 
-const IndexIntro = styled.div`
+export const IndexIntro = styled.div`
   justify-self: center;
   align-self: center;
   width: 100%;
@@ -75,7 +75,7 @@ const IndexIntro = styled.div`
   `};
 `;
 
-const IndexBgCon = styled.div`
+export const IndexBgCon = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -84,12 +84,12 @@ const IndexBgCon = styled.div`
   display: grid;
 `;
 
-const IndexBgFixed = styled(FixedContent)`
+export const IndexBgFixed = styled(FixedContent)`
   padding: 0;
   height: 100%;
 `;
 
-const IndexBg = styled.div`
+export const IndexBg = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -99,14 +99,3 @@ const IndexBg = styled.div`
     height: 100%;
   }
 `;
-
-export {
-  IndexSplash,
-  IndexInfo,
-  IndexIntro,
-  IndexBgCon,
-  IndexBgFixed,
-  IndexBg,
-  IndexList,
-  IndexItem,
-};

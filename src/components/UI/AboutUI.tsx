@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 import { media } from '../../utils/mq';
 
-const AboutCon = styled.div`
+export const AboutCon = styled.div`
   display: grid;
 `;
 
-const AboutContent = styled.div`
+export const AboutContent = styled.div`
   ${media.tablet`
     padding-right: 30px;
   `};
 `;
 
-const AboutGrid = styled.div`
+export const AboutGrid = styled.div`
   display: grid;
   align-self: center;
   justify-self: center;
@@ -20,7 +20,7 @@ const AboutGrid = styled.div`
   `};
 `;
 
-const AboutImage = styled.div`
+export const AboutImage = styled.div`
   display: grid;
   padding-top: 30px;
   justify-content: center;
@@ -29,5 +29,3 @@ const AboutImage = styled.div`
     height: auto;
   }
 `;
-
-export { AboutCon, AboutContent, AboutGrid, AboutImage };

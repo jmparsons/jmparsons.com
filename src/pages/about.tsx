@@ -1,11 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../components/Layout';
-import Content from '../components/Content';
+import { Layout } from '../components/Layout';
+import { Content } from '../components/Content';
 import { AboutImage, AboutCon, AboutGrid, AboutContent } from '../components/UI/AboutUI';
 import train from '../assets/images/train.gif';
 
-const About: React.FC = () => (
+export default () => (
   <Layout>
     <Helmet title="About" />
     <Content>
@@ -48,5 +48,3 @@ const About: React.FC = () => (
     </Content>
   </Layout>
 );
-
-export default About;

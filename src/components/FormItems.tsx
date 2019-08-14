@@ -7,18 +7,16 @@ interface FormItemProps {
   type?: string;
 }
 
-const Input: React.FC<FormItemProps> = ({ placeholder, name, type = 'text' }) => (
+export const Input = ({ placeholder, name, type = 'text' }: FormItemProps) => (
   <FormItem>
     <InputField name={name} placeholder={placeholder} type={type} />
     <ErrorMessage name={name} component="span" />
   </FormItem>
 );
 
-const TextArea: React.FC<FormItemProps> = ({ placeholder, name }) => (
+export const TextArea = ({ placeholder, name }: FormItemProps) => (
   <FormItem>
     <TextAreaField name={name} placeholder={placeholder} />
     <ErrorMessage name={name} component="span" />
   </FormItem>
 );
-
-export { Input, TextArea };

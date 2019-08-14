@@ -146,6 +146,4 @@ const dark: ThemexBase = {
   },
 };
 
-const Theme: ThemexProps = { light, dark };
-
-export default Theme;
+export const Theme: ThemexProps = { light, dark };

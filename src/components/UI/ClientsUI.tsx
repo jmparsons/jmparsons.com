@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { media } from '../../utils/mq';
 import { ThxProps } from '../Theme';
 
-const ClientGrid = styled.div`
+export const ClientGrid = styled.div`
   display: grid;
   width: 100%;
   grid-gap: 15px;
@@ -15,9 +15,7 @@ const ClientGrid = styled.div`
   `};
 `;
 
-const ClientItem = styled.div`
+export const ClientItem = styled.div`
   outline: 1px solid ${({ theme }: ThxProps) => theme.main.border};
   background: #fff;
 `;
-
-export { ClientGrid, ClientItem };

@@ -1,8 +1,8 @@
 import React from 'react';
 import { TopNavCon, TopLink, HomeLink } from './UI/TopBarUI';
-import Routes from './Routes';
+import { Routes } from './Routes';
 
-const TopNav: React.FC = () => (
+export const TopNav = () => (
   <TopNavCon>
     <HomeLink to={Routes.home}>Home</HomeLink>
     <TopLink to={Routes.services}>Services</TopLink>
@@ -11,5 +11,3 @@ const TopNav: React.FC = () => (
     <TopLink to={Routes.contact}>Contact</TopLink>
   </TopNavCon>
 );
-
-export default TopNav;
