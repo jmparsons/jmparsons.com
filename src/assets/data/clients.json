@@ -20,16 +20,16 @@
     "image": "../images/coca-cola-mixon.jpg"
   },
   {
+    "name": "Disney",
+    "image": "../images/disney.jpg"
+  },
+  {
     "name": "Eat This, Not That!",
     "image": "../images/eat-this.jpg"
   },
   {
     "name": "Google Summit",
     "image": "../images/google-summit.jpg"
-  },
-  {
-    "name": "I Can't Believe It's Not Butter!",
-    "image": "../images/icantbelieveitsnotbutter.jpg"
   },
   {
     "name": "Khiels",
