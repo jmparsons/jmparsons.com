@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect, useCallback } from 'react';
 import { ThemerContext } from './src/utils/contexts';
 import { ThemerProvider } from './src/utils/providers';
 import './src/components/layout.css';
@@ -13,7 +13,7 @@ const RealRoot = ({ children }) => {
   const [once, setOnce] = useState(false);
   const [twice, setTwice] = useState(false);
   const { theme, toggleTheme } = useContext(ThemerContext);
-  useEffect(() => {
+  const checkTheme = useCallback(() => {
     if (!once && !twice && theme === 'dark') {
       setOnce(true);
       setTwice(true);
@@ -28,7 +28,10 @@ const RealRoot = ({ children }) => {
         }
       }
     }
-  }, [once, twice]);
+  }, [once, twice, theme, toggleTheme]);
+  useEffect(() => {
+    checkTheme();
+  }, [checkTheme]);
   return children;
 };
 
