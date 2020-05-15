@@ -6,7 +6,7 @@ export const BotBar = () => (
   <BotBarCon>
     <BotBarGrid>
       <SocialNav />
-      <CopyRight>&copy; 2013-2019 JMParsons</CopyRight>
+      <CopyRight>&copy; 2013-2020 JMParsons</CopyRight>
     </BotBarGrid>
   </BotBarCon>
 );
