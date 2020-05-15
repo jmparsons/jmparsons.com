@@ -10,7 +10,9 @@ interface ThemerProviderProps {
 export const ThemerProvider = ({ children }: ThemerProviderProps) => {
   const [theme, setTheme] = useLocalStorage('theme', 'dark');
   return (
-    <ThemerContext.Provider value={{ theme, toggleTheme: updateTheme(theme, setTheme) }}>
+    <ThemerContext.Provider
+      value={{ theme, toggleTheme: updateTheme(theme, setTheme) }}
+    >
       {children}
     </ThemerContext.Provider>
   );

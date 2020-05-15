@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { Layout } from '../components/Layout';
 import { ContactForm } from '../components/ContactForm';
 import { ContactSent } from '../components/ContactSent';

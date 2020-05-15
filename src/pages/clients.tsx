@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import Img, { FluidObject } from 'gatsby-image';
 import { Layout } from '../components/Layout';
 import { Content } from '../components/Content';

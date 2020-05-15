@@ -4,7 +4,9 @@ import { ThemerContext, ThemerContextProps } from '../utils/contexts';
 import { ThemeBtn, ThemeNav } from './UI/ThemeUI';
 import { getAltTheme } from '../utils/themer';
 
-type ThemeIconProps = { [key in ThemerContextProps['theme']]: keyof typeof icons };
+type ThemeIconProps = {
+  [key in ThemerContextProps['theme']]: keyof typeof icons;
+};
 
 export const ThemeToggle = () => {
   const { theme, toggleTheme } = useContext(ThemerContext);

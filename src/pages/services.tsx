@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { Layout } from '../components/Layout';
 import { Content } from '../components/Content';
 import { SvcStyles, SvcGrid, SvcBlock } from '../components/UI/ServicesUI';
@@ -81,14 +81,14 @@ export default () => (
         </SvcGrid>
         <SvcGrid>
           <SvcBlock>
-            <h3>React / React Native</h3>
+            <h3>React Native / Flutter</h3>
             <ul>
-              <li>Hooks, Context, Redux, Mobx</li>
-              <li>Axios, Immutable, i18n, Jest</li>
+              <li>Hooks, Context, Redux Toolkit</li>
+              <li>Widgets, Axios, i18n</li>
               <li>Routers, Navigators</li>
+              <li>Testing Library, Jest</li>
               <li>Apollo GraphQL</li>
-              <li>Styled Components</li>
-              <li>Higher Order Components</li>
+              <li>Styled Components, Material</li>
             </ul>
           </SvcBlock>
           <SvcBlock>
@@ -202,16 +202,16 @@ export default () => (
             <ul>
               <li>(x)HTML 4, HTML 5</li>
               <li>CSS 1-3 - Grid, Flexbox</li>
-              <li>Javascript</li>
+              <li>Javascript, Typescript</li>
               <li>Scala, Java, Kotlin</li>
+              <li>Dart, Go</li>
               <li>Haskell</li>
               <li>Objective C, Swift</li>
               <li>C++, C#, Rust</li>
-              <li>Dart, Go</li>
               <li>OCaml, Reason</li>
               <li>Ruby</li>
               <li>Python</li>
-              <li>Lua</li>
+              <li>Lua, GDScript</li>
             </ul>
           </SvcBlock>
           <SvcBlock>

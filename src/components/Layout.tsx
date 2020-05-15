@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { MainGrid, Main } from './UI/MainUI';
 import { GlobalStyle } from './GlobalStyle';
 import { TopBar } from './TopBar';
