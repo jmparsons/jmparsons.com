@@ -26,7 +26,10 @@ interface ContentProps {
   children: React.ReactNode;
 }
 
-export const Content: React.FC<ContentProps> = ({ type = 'fixed', children }) => {
+export const Content: React.FC<ContentProps> = ({
+  type = 'fixed',
+  children,
+}) => {
   const Con = type === 'fixed' ? FixedContent : FullContent;
   return <Con>{children}</Con>;
 };

@@ -1,7 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Layout } from '../components/Layout';
-import { IndexSplash, IndexInfo, IndexIntro, IndexList, IndexItem } from '../components/UI/IndexUI';
+import {
+  IndexSplash,
+  IndexInfo,
+  IndexIntro,
+  IndexList,
+  IndexItem,
+} from '../components/UI/IndexUI';
 
 export default () => (
   <Layout>
@@ -16,7 +22,10 @@ export default () => (
         <IndexIntro>
           <h2>My name is Jon.</h2>
           <h3>Full Stack Developer</h3>
-          <p>New York based professional Scala, Play, Node, React, iOS, and Android Developer.</p>
+          <p>
+            New York based professional Scala, Play, Node, React, iOS, and
+            Android Developer.
+          </p>
         </IndexIntro>
         <IndexList>
           <IndexItem>websites</IndexItem>
