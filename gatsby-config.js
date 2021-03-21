@@ -33,14 +33,10 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Open Sans`,
-            variants: [`300`, `400`, `700`],
-          },
-        ],
+        fonts: [`Open Sans\:300,400,700`],
+        display: 'swap',
       },
     },
     {

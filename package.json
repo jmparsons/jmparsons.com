@@ -16,9 +16,9 @@
     "gatsby": "^3.1.1",
     "gatsby-image": "^3.1.0",
     "gatsby-plugin-google-analytics": "^3.1.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^3.1.0",
     "gatsby-plugin-offline": "^4.1.0",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
     "gatsby-plugin-react-helmet": "^4.1.0",
     "gatsby-plugin-sharp": "^3.1.1",
     "gatsby-plugin-styled-components": "^4.1.0",
@@ -53,8 +53,5 @@
     "xserve": "gatsby serve -H 0.0.0.0 -p 9000",
     "gengql": "graphql-codegen",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
-  },
-  "engines": {
-    "node": ">=12.18.0"
   }
 }
