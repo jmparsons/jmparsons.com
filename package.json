@@ -53,5 +53,8 @@
     "xserve": "gatsby serve -H 0.0.0.0 -p 9000",
     "gengql": "graphql-codegen",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "engines": {
+    "node": ">=12.18.0"
   }
 }
